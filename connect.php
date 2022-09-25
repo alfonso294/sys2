@@ -14,5 +14,3 @@
 	}
 
 ?>
-ADASDJ
-ASDASDAS
