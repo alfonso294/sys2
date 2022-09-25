@@ -59,7 +59,7 @@ body {
 
                                 
                                 <?php
-                                $query = 'SELECT c. * , p.* FROM students c, school p WHERE c.Student_ID = p.Student_ID';
+                                $query = 'SELECT c. * , p.*,l.* FROM students c, school p, documents l WHERE c.Student_ID = p.Student_ID = l.Student_ID';
                                 $result = mysqli_query($con, $query) or die(mysqli_error($con));
                                
                                 
