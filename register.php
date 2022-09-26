@@ -1305,7 +1305,8 @@ body {
               <option class="Manila">Santa Ana: Barangay 904</option> 
               <option class="Manila">Santa Ana: Barangay 905</option> 
               <option class="Manila">Santa Cruz: Barangay 297</option> 
-              <option class="Manila"></option> 
+              <option class="Manila">Santa Cruz: Barangay 298</option> 
+              <option class="Manila">Santa Cruz: Barangay 299</option> 
               <option class="Manila"></option> 
               <option class="Manila"></option>    
               <option class="Manila"></option> 
