@@ -32,6 +32,7 @@
     $FaName = clean($_POST['FaName']);
     $MoEduc = clean($_POST['MoEduc']);
     $FaEduc = clean($_POST['FaEduc']);
+    
 
     
 
@@ -152,6 +153,11 @@ body {
                 <div class="form-group col-md-6">
                 <label for="password">Password</label>
                 <input type="text" class="form-control" name="password" placeholder="Password" required>
+		<div class="form-group">
+                <small id="passwordHelpInline" class="text-muted">
+                &nbsp;Must be 8-20 characters long.
+                </small>
+                </div>
                 </div>
         </div>
 
