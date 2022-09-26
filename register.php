@@ -1943,6 +1943,19 @@ body {
               <option class="Las Piñas">Talon Tres</option> 
               <option class="Las Piñas">Talon Uno</option>  
               <option class="Las Piñas">Zapote</option>   
+              <option class="Pateros">Aguho</option>
+              <option class="Pateros">Magtanggol</option> 
+              <option class="Pateros">Martires del 96</option>  
+              <option class="Pateros">Poblacion</option>  
+              <option class="Pateros">San Pedro</option>
+              <option class="Pateros">San Roque</option> 
+              <option class="Pateros">Santa Ana</option>  
+              <option class="Pateros">Santo Rosario-Kanluran</option> 
+              <option class="Pateros">Santo Rosario-Silangan</option>
+              <option class="Pateros">Tabacalera</option> 
+              <option class="Pateros"></option>  
+              <option class="Pateros"></option>  
+             
              
              
              
