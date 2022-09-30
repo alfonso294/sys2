@@ -344,7 +344,7 @@ input:invalid {
                     <option class="Abra">Lagangilang</option>
                     <option class="Abra">Lagayan</option>
                     <option class="Abra">Langiden</option>
-                    <option class="Abra">La Paz</option>
+                    <option class="Abra" value="La-Paz">La Paz</option>
                     <option class="Abra">Licuan-Baay(Licuan)</option>
                     <option class="Abra">Luba</option>
                     <option class="Abra">Malibcong</option>
@@ -2325,8 +2325,7 @@ input:invalid {
               <option class="Langiden">Malapaao</option>
               <option class="Langiden">Poblacion</option>
               <option class="Langiden">Quillat</option>
-<<<<<<< HEAD
-              <option class="La Paz">Benben</option>
+              <option class="La-Paz">Benben</option>
               <option class="La Paz">Bulbulala</option>
               <option class="La Paz">Buli</option>
               <option class="La Paz">Canan</option>
@@ -2338,12 +2337,99 @@ input:invalid {
               <option class="La Paz">San Gregorio</option>
               <option class="La Paz">Toon</option>
               <option class="La Paz">Udangan</option>
-              <option class="Licuan-Baay"></option>
-              <option class="Licuan-Baay"></option>
-=======
-              <option class=""
-              
->>>>>>> ec7223fa61a39ac93410cfaceec053951130e03a
+              <option class="Licuan-Baay">Bonglo</option>
+              <option class="Licuan-Baay">Bulbulala</option>
+              <option class="Licuan-Baay">Cawayan</option>
+              <option class="Licuan-Baay">Domenglay</option>
+              <option class="Licuan-Baay">Lenneng</option>
+              <option class="Licuan-Baay">Mapisla</option>
+              <option class="Licuan-Baay">Mogao</option>
+              <option class="Licuan-Baay">Nalbuan</option>
+              <option class="Licuan-Baay">Poblacion</option>
+              <option class="Licuan-Baay">Subagan</option>
+              <option class="Licuan-Baay">Tumalip</option>
+              <option class="Luba">Ampalioc</option>
+              <option class="Luba">Barit</option>
+              <option class="Luba">Gayaman</option>
+              <option class="Luba">Lul-luno</option>
+              <option class="Luba">Luzong</option>
+              <option class="Luba">Nagbukel-Tuquipa</option>
+              <option class="Luba">Poblacion</option>
+              <option class="Luba">Sabnangan</option>
+              <option class="Malibcong">Bayabas</option>
+              <option class="Malibcong">Binasaran</option>
+              <option class="Malibcong">Buanao</option>
+              <option class="Malibcong">Dulao</option>
+              <option class="Malibcong">Duldulao</option>
+              <option class="Malibcong">Gacab</option>
+              <option class="Malibcong">Lat-ey</option>
+              <option class="Malibcong">Malibcong</option>
+              <option class="Malibcong">Mataragan</option>
+              <option class="Malibcong">Pacgued</option>
+              <option class="Malibcong">Taripan</option>
+              <option class="Malibcong">Umnap</option>
+              <option class="Manabo">Ayyeng</option>
+              <option class="Manabo">Catacdegan Nuevo</option>
+              <option class="Manabo">Catacdegan Viejo</option>
+              <option class="Manabo">Luzong</option>
+              <option class="Manabo">San Jose Norte</option>
+              <option class="Manabo">San Jose Sur</option>
+              <option class="Manabo">San Juan Norte</option>
+              <option class="Manabo">San Juan Sur</option>
+              <option class="Manabo">San Ramon East</option>
+              <option class="Manabo">San Ramon West</option>
+              <option class="Manabo">Santo Tomas</option>
+              <option class="Peñarrubia">Dumayco</option>
+              <option class="Peñarrubia">Lusuac</option>
+              <option class="Peñarrubia">Malamsit</option>
+              <option class="Peñarrubia">Namarabar</option>
+              <option class="Peñarrubia">Patiao</option>
+              <option class="Peñarrubia">Poblacion</option>
+              <option class="Peñarrubia">Riang</option>
+              <option class="Peñarrubia">Santa Rosa</option>
+              <option class="Peñarrubia">Tattawa</option>
+              <option class="Pidigan">Alinaya</option>
+              <option class="Pidigan">Arab</option>
+              <option class="Pidigan">Garreta</option>
+              <option class="Pidigan">Immuli</option>
+              <option class="Pidigan">Laskig</option>
+              <option class="Pidigan">Monggoc</option>
+              <option class="Pidigan">Naguirayan</option>
+              <option class="Pidigan">Pamutic</option>
+              <option class="Pidigan">Pangtud</option>
+              <option class="Pidigan">Poblacion East</option>
+              <option class="Pidigan">Poblacion West</option>
+              <option class="Pidigan">San Diego</option>
+              <option class="Pidigan">Sulbec</option>
+              <option class="Pidigan">Suyo</option>
+              <option class="Pidigan">Yuyeng</option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+              <option class="Pilar"></option>
+
+
+
+
+
+
+
+
+
              
 
 
