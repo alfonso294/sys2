@@ -353,9 +353,9 @@ input:invalid {
                     <option class="Abra">Pidigan</option>
                     <option class="Abra">Pilar</option>
                     <option class="Abra">Sallapadan</option>
-                    <option class="Abra">San Isidro</option>
-                    <option class="Abra">San Juan</option>
-                    <option class="Abra">San Quintin</option>
+                    <option class="Abra" value="San-Isidro">San Isidro</option>
+                    <option class="Abra" value="San-Juan">San Juan</option>
+                    <option class="Abra" value="San-Quintin">San Quintin</option>
                     <option class="Abra">Tayum</option>
                     <option class="Abra">Tineg</option>
                     <option class="Abra">Tubo</option>
@@ -375,13 +375,13 @@ input:invalid {
                     <option class="Benguet">Kabayan</option>
                     <option class="Benguet">Kapangan</option>
                     <option class="Benguet">Kibungan</option>
-                    <option class="Benguet">La Trinidad</option>
+                    <option class="Benguet" value="La-Trinidad">La Trinidad</option>
                     <option class="Benguet">Mankayan</option>
                     <option class="Benguet">Sablan</option>
                     <option class="Benguet">Tuba</option>
                     <option class="Benguet">Tublay</option>
                     <option class="Ifugao">Aguinaldo</option>
-                    <option class="Ifugao">Alfonso Lista</option>
+                    <option class="Ifugao" value="Alfonso-Lista>Alfonso Lista</option>
                     <option class="Ifugao">Asipulo</option>
                     <option class="Ifugao">Banaue</option>
                     <option class="Ifugao">Hingyon</option>
@@ -2403,24 +2403,108 @@ input:invalid {
               <option class="Pidigan">Sulbec</option>
               <option class="Pidigan">Suyo</option>
               <option class="Pidigan">Yuyeng</option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
-              <option class="Pilar"></option>
+              <option class="Pilar">Bolbolo</option>
+              <option class="Pilar">Brookside</option>
+              <option class="Pilar">Dalit</option>
+              <option class="Pilar">Dintan</option>
+              <option class="Pilar">Gapang</option>
+              <option class="Pilar">Kinabit</option>
+              <option class="Pilar">Maliplipit</option>
+              <option class="Pilar">Nagcanasan</option>
+              <option class="Pilar">Nanangduan</option>
+              <option class="Pilar">Narnara</option>
+              <option class="Pilar">Ocup</option>
+              <option class="Pilar">Pang-ot</option>
+              <option class="Pilar">Patad</option>
+              <option class="Pilar">Poblacion</option>
+              <option class="Pilar">San Juan East</option>
+              <option class="Pilar">San Juan West</option>
+              <option class="Pilar">South Balioag</option>
+              <option class="Pilar">Tikitik</option>
+              <option class="Pilar">Villavieja</option>
+              <option class="Sallapadan">Bazar</option>
+              <option class="Sallapadan">Bilabila</option>
+              <option class="Sallapadan">Gangal</option>
+              <option class="Sallapadan">Maguyepyep</option>
+              <option class="Sallapadan">Naguilian</option>
+              <option class="Sallapadan">Saccaang</option>
+              <option class="Sallapadan">Sallapadan</option>
+              <option class="Sallapadan">Subusob</option>
+              <option class="Sallapadan">Ud-udiao</option>
+              <option class="San-Isidro">Cabayogan</option>
+              <option class="San-Isidro">Dalimag</option>
+              <option class="San-Isidro">Langbaban</option>
+              <option class="San-Isidro">Manayday</option>
+              <option class="San-Isidro">Pantoc</option>
+              <option class="San-Isidro">Poblacion</option>
+              <option class="San-Isidro">Sabtan-olo</option>
+              <option class="San-Isidro">San Marcial</option>
+              <option class="San-Juan">Abualan</option>
+              <option class="San-Juan">Ba-ug</option>
+              <option class="San-Juan">Badas</option>
+              <option class="San-Juan">Cabcaborao</option>
+              <option class="San-Juan">Culiong</option>
+              <option class="San-Juan">Daoidao</option>
+              <option class="San-Juan">Guimba</option>
+              <option class="San-Juan">Lam-ag</option>
+              <option class="San-Juan">Nangobongan</option>
+              <option class="San-Juan">Pattaoig</option>
+              <option class="San-Juan">Poblacion North</option>
+              <option class="San-Juan">Poblacion North</option>
+              <option class="San-Juan">Quidaoen</option>
+              <option class="San-Juan">Sabangan</option>
+              <option class="San-Juan">Silet</option>
+              <option class="San-Juan">Supi-il</option>
+              <option class="San-Juan">Tagaytay</option>
+              <option class="San-Quintin">Labaan</option>
+              <option class="San-Quintin">Palang</option>
+              <option class="San-Quintin">Pantoc</option>
+              <option class="San-Quintin">Poblacion</option>
+              <option class="San-Quintin">Tangadan</option>
+              <option class="San-Quintin">Villa Mercedes</option>
+              <option class="Tayum">Bagalay</option>
+              <option class="Tayum">Basbasa</option>
+              <option class="Tayum">Budac</option>
+              <option class="Tayum">Bumagcat</option>
+              <option class="Tayum">Cabaroan</option>
+              <option class="Tayum">Deet</option>
+              <option class="Tayum">Gaddani</option>
+              <option class="Tayum">Patucannay</option>
+              <option class="Tayum">Pias</option>
+              <option class="Tayum">Poblacion</option>
+              <option class="Tayum">Velasco</option>
+              <option class="Tineg">Alaoa</option>
+              <option class="Tineg">Anayan</option>
+              <option class="Tineg">Apao</option>
+              <option class="Tineg">Belaat</option>
+              <option class="Tineg">Caganayan</option>
+              <option class="Tineg">Cogon</option>
+              <option class="Tineg">Lanec</option>
+              <option class="Tineg">Lapat-Balantay</option>
+              <option class="Tineg">Naglibacan</option>
+              <option class="Tineg">Poblacion</option>
+              <option class="Tubo">Alangatin</option>
+              <option class="Tubo">Amtuagan</option>
+              <option class="Tubo">Dilong</option>
+              <option class="Tubo">Kili</option>
+              <option class="Tubo">Poblacion</option>
+              <option class="Tubo">Supo</option>
+              <option class="Tubo">Tabacda</option>
+              <option class="Tubo">Tiempo</option>
+              <option class="Tubo">Tubtuba</option>
+              <option class="Tubo">Wayangan</option>
+              <option class="Villaviciosa">Ap-apaya</option>
+              <option class="Villaviciosa">Bol-lilising</option>
+              <option class="Villaviciosa">Cal-lao</option>
+              <option class="Villaviciosa">Lap-lapog</option>
+              <option class="Villaviciosa">Lumaba</option>
+              <option class="Villaviciosa">Poblacion</option>
+              <option class="Villaviciosa">Tamac</option>
+              <option class="Villaviciosa">Tuquib</option>
+              
+
+
+
 
 
 
