@@ -9,6 +9,8 @@
 
   if(isset($_POST['register'])) {
 
+    $data = $_POST;
+
     $uname = clean($_POST['username']); 
     $pword = clean($_POST['password']); 
     $studno = clean($_POST['Student_ID']); 
@@ -32,13 +34,8 @@
     $FaName = clean($_POST['FaName']);
     $MoEduc = clean($_POST['MoEduc']);
     $FaEduc = clean($_POST['FaEduc']);
+    $province =clean($_POST['province']);
     
-
-    
-
-
-
-
 
     $query = "SELECT username FROM students WHERE username = '$uname'";
     $result = mysqli_query($con,$query);
@@ -54,10 +51,13 @@
       $result = mysqli_query($con,$query);
 
 
+      
+
+
     if(mysqli_num_rows($result) == 0) {
 
-        $query = "INSERT INTO students (username, password, Student_ID, firstname, lastname, email, birthday,address, barangay, zip, city, middlename, marital, gender, cellphonenum, MotherName, FatherName, MotherEduc, FatherEduc)
-        VALUES ('$uname', '$pword', '$studno', '$fname', '$lname', '$email', '$birthday', '$Add', '$barangay', '$zip', '$city', '$mname', '$marital', '$gender','$cnum','$MoName','$FaName','$MoEduc','$FaEduc')";
+        $query = "INSERT INTO students (username, password, Student_ID, firstname, lastname, email, birthday,address, barangay, zip, city, middlename, marital, gender, cellphonenum, MotherName, FatherName, MotherEduc, FatherEduc, province, SignupOn)
+        VALUES ('$uname', '$pword', '$studno', '$fname', '$lname', '$email', '$birthday', '$Add', '$barangay', '$zip', '$city', '$mname', '$marital', '$gender','$cnum','$MoName','$FaName','$MoEduc','$FaEduc','$province', NOW())";
 
         $que = "INSERT INTO documents (Student_ID, username, password, email) VALUES ('$studno','$uname','$pword','$email')";
           
@@ -97,18 +97,26 @@
     }
 
   } 
+
+
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-body {
-  background-image: url("assets/img/bg4.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+input,
+input:valid {
+    border-color: green;
 }
+
+input:invalid {
+    border-color: red;
+}
+
+
+
 </style>
   
 
@@ -116,12 +124,13 @@ body {
 
 	<link href="bootstrap.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  
 
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-    
 </head>
 <body>
 
@@ -129,64 +138,64 @@ body {
 
   <section class="center-text">
     
-    <strong></strong>
+   
 
     <div class="registration-form box-center clearfix">
 
-    <?php 
-        if(isset($_SESSION['errprompt'])) {
-          showError();
-        }
-    ?>
+   
 
-      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" id="form">
+
+
+        <div class="form-group">
+          <text style="color:red">*Required field</text></label>
+        </div>
 
    <fieldset> 
       <legend>Personal Information</legend>  
         
         <div class="form-row">
                 <div class="form-group col-md-6">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" name="username" id="floatingInput"  placeholder="Username (must be unique)" required>
+                <label for="username">Username<text style="color:red">&nbsp; *</text></label>
+                
+                <input type="text" name="username" class="form-control" id="Username"  placeholder="Username (must be unique)" pattern="[A-Za0-z9]{1,}" title="Username should only contain numbers, lowercase and uppercase letters." required>
                 </div>
 
                 <div class="form-group col-md-6">
-                <label for="password">Password</label>
-                <input type="text" class="form-control" name="password" placeholder="Password" required>
-		<div class="form-group">
-                <small id="passwordHelpInline" class="text-muted">
-                &nbsp;Must be 8-20 characters long.
-                </small>
+                <label for="password">Password<text style="color:red">&nbsp; *</text></label>
+                <input type="text" class="form-control" name="password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><span class="text-muted" style="font-size: 12px;">Username should only contain numbers, </span>
                 </div>
-                </div>
+
+
+                
         </div>
 
                 
-        <div class="form-row">
+        <br><div class="form-row"><br><br>
                 <div class="form-group col-md-4">
-                <label for="firstname">First Name</label>
+                <label for="firstname" style="font-size: 15px;">First Name<i class="text-muted" style="font-size: 11px;">(Pangalan)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
                 </div>
 
                 <div class="form-group col-md-4">
-                <label for="middlename">Middle Name</label>
+                <label for="middlename" style="font-size: 15px;">Middle Name<i class="text-muted" style="font-size: 11px;">(Gitnang Pangalan)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="text" class="form-control" name="middlename" placeholder="Middle Name" required>
                 </div>
 
                 <div class="form-group col-md-4">
-                <label for="lastname">Last Name</label>
+                <label for="lastname" style="font-size: 15px;">Last Name<i class="text-muted" style="font-size: 11px;">(Apelyido)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
                 </div>
         </div>
 
         <div class="form-row">
                 <div class="form-group col-md-6">
-                <label for="birthday">Birthday</label>
+                <label for="birthday" style="font-size: 15px;">Birthday<i class="text-muted" style="font-size: 11px;">(Kaarawan)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="date" class="form-control" name="birthday" placeholder="Birthday" required>
                 </div>
 
                 <div class="form-group col-md-6">
-                <label for="email">Email</label>
+                <label for="email" style="font-size: 15px;">Email<i class="text-muted" style="font-size: 11px;">(Sulatroniko)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
 
@@ -194,13 +203,15 @@ body {
 
          <div class="form-row">
                 <div class="form-group col-md-6">
-                <label class="gender">Gender</label><br>
-                <input name="gender" type="radio" value="male" checked>Male
+                <label class="gender" style="font-size: 15px;">Gender<i class="text-muted" style="font-size: 11px;">(Kasarian)</i><text style="color:red">&nbsp; *</text></label><br>
+                <input name="gender" type="radio" value="male" checked>Male &nbsp; &nbsp;
                 <input name="gender" type="radio" value="female">Female
                 </div>
 
                 <div class="form-group col-md-6">
-                <label for="cpnum">Cellphone Number</label>
+                <label for="cpnum" style="font-size: 15px;">Cellphone Number<i class="text-muted" style="font-size: 11px;">(Numero ng Telepono
+
+)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="number" class="form-control" name="cpnum" placeholder="Cellphone Number" required>
                 </div>
 
@@ -209,42 +220,157 @@ body {
 
           <div class="form-row">
                 <div class="form-group col-md-12">
-                <label for="address">Address</label>
+                <label for="address" style="font-size: 15px">Address<i class="text-muted" style="font-size: 11px;">(Tirahan)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="text" class="form-control" name="address" placeholder="1234 Main Street"  required>
                 </div>
           </div>
 
 
         <div class="form-row">
-                 <div class="form-group col-md-6">
-                  <label for="city">City</label>
-                  <select id="city" class="form-control" name="city">
-                    <option selected>Choose...</option>
-                    <option selected>Muntinlupa</option>
-                    <option selected>Caloocan</option>
-                    <option selected>Malabon</option>
-                    <option selected>Navotas</option>
-                    <option selected>Valenzuela</option>
-                    <option selected>Quezon</option>
-                    <option selected>Marikina</option>
-                    <option selected>Pasig</option>
-                    <option selected>Taguig</option>
-                    <option selected>Makati</option>
-                    <option selected>Manila</option>
-                    <option selected>Mandaluyong</option>
-                    <option selected>San Juan</option>
-                    <option selected>Pasay</option>
-                    <option selected>Parañaque</option>
-                    <option selected>Las Piñas</option>
-                    <option selected>Pateros</option>
-                  </select required>
 
-        </div>
+                  <div class="form-group col-md-4">
+                     <label for="province" style="font-size: 15px;">Province/State<i class="text-muted" style="font-size: 11px;">(Probinsya)</i><text style="color:red">&nbsp; *</text></label>
+                  <select id="province" class="form-control" name="province" required>
+                     <option value=""selected>-</option>
+                     <option>NCR</option>
+                    <option >Abra</option>
+                    <option >Apayao</option>
+                    <option >Benguet</option>
+                    <option >Ifugao</option>
+                    <option >Kalinga</option>
+                    <option >Mountain Province</option>
+                    <option >Ilocos Norte</option>
+                    <option >Ilocos Sur</option>
+                    <option >La Union</option>
+                    <option >Pangasinan</option>
+                    <option >Batanes</option>
+                    <option >Cagayan</option>
+                    <option >Isabela</option>
+                    <option >Nueva Ecijia</option>
+                    <option >Pampanga</option>
+                    <option >Tarlac</option>
+                    <option>Zambales</option>
+                    <option>Batangas</option>
+                    <option>Cavite</option>
+                    <option>Laguna</option>
+                    <option>Quezon</option>
+                    <option>Rizal</option>
+                    <option>Marinduque</option>
+                    <option>Occidental Mindoro</option>
+                    <option>Oriental Mindoro</option>
+                    <option>Palawan</option>
+                    <option>Romblon</option>
+                    <option>Albay</option>
+                    <option>Camarines Norte</option>
+                    <option>Camarines Sur</option>
+                    <option>Catanduanes</option>
+                    <option>Masbate</option>
+                    <option>Sorsogon</option>
+                    <option>Aklan</option>
+                    <option>Antique</option>
+                    <option>Capiz</option>
+                    <option>Guimaras</option>
+                    <option>Iloilo</option>
+                    <option>Negros Occidental</option>
+                    <option>Bohol</option>
+                    <option>Cebu</option>
+                    <option>Negros Oriental</option>
+                    <option>Siquijor</option>
+                    <option>Biliran</option>
+                    <option>Eastern Samar</option>
+                    <option>Leyte</option>
+                    <option>Northern Samar</option>
+                    <option>Samar</option>
+                    <option>Southern Leyte</option>
+                    <option>Zamboanga del Norte</option>
+                    <option>Zamboanga del Sur</option>
+                    <option>Zamboanga Sibugay</option>
+                    <option>Bukidnon</option>
+                    <option>Camiguin</option>
+                    <option>Lanao del Norte</option>
+                    <option>Misamis Occidental</option>
+                    <option>Misamis Oriental</option>
+                    <option>Davao de Oro</option>
+                    <option>Davao del Norte</option>
+                    <option>Davao del Sur</option>
+                    <option>Davao Occidental</option>
+                    <option>Davao Oriental</option>
+                    <option>Cotabato</option>
+                    <option>Sarangani</option>
+                    <option>South Cotabato</option>
+                    <option>Sultan Kudarat</option>
+                    <option>Agusan del Norte</option>
+                    <option>Agusan del Sur</option>
+                    <option>Dinagat Islands</option>
+                    <option>Surigao del Norte</option>
+                    <option>Surigao del Sur</option>
+                    <option>Basilan</option>
+                    <option>Lanao del Sur</option>
+                    <option>Maguindanao</option>
+                    <option>Sulu</option>
+                    <option>Tawi-Tawi</option>
+                    </select>
+                  </div>
+
+                 <div class="form-group col-md-4">
+                  <label for="city">City/Municipality<text style="color:red">&nbsp; *</text></label>
+                  <select id="city" class="form-control" name="city" required>
+                    <option value=""selected>-</option>
+                    <option class="NCR">Muntinlupa</option>
+                    <option class="NCR">Caloocan</option>
+                    <option class="NCR">Malabon</option>
+                    <option class="NCR">Navotas</option>
+                    <option class="NCR">Valenzuela</option>
+                    <option class="NCR">Quezon</option>
+                    <option class="NCR">Marikina</option>
+                    <option class="NCR">Pasig</option>
+                    <option class="NCR">Taguig</option>
+                    <option class="NCR">Makati</option>
+                    <option class="NCR">Manila</option>
+                    <option class="NCR">Mandaluyong</option>
+                    <option class="NCR" value="San-Juan">San Juan</option>
+                    <option class="NCR">Pasay</option>
+                    <option class="NCR">Parañaque</option>
+                    <option class="NCR" value="Las-Piñas">Las Piñas</option>
+                    <option class="NCR">Pateros</option>
+                    <option class="Abra">Bangued</option>
+                    <option class="Abra">Boliney</option>
+                    <option class="Abra">Bucay</option>
+                    <option class="Abra">Bucloc</option>
+                    <option class="Abra">Daguioman</option>
+                    <option class="Abra">Danglas</option>
+                    <option class="Abra">Dolores</option>
+                    <option class="Abra">Lacub</option>
+                    <option class="Abra">Lagangilang</option>
+                    <option class="Abra">Lagayan</option>
+                    <option class="Abra">Langiden</option>
+                    <option class="Abra">La Paz</option>
+                    <option class="Abra">Licuan-Baay(Licuan)</option>
+                    <option class="Abra">Luba</option>
+                    <option class="Abra">Malibcong</option>
+                    <option class="Abra">Manabo</option>
+                    <option class="Abra">Peñarrubia</option>
+                    <option class="Abra">Pidigan</option>
+                    <option class="Abra">Pilar</option>
+                    <option class="Abra">Sallapadan</option>
+                    <option class="Abra">San Isidro</option>
+                    <option class="Abra">San Juan</option>
+                    <option class="Abra">San Quintin</option>
+                    <option class="Abra">Tayum</option>
+                    <option class="Abra">Tineg</option>
+                    <option class="Abra">Tubo</option>
+                    <option class="Abra">Villaviciosa</option>
 
 
-        <div class="form-group col-md-4">
+
+                  </select>
+                  </div>
+
+
+            <div class="form-group col-md-4">
             <label for="barangay">Barangay</label>
-            <select id="barangay" class="form-control" name="barangay">
+            <select id="barangay" class="form-control" name="barangay" required>
+               <option value=""selected>-</option>
               <option class="Muntinlupa">Alabang</option>
               <option class="Muntinlupa">Bayanan</option>
               <option class="Muntinlupa">Tunasan</option>
@@ -1307,111 +1433,698 @@ body {
               <option class="Manila">Santa Cruz: Barangay 297</option> 
               <option class="Manila">Santa Cruz: Barangay 298</option> 
               <option class="Manila">Santa Cruz: Barangay 299</option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option>    
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option>    
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option>    
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option> 
-              <option class="Manila"></option>    
-                                 
-                          
-                          
-                          
-                          
-                  
-                  
-                          
-                  
-              
-              
-              
+              <option class="Manila">Santa Cruz: Barangay 300</option> 
+              <option class="Manila">Santa Cruz: Barangay 301</option> 
+              <option class="Manila">Santa Cruz: Barangay 302</option>    
+              <option class="Manila">Santa Cruz: Barangay 303</option> 
+              <option class="Manila">Santa Cruz: Barangay 304</option> 
+              <option class="Manila">Santa Cruz: Barangay 305</option> 
+              <option class="Manila">Santa Cruz: Barangay 306</option> 
+              <option class="Manila">Santa Cruz: Barangay 307</option> 
+              <option class="Manila">Santa Cruz: Barangay 308</option> 
+              <option class="Manila">Santa Cruz: Barangay 309</option> 
+              <option class="Manila">Santa Cruz: Barangay 310</option> 
+              <option class="Manila">Santa Cruz: Barangay 311</option> 
+              <option class="Manila">Santa Cruz: Barangay 312</option> 
+              <option class="Manila">Santa Cruz: Barangay 313</option> 
+              <option class="Manila">Santa Cruz: Barangay 314</option> 
+              <option class="Manila">Santa Cruz: Barangay 315</option> 
+              <option class="Manila">Santa Cruz: Barangay 316</option> 
+              <option class="Manila">Santa Cruz: Barangay 317</option> 
+              <option class="Manila">Santa Cruz: Barangay 318</option> 
+              <option class="Manila">Santa Cruz: Barangay 319</option> 
+              <option class="Manila">Santa Cruz: Barangay 320</option> 
+              <option class="Manila">Santa Cruz: Barangay 321</option> 
+              <option class="Manila">Santa Cruz: Barangay 322</option> 
+              <option class="Manila">Santa Cruz: Barangay 323</option> 
+              <option class="Manila">Santa Cruz: Barangay 324</option> 
+              <option class="Manila">Santa Cruz: Barangay 325</option> 
+              <option class="Manila">Santa Cruz: Barangay 326</option> 
+              <option class="Manila">Santa Cruz: Barangay 327</option> 
+              <option class="Manila">Santa Cruz: Barangay 328</option>    
+              <option class="Manila">Santa Cruz: Barangay 329</option> 
+              <option class="Manila">Santa Cruz: Barangay 330</option> 
+              <option class="Manila">Santa Cruz: Barangay 331</option> 
+              <option class="Manila">Santa Cruz: Barangay 332</option> 
+              <option class="Manila">Santa Cruz: Barangay 333</option> 
+              <option class="Manila">Santa Cruz: Barangay 334</option> 
+              <option class="Manila">Santa Cruz: Barangay 335</option> 
+              <option class="Manila">Santa Cruz: Barangay 336</option> 
+              <option class="Manila">Santa Cruz: Barangay 337</option> 
+              <option class="Manila">Santa Cruz: Barangay 338</option> 
+              <option class="Manila">Santa Cruz: Barangay 339</option> 
+              <option class="Manila">Santa Cruz: Barangay 340</option> 
+              <option class="Manila">Santa Cruz: Barangay 341</option> 
+              <option class="Manila">Santa Cruz: Barangay 342</option> 
+              <option class="Manila">Santa Cruz: Barangay 343</option> 
+              <option class="Manila">Santa Cruz: Barangay 344</option> 
+              <option class="Manila">Santa Cruz: Barangay 345</option> 
+              <option class="Manila">Santa Cruz: Barangay 346</option> 
+              <option class="Manila">Santa Cruz: Barangay 347</option> 
+              <option class="Manila">Santa Cruz: Barangay 348</option> 
+              <option class="Manila">Santa Cruz: Barangay 349</option> 
+              <option class="Manila">Santa Cruz: Barangay 350</option> 
+              <option class="Manila">Santa Cruz: Barangay 351</option> 
+              <option class="Manila">Santa Cruz: Barangay 352</option> 
+              <option class="Manila">Santa Cruz: Barangay 353</option> 
+              <option class="Manila">Santa Cruz: Barangay 354</option>    
+              <option class="Manila">Santa Cruz: Barangay 355</option> 
+              <option class="Manila">Santa Cruz: Barangay 356</option> 
+              <option class="Manila">Santa Cruz: Barangay 357</option> 
+              <option class="Manila">Santa Cruz: Barangay 358</option> 
+              <option class="Manila">Santa Cruz: Barangay 359</option> 
+              <option class="Manila">Santa Cruz: Barangay 360</option> 
+              <option class="Manila">Santa Cruz: Barangay 361</option> 
+              <option class="Manila">Santa Cruz: Barangay 362</option> 
+              <option class="Manila">Santa Cruz: Barangay 363</option> 
+              <option class="Manila">Santa Cruz: Barangay 364</option> 
+              <option class="Manila">Santa Cruz: Barangay 365</option> 
+              <option class="Manila">Santa Cruz: Barangay 366</option> 
+              <option class="Manila">Santa Cruz: Barangay 367</option> 
+              <option class="Manila">Santa Cruz: Barangay 368</option> 
+              <option class="Manila">Santa Cruz: Barangay 369</option> 
+              <option class="Manila">Santa Cruz: Barangay 370</option> 
+              <option class="Manila">Santa Cruz: Barangay 371</option> 
+              <option class="Manila">Santa Cruz: Barangay 372</option> 
+              <option class="Manila">Santa Cruz: Barangay 373</option> 
+              <option class="Manila">Santa Cruz: Barangay 374</option> 
+              <option class="Manila">Santa Cruz: Barangay 375</option> 
+              <option class="Manila">Santa Cruz: Barangay 376</option> 
+              <option class="Manila">Santa Cruz: Barangay 377</option> 
+              <option class="Manila">Santa Cruz: Barangay 378</option> 
+              <option class="Manila">Santa Cruz: Barangay 379</option> 
+              <option class="Manila">Santa Cruz: Barangay 380</option> 
+              <option class="Manila">Santa Cruz: Barangay 381</option> 
+              <option class="Manila">Santa Cruz: Barangay 382</option> 
+              <option class="Manila">Tondo: Barangay 1</option>    
+              <option class="Manila">Tondo: Barangay 2</option> 
+              <option class="Manila">Tondo: Barangay 3</option> 
+              <option class="Manila">Tondo: Barangay 4</option> 
+              <option class="Manila">Tondo: Barangay 5</option> 
+              <option class="Manila">Tondo: Barangay 6</option> 
+              <option class="Manila">Tondo: Barangay 7</option> 
+              <option class="Manila">Tondo: Barangay 8</option> 
+              <option class="Manila">Tondo: Barangay 9</option> 
+              <option class="Manila">Tondo: Barangay 10</option> 
+              <option class="Manila">Tondo: Barangay 11</option> 
+              <option class="Manila">Tondo: Barangay 12</option> 
+              <option class="Manila">Tondo: Barangay 13</option> 
+              <option class="Manila">Tondo: Barangay 14</option> 
+              <option class="Manila">Tondo: Barangay 15</option> 
+              <option class="Manila">Tondo: Barangay 16</option> 
+              <option class="Manila">Tondo: Barangay 17</option> 
+              <option class="Manila">Tondo: Barangay 18</option> 
+              <option class="Manila">Tondo: Barangay 19</option> 
+              <option class="Manila">Tondo: Barangay 20</option> 
+              <option class="Manila">Tondo: Barangay 21</option> 
+              <option class="Manila">Tondo: Barangay 22</option> 
+              <option class="Manila">Tondo: Barangay 23</option> 
+              <option class="Manila">Tondo: Barangay 24</option> 
+              <option class="Manila">Tondo: Barangay 25</option> 
+              <option class="Manila">Tondo: Barangay 26</option> 
+              <option class="Manila">Tondo: Barangay 27</option>    
+              <option class="Manila">Tondo: Barangay 28</option>    
+              <option class="Manila">Tondo: Barangay 29</option> 
+              <option class="Manila">Tondo: Barangay 30</option> 
+              <option class="Manila">Tondo: Barangay 31</option> 
+              <option class="Manila">Tondo: Barangay 32</option> 
+              <option class="Manila">Tondo: Barangay 33</option> 
+              <option class="Manila">Tondo: Barangay 34</option> 
+              <option class="Manila">Tondo: Barangay 35</option> 
+              <option class="Manila">Tondo: Barangay 36</option> 
+              <option class="Manila">Tondo: Barangay 37</option> 
+              <option class="Manila">Tondo: Barangay 38</option> 
+              <option class="Manila">Tondo: Barangay 39</option> 
+              <option class="Manila">Tondo: Barangay 40</option> 
+              <option class="Manila">Tondo: Barangay 41</option> 
+              <option class="Manila">Tondo: Barangay 42</option> 
+              <option class="Manila">Tondo: Barangay 43</option> 
+              <option class="Manila">Tondo: Barangay 44</option> 
+              <option class="Manila">Tondo: Barangay 45</option> 
+              <option class="Manila">Tondo: Barangay 46</option> 
+              <option class="Manila">Tondo: Barangay 47</option> 
+              <option class="Manila">Tondo: Barangay 48</option> 
+              <option class="Manila">Tondo: Barangay 49</option> 
+              <option class="Manila">Tondo: Barangay 50</option> 
+              <option class="Manila">Tondo: Barangay 51</option> 
+              <option class="Manila">Tondo: Barangay 52</option> 
+              <option class="Manila">Tondo: Barangay 53</option> 
+              <option class="Manila">Tondo: Barangay 54</option>    
+              <option class="Manila">Tondo: Barangay 55</option>    
+              <option class="Manila">Tondo: Barangay 56</option> 
+              <option class="Manila">Tondo: Barangay 57</option> 
+              <option class="Manila">Tondo: Barangay 58</option> 
+              <option class="Manila">Tondo: Barangay 59</option> 
+              <option class="Manila">Tondo: Barangay 60</option> 
+              <option class="Manila">Tondo: Barangay 61</option> 
+              <option class="Manila">Tondo: Barangay 62</option> 
+              <option class="Manila">Tondo: Barangay 63</option> 
+              <option class="Manila">Tondo: Barangay 64</option> 
+              <option class="Manila">Tondo: Barangay 65</option> 
+              <option class="Manila">Tondo: Barangay 66</option> 
+              <option class="Manila">Tondo: Barangay 67</option> 
+              <option class="Manila">Tondo: Barangay 68</option> 
+              <option class="Manila">Tondo: Barangay 69</option> 
+              <option class="Manila">Tondo: Barangay 70</option> 
+              <option class="Manila">Tondo: Barangay 71</option> 
+              <option class="Manila">Tondo: Barangay 72</option> 
+              <option class="Manila">Tondo: Barangay 73</option> 
+              <option class="Manila">Tondo: Barangay 74</option> 
+              <option class="Manila">Tondo: Barangay 75</option> 
+              <option class="Manila">Tondo: Barangay 76</option> 
+              <option class="Manila">Tondo: Barangay 77</option> 
+              <option class="Manila">Tondo: Barangay 78</option> 
+              <option class="Manila">Tondo: Barangay 79</option> 
+              <option class="Manila">Tondo: Barangay 80</option> 
+              <option class="Manila">Tondo: Barangay 81</option>  
+              <option class="Manila">Tondo: Barangay 82</option>  
+              <option class="Manila">Tondo: Barangay 83</option> 
+              <option class="Manila">Tondo: Barangay 84</option> 
+              <option class="Manila">Tondo: Barangay 83</option> 
+              <option class="Manila">Tondo: Barangay 84</option> 
+              <option class="Manila">Tondo: Barangay 85</option> 
+              <option class="Manila">Tondo: Barangay 86</option> 
+              <option class="Manila">Tondo: Barangay 87</option> 
+              <option class="Manila">Tondo: Barangay 88</option> 
+              <option class="Manila">Tondo: Barangay 89</option> 
+              <option class="Manila">Tondo: Barangay 90</option> 
+              <option class="Manila">Tondo: Barangay 91</option> 
+              <option class="Manila">Tondo: Barangay 92</option> 
+              <option class="Manila">Tondo: Barangay 93</option> 
+              <option class="Manila">Tondo: Barangay 94</option> 
+              <option class="Manila">Tondo: Barangay 95</option> 
+              <option class="Manila">Tondo: Barangay 96</option> 
+              <option class="Manila">Tondo: Barangay 97</option> 
+              <option class="Manila">Tondo: Barangay 98</option> 
+              <option class="Manila">Tondo: Barangay 99</option> 
+              <option class="Manila">Tondo: Barangay 100</option> 
+              <option class="Manila">Tondo: Barangay 101</option> 
+              <option class="Manila">Tondo: Barangay 102</option> 
+              <option class="Manila">Tondo: Barangay 103</option> 
+              <option class="Manila">Tondo: Barangay 104</option> 
+              <option class="Manila">Tondo: Barangay 105</option> 
+              <option class="Manila">Tondo: Barangay 106</option>
+              <option class="Manila">Tondo: Barangay 107</option> 
+              <option class="Manila">Tondo: Barangay 108</option> 
+              <option class="Manila">Tondo: Barangay 109</option> 
+              <option class="Manila">Tondo: Barangay 110</option> 
+              <option class="Manila">Tondo: Barangay 111</option> 
+              <option class="Manila">Tondo: Barangay 112</option> 
+              <option class="Manila">Tondo: Barangay 113</option> 
+              <option class="Manila">Tondo: Barangay 114</option> 
+              <option class="Manila">Tondo: Barangay 115</option> 
+              <option class="Manila">Tondo: Barangay 116</option> 
+              <option class="Manila">Tondo: Barangay 117</option> 
+              <option class="Manila">Tondo: Barangay 118</option> 
+              <option class="Manila">Tondo: Barangay 119</option> 
+              <option class="Manila">Tondo: Barangay 120</option>             
+              <option class="Manila">Tondo: Barangay 121</option> 
+              <option class="Manila">Tondo: Barangay 122</option> 
+              <option class="Manila">Tondo: Barangay 123</option> 
+              <option class="Manila">Tondo: Barangay 124</option> 
+              <option class="Manila">Tondo: Barangay 125</option> 
+              <option class="Manila">Tondo: Barangay 126</option> 
+              <option class="Manila">Tondo: Barangay 127</option> 
+              <option class="Manila">Tondo: Barangay 128</option> 
+              <option class="Manila">Tondo: Barangay 129</option> 
+              <option class="Manila">Tondo: Barangay 130</option> 
+              <option class="Manila">Tondo: Barangay 131</option> 
+              <option class="Manila">Tondo: Barangay 132</option> 
+              <option class="Manila">Tondo: Barangay 133</option> 
+              <option class="Manila">Tondo: Barangay 134</option>      
+              <option class="Manila">Tondo: Barangay 135</option> 
+              <option class="Manila">Tondo: Barangay 136</option> 
+              <option class="Manila">Tondo: Barangay 137</option> 
+              <option class="Manila">Tondo: Barangay 138</option> 
+              <option class="Manila">Tondo: Barangay 139</option> 
+              <option class="Manila">Tondo: Barangay 140</option> 
+              <option class="Manila">Tondo: Barangay 141</option> 
+              <option class="Manila">Tondo: Barangay 142</option> 
+              <option class="Manila">Tondo: Barangay 143</option> 
+              <option class="Manila">Tondo: Barangay 144</option> 
+              <option class="Manila">Tondo: Barangay 145</option> 
+              <option class="Manila">Tondo: Barangay 146</option> 
+              <option class="Manila">Tondo: Barangay 147</option> 
+              <option class="Manila">Tondo: Barangay 148</option>  
+              <option class="Manila">Tondo: Barangay 149</option> 
+              <option class="Manila">Tondo: Barangay 150</option> 
+              <option class="Manila">Tondo: Barangay 151</option> 
+              <option class="Manila">Tondo: Barangay 152</option> 
+              <option class="Manila">Tondo: Barangay 153</option> 
+              <option class="Manila">Tondo: Barangay 154</option> 
+              <option class="Manila">Tondo: Barangay 155</option> 
+              <option class="Manila">Tondo: Barangay 156</option> 
+              <option class="Manila">Tondo: Barangay 157</option>      
+              <option class="Manila">Tondo: Barangay 158</option> 
+              <option class="Manila">Tondo: Barangay 159</option> 
+              <option class="Manila">Tondo: Barangay 160</option> 
+              <option class="Manila">Tondo: Barangay 161</option> 
+              <option class="Manila">Tondo: Barangay 162</option> 
+              <option class="Manila">Tondo: Barangay 163</option> 
+              <option class="Manila">Tondo: Barangay 164</option> 
+              <option class="Manila">Tondo: Barangay 165</option> 
+              <option class="Manila">Tondo: Barangay 166</option>      
+              <option class="Manila">Tondo: Barangay 167</option> 
+              <option class="Manila">Tondo: Barangay 168</option> 
+              <option class="Manila">Tondo: Barangay 169</option> 
+              <option class="Manila">Tondo: Barangay 170</option> 
+              <option class="Manila">Tondo: Barangay 171</option> 
+              <option class="Manila">Tondo: Barangay 172</option> 
+              <option class="Manila">Tondo: Barangay 173</option> 
+              <option class="Manila">Tondo: Barangay 174</option> 
+              <option class="Manila">Tondo: Barangay 175</option>      
+              <option class="Manila">Tondo: Barangay 176</option> 
+              <option class="Manila">Tondo: Barangay 177</option> 
+              <option class="Manila">Tondo: Barangay 178</option> 
+              <option class="Manila">Tondo: Barangay 179</option> 
+              <option class="Manila">Tondo: Barangay 180</option> 
+              <option class="Manila">Tondo: Barangay 181</option> 
+              <option class="Manila">Tondo: Barangay 182</option> 
+              <option class="Manila">Tondo: Barangay 183</option> 
+              <option class="Manila">Tondo: Barangay 184</option>      
+              <option class="Manila">Tondo: Barangay 185</option> 
+              <option class="Manila">Tondo: Barangay 186</option> 
+              <option class="Manila">Tondo: Barangay 187</option> 
+              <option class="Manila">Tondo: Barangay 188</option> 
+              <option class="Manila">Tondo: Barangay 189</option> 
+              <option class="Manila">Tondo: Barangay 190</option> 
+              <option class="Manila">Tondo: Barangay 191</option> 
+              <option class="Manila">Tondo: Barangay 192</option> 
+              <option class="Manila">Tondo: Barangay 193</option>      
+              <option class="Manila">Tondo: Barangay 194</option> 
+              <option class="Manila">Tondo: Barangay 195</option> 
+              <option class="Manila">Tondo: Barangay 196</option> 
+              <option class="Manila">Tondo: Barangay 197</option>      
+              <option class="Manila">Tondo: Barangay 198</option> 
+              <option class="Manila">Tondo: Barangay 199</option> 
+              <option class="Manila">Tondo: Barangay 200</option> 
+              <option class="Manila">Tondo: Barangay 201</option> 
+              <option class="Manila">Tondo: Barangay 202</option> 
+              <option class="Manila">Tondo: Barangay 202-A</option> 
+              <option class="Manila">Tondo: Barangay 203</option> 
+              <option class="Manila">Tondo: Barangay 204</option> 
+              <option class="Manila">Tondo: Barangay 205</option>      
+              <option class="Manila">Tondo: Barangay 206</option> 
+              <option class="Manila">Tondo: Barangay 207</option> 
+              <option class="Manila">Tondo: Barangay 208</option> 
+              <option class="Manila">Tondo: Barangay 209</option>      
+              <option class="Manila">Tondo: Barangay 210</option> 
+              <option class="Manila">Tondo: Barangay 211</option> 
+              <option class="Manila">Tondo: Barangay 212</option> 
+              <option class="Manila">Tondo: Barangay 213</option> 
+              <option class="Manila">Tondo: Barangay 214</option> 
+              <option class="Manila">Tondo: Barangay 215</option> 
+              <option class="Manila">Tondo: Barangay 216</option> 
+              <option class="Manila">Tondo: Barangay 217</option> 
+              <option class="Manila">Tondo: Barangay 218</option>      
+              <option class="Manila">Tondo: Barangay 219</option> 
+              <option class="Manila">Tondo: Barangay 220</option> 
+              <option class="Manila">Tondo: Barangay 221</option> 
+              <option class="Manila">Tondo: Barangay 222</option>      
+              <option class="Manila">Tondo: Barangay 223</option> 
+              <option class="Manila">Tondo: Barangay 224</option> 
+              <option class="Manila">Tondo: Barangay 225</option> 
+              <option class="Manila">Tondo: Barangay 226</option> 
+              <option class="Manila">Tondo: Barangay 227</option> 
+              <option class="Manila">Tondo: Barangay 228</option> 
+              <option class="Manila">Tondo: Barangay 229</option> 
+              <option class="Manila">Tondo: Barangay 230</option> 
+              <option class="Manila">Tondo: Barangay 231</option>      
+              <option class="Manila">Tondo: Barangay 232</option> 
+              <option class="Manila">Tondo: Barangay 233</option> 
+              <option class="Manila">Tondo: Barangay 234</option> 
+              <option class="Manila">Tondo: Barangay 235</option>      
+              <option class="Manila">Tondo: Barangay 236</option> 
+              <option class="Manila">Tondo: Barangay 237</option> 
+              <option class="Manila">Tondo: Barangay 238</option> 
+              <option class="Manila">Tondo: Barangay 239</option> 
+              <option class="Manila">Tondo: Barangay 240</option> 
+              <option class="Manila">Tondo: Barangay 241</option> 
+              <option class="Manila">Tondo: Barangay 242</option> 
+              <option class="Manila">Tondo: Barangay 243</option> 
+              <option class="Manila">Tondo: Barangay 244</option>  
+              <option class="Manila">Tondo: Barangay 245</option> 
+              <option class="Manila">Tondo: Barangay 246</option> 
+              <option class="Manila">Tondo: Barangay 247</option> 
+              <option class="Manila">Tondo: Barangay 248</option> 
+              <option class="Manila">Tondo: Barangay 249</option> 
+              <option class="Manila">Tondo: Barangay 250</option> 
+              <option class="Manila">Tondo: Barangay 251</option> 
+              <option class="Manila">Tondo: Barangay 252</option>      
+              <option class="Manila">Tondo: Barangay 253</option> 
+              <option class="Manila">Tondo: Barangay 254</option> 
+              <option class="Manila">Tondo: Barangay 255</option> 
+              <option class="Manila">Tondo: Barangay 256</option>      
+              <option class="Manila">Tondo: Barangay 257</option> 
+              <option class="Manila">Tondo: Barangay 259</option> 
+              <option class="Manila">Tondo: Barangay 260</option> 
+              <option class="Manila">Tondo: Barangay 261</option> 
+              <option class="Manila">Tondo: Barangay 262</option> 
+              <option class="Manila">Tondo: Barangay 263</option> 
+              <option class="Manila">Tondo: Barangay 264</option> 
+              <option class="Manila">Tondo: Barangay 265</option> 
+              <option class="Manila">Tondo: Barangay 266</option>      
+              <option class="Manila">Tondo: Barangay 267</option> 
+              <option class="Mandaluyong">Addition Hills</option> 
+              <option class="Mandaluyong">Bagong Silang</option> 
+              <option class="Mandaluyong">Barangka Drive</option>      
+              <option class="Mandaluyong">Barangka Ibaba</option> 
+              <option class="Mandaluyong">Barangka Ilaya</option> 
+              <option class="Mandaluyong">Barangka Itaas</option> 
+              <option class="Mandaluyong">Buayang Bato</option> 
+              <option class="Mandaluyong">Burol</option> 
+              <option class="Mandaluyong">Daang Bakal</option> 
+              <option class="Mandaluyong">Hagdang Bato Itaas</option> 
+              <option class="Mandaluyong">Hagdang Bato Libis</option> 
+              <option class="Mandaluyong">Harapin Ang Bukas</option>      
+              <option class="Mandaluyong">Highway Hills</option>      
+              <option class="Mandaluyong">Hulo</option> 
+              <option class="Mandaluyong">Mabini-J. Rizal</option> 
+              <option class="Mandaluyong">Malamig</option> 
+              <option class="Mandaluyong">Mauway</option> 
+              <option class="Mandaluyong">Namayan</option> 
+              <option class="Mandaluyong">New Zañiga</option> 
+              <option class="Mandaluyong">Old Zañiga</option> 
+              <option class="Mandaluyong">Pag-asa</option> 
+              <option class="Mandaluyong">Plainview</option>      
+              <option class="Mandaluyong">Pleasant Hills</option> 
+              <option class="Mandaluyong">Poblacion</option> 
+              <option class="Mandaluyong">San Jose</option> 
+              <option class="Mandaluyong">Vergara</option> 
+              <option class="Mandaluyong">Wack-Wack Greenhills</option>   
+              <option class="San-Juan">Addition Hills</option> 
+              <option class="San Juan">Balong-Bato</option> 
+              <option class="San Juan">Batis</option> 
+              <option class="San Juan">Corazon de Jesus</option> 
+              <option class="San Juan">Ermitaño</option> 
+              <option class="San Juan">Greenhills</option> 
+              <option class="San Juan">Halo-halo</option> 
+              <option class="San Juan">Isabelita</option> 
+              <option class="San Juan">Kabayanan</option> 
+              <option class="San Juan">Little Baguio</option>      
+              <option class="San Juan">Maytunas</option> 
+              <option class="San Juan">Onse</option> 
+              <option class="San Juan">Pasadeña</option> 
+              <option class="San Juan">Pedro Cruz</option> 
+              <option class="San Juan">Progreso</option> 
+              <option class="San Juan">Rivera</option> 
+              <option class="San Juan">Salapan</option> 
+              <option class="San Juan">San Perfecto</option> 
+              <option class="San Juan">Santa Lucia</option>      
+              <option class="San Juan">Tibagan</option> 
+              <option class="San Juan">West Crame</option> 
+              <option class="Pasay">Barangay 1</option> 
+              <option class="Pasay">Barangay 2</option> 
+              <option class="Pasay">Barangay 3</option>    
+              <option class="Pasay">Barangay 4</option> 
+              <option class="Pasay">Barangay 5</option> 
+              <option class="Pasay">Barangay 6</option> 
+              <option class="Pasay">Barangay 7</option>               
+              <option class="Pasay">Barangay 8</option> 
+              <option class="Pasay">Barangay 9</option> 
+              <option class="Pasay">Barangay 10</option>       
+              <option class="Pasay">Barangay 100</option> 
+              <option class="Pasay">Barangay 101</option> 
+              <option class="Pasay">Barangay 102</option>       
+              <option class="Pasay">Barangay 103</option> 
+              <option class="Pasay">Barangay 104</option> 
+              <option class="Pasay">Barangay 105</option>       
+              <option class="Pasay">Barangay 106</option> 
+              <option class="Pasay">Barangay 107</option> 
+              <option class="Pasay">Barangay 108</option>       
+              <option class="Pasay">Barangay 109</option> 
+              <option class="Pasay">Barangay 11</option> 
+              <option class="Pasay">Barangay 110</option>       
+              <option class="Pasay">Barangay 111</option> 
+              <option class="Pasay">Barangay 112</option> 
+              <option class="Pasay">Barangay 113</option>       
+              <option class="Pasay">Barangay 114</option> 
+              <option class="Pasay">Barangay 115</option> 
+              <option class="Pasay">Barangay 116</option>       
+              <option class="Pasay">Barangay 117</option> 
+              <option class="Pasay">Barangay 118</option> 
+              <option class="Pasay">Barangay 119</option>       
+              <option class="Pasay">Barangay 12</option> 
+              <option class="Pasay">Barangay 120</option> 
+              <option class="Pasay">Barangay 121</option>       
+              <option class="Pasay">Barangay 122</option> 
+              <option class="Pasay">Barangay 123</option> 
+              <option class="Pasay">Barangay 124</option>       
+              <option class="Pasay">Barangay 125</option> 
+              <option class="Pasay">Barangay 126</option> 
+              <option class="Pasay">Barangay 127</option> 
+              <option class="Pasay">Barangay 128</option> 
+              <option class="Pasay">Barangay 129</option>       
+              <option class="Pasay">Barangay 13</option> 
+              <option class="Pasay">Barangay 130</option> 
+              <option class="Pasay">Barangay 131</option>       
+              <option class="Pasay">Barangay 132</option> 
+              <option class="Pasay">Barangay 133</option> 
+              <option class="Pasay">Barangay 134</option>   
+              <option class="Pasay">Barangay 135</option>       
+              <option class="Pasay">Barangay 136</option> 
+              <option class="Pasay">Barangay 137</option> 
+              <option class="Pasay">Barangay 138</option>       
+              <option class="Pasay">Barangay 139</option> 
+              <option class="Pasay">Barangay 14</option> 
+              <option class="Pasay">Barangay 140</option>   
+              <option class="Pasay">Barangay 141</option>       
+              <option class="Pasay">Barangay 142</option> 
+              <option class="Pasay">Barangay 143</option> 
+              <option class="Pasay">Barangay 144</option>       
+              <option class="Pasay">Barangay 145</option> 
+              <option class="Pasay">Barangay 146</option> 
+              <option class="Pasay">Barangay 147</option>   
+              <option class="Pasay">Barangay 148</option>       
+              <option class="Pasay">Barangay 149</option> 
+              <option class="Pasay">Barangay 15</option> 
+              <option class="Pasay">Barangay 150</option>       
+              <option class="Pasay">Barangay 151</option> 
+              <option class="Pasay">Barangay 152</option> 
+              <option class="Pasay">Barangay 153</option>         
+              <option class="Pasay">Barangay 154</option>       
+              <option class="Pasay">Barangay 155</option> 
+              <option class="Pasay">Barangay 156</option> 
+              <option class="Pasay">Barangay 157</option>       
+              <option class="Pasay">Barangay 158</option> 
+              <option class="Pasay">Barangay 159</option> 
+              <option class="Pasay">Barangay 16</option>   
+              <option class="Pasay">Barangay 160</option> 
+              <option class="Pasay">Barangay 161</option> 
+              <option class="Pasay">Barangay 162</option>         
+              <option class="Pasay">Barangay 163</option>       
+              <option class="Pasay">Barangay 164</option> 
+              <option class="Pasay">Barangay 165</option> 
+              <option class="Pasay">Barangay 166</option>       
+              <option class="Pasay">Barangay 167</option> 
+              <option class="Pasay">Barangay 168</option> 
+              <option class="Pasay">Barangay 169</option>  
+              <option class="Pasay">Barangay 17</option> 
+              <option class="Pasay">Barangay 170</option> 
+              <option class="Pasay">Barangay 171</option>         
+              <option class="Pasay">Barangay 172</option>       
+              <option class="Pasay">Barangay 173</option> 
+              <option class="Pasay">Barangay 174</option> 
+              <option class="Pasay">Barangay 175</option>       
+              <option class="Pasay">Barangay 176</option> 
+              <option class="Pasay">Barangay 177</option> 
+              <option class="Pasay">Barangay 178</option>  
+              <option class="Pasay">Barangay 179</option> 
+              <option class="Pasay">Barangay 18</option> 
+              <option class="Pasay">Barangay 180</option>         
+              <option class="Pasay">Barangay 181</option>       
+              <option class="Pasay">Barangay 182</option> 
+              <option class="Pasay">Barangay 183</option> 
+              <option class="Pasay">Barangay 184</option>       
+              <option class="Pasay">Barangay 185</option> 
+              <option class="Pasay">Barangay 186</option> 
+              <option class="Pasay">Barangay 187</option> 
+              <option class="Pasay">Barangay 188</option> 
+              <option class="Pasay">Barangay 189</option> 
+              <option class="Pasay">Barangay 19</option>         
+              <option class="Pasay">Barangay 190</option>       
+              <option class="Pasay">Barangay 191</option> 
+              <option class="Pasay">Barangay 192</option> 
+              <option class="Pasay">Barangay 193</option>       
+              <option class="Pasay">Barangay 194</option> 
+              <option class="Pasay">Barangay 195</option> 
+              <option class="Pasay">Barangay 196</option>   
+              <option class="Pasay">Barangay 197</option>       
+              <option class="Pasay">Barangay 198</option> 
+              <option class="Pasay">Barangay 199</option> 
+              <option class="Pasay">Barangay 20</option>       
+              <option class="Pasay">Barangay 200</option> 
+              <option class="Pasay">Barangay 201</option> 
+              <option class="Pasay">Barangay 21</option> 
+              <option class="Pasay">Barangay 22</option> 
+              <option class="Pasay">Barangay 23</option> 
+              <option class="Pasay">Barangay 24</option>         
+              <option class="Pasay">Barangay 25</option>       
+              <option class="Pasay">Barangay 26</option> 
+              <option class="Pasay">Barangay 27</option> 
+              <option class="Pasay">Barangay 28</option>       
+              <option class="Pasay">Barangay 29</option> 
+              <option class="Pasay">Barangay 30</option> 
+              <option class="Pasay">Barangay 31</option>   
+              <option class="Pasay">Barangay 32</option>       
+              <option class="Pasay">Barangay 33</option> 
+              <option class="Pasay">Barangay 34</option> 
+              <option class="Pasay">Barangay 35</option>       
+              <option class="Pasay">Barangay 36</option> 
+              <option class="Pasay">Barangay 37</option> 
+              <option class="Pasay">Barangay 38</option> 
+              <option class="Pasay">Barangay 39</option> 
+              <option class="Pasay">Barangay 40</option> 
+              <option class="Pasay">Barangay 41</option>         
+              <option class="Pasay">Barangay 42</option>       
+              <option class="Pasay">Barangay 43</option> 
+              <option class="Pasay">Barangay 44</option> 
+              <option class="Pasay">Barangay 45</option>       
+              <option class="Pasay">Barangay 46</option> 
+              <option class="Pasay">Barangay 47</option> 
+              <option class="Pasay">Barangay 48</option>   
+              <option class="Pasay">Barangay 49</option>       
+              <option class="Pasay">Barangay 50</option> 
+              <option class="Pasay">Barangay 51</option> 
+              <option class="Pasay">Barangay 52</option>       
+              <option class="Pasay">Barangay 52</option> 
+              <option class="Pasay">Barangay 53</option> 
+              <option class="Pasay">Barangay 54</option> 
+              <option class="Pasay">Barangay 55</option> 
+              <option class="Pasay">Barangay 57</option> 
+              <option class="Pasay">Barangay 58</option>         
+              <option class="Pasay">Barangay 59</option>       
+              <option class="Pasay">Barangay 60</option> 
+              <option class="Pasay">Barangay 61</option> 
+              <option class="Pasay">Barangay 62</option>       
+              <option class="Pasay">Barangay 63</option> 
+              <option class="Pasay">Barangay 64</option> 
+              <option class="Pasay">Barangay 65</option>   
+              <option class="Pasay">Barangay 66</option> 
+              <option class="Pasay">Barangay 67</option>       
+              <option class="Pasay">Barangay 68</option> 
+              <option class="Pasay">Barangay 69</option> 
+              <option class="Pasay">Barangay 70</option> 
+              <option class="Pasay">Barangay 71</option> 
+              <option class="Pasay">Barangay 72</option> 
+              <option class="Pasay">Barangay 73</option>         
+              <option class="Pasay">Barangay 74</option>       
+              <option class="Pasay">Barangay 75</option> 
+              <option class="Pasay">Barangay 76</option> 
+              <option class="Pasay">Barangay 77</option>       
+              <option class="Pasay">Barangay 78</option> 
+              <option class="Pasay">Barangay 79</option> 
+              <option class="Pasay">Barangay 80</option>   
+              <option class="Pasay">Barangay 81</option> 
+              <option class="Pasay">Barangay 82</option>       
+              <option class="Pasay">Barangay 83</option> 
+              <option class="Pasay">Barangay 84</option> 
+              <option class="Pasay">Barangay 85</option> 
+              <option class="Pasay">Barangay 86</option> 
+              <option class="Pasay">Barangay 87</option> 
+              <option class="Pasay">Barangay 89</option>         
+              <option class="Pasay">Barangay 90</option>       
+              <option class="Pasay">Barangay 91</option> 
+              <option class="Pasay">Barangay 92</option> 
+              <option class="Pasay">Barangay 93</option>       
+              <option class="Pasay">Barangay 94</option> 
+              <option class="Pasay">Barangay 95</option> 
+              <option class="Pasay">Barangay 96</option>   
+              <option class="Pasay">Barangay 97</option>   
+              <option class="Pasay">Barangay 98</option> 
+              <option class="Pasay">Barangay 99</option>       
+              <option class="Parañaque">Baclaran</option> 
+              <option class="Parañaque">B.F. Homes</option> 
+              <option class="Parañaque">Don Bosco</option> 
+              <option class="Parañaque">Don Galo</option> 
+              <option class="Parañaque">La Huerta</option> 
+              <option class="Parañaque">Marcelo Green Village</option>         
+              <option class="Parañaque">Merville</option>       
+              <option class="Parañaque">Moonwalk</option> 
+              <option class="Parañaque">San Antonio</option> 
+              <option class="Parañaque">San Dionisio</option>       
+              <option class="Parañaque">San Isidro</option> 
+              <option class="Parañaque">San Martin De Porres</option> 
+              <option class="Parañaque">Santo Niño</option>  
+              <option class="Parañaque">Sun Valley</option>       
+              <option class="Parañaque">Tambo</option> 
+              <option class="Parañaque">Vitalez</option> 
+              <option class="Las piñas">Almanza Dos</option>
+              <option class="Las Piñas">Almanza Uno</option> 
+              <option class="Las Piñas">B.F. International Village</option>  
+              <option class="Las Piñas">Daniel Fajardo</option>  
+              <option class="Las Piñas">Elias Aldana</option>
+              <option class="Las Piñas">Ilaya</option> 
+              <option class="Las Piñas">Manuyo Dos</option>  
+              <option class="Las Piñas">Manuyo Uno</option>   
+              <option class="Las Piñas">Pampalona Dos</option>
+              <option class="Las Piñas">Pampalona Tres</option> 
+              <option class="Las Piñas">Pampalona Uno</option>  
+              <option class="Las Piñas">Pilar</option>   
+              <option class="Las Piñas">Pulang Lupa Dos</option>
+              <option class="Las Piñas">Pulang Lupa Uno</option> 
+              <option class="Las Piñas">Talon Dos</option>  
+              <option class="Las Piñas">Talon Kuatro</option>   
+              <option class="Las Piñas">Talon Singko</option>
+              <option class="Las Piñas">Talon Tres</option> 
+              <option class="Las Piñas">Talon Uno</option>  
+              <option class="Las Piñas">Zapote</option>   
+              <option class="Pateros">Aguho</option>
+              <option class="Pateros">Magtanggol</option> 
+              <option class="Pateros">Martires del 96</option>  
+              <option class="Pateros">Poblacion</option>  
+              <option class="Pateros">San Pedro</option>
+              <option class="Pateros">San Roque</option> 
+              <option class="Pateros">Santa Ana</option>  
+              <option class="Pateros">Santo Rosario-Kanluran</option> 
+              <option class="Pateros">Santo Rosario-Silangan</option>
+              <option class="Pateros">Tabacalera</option> 
+              <option class="Bangued">Agtangao</option>
+              <option class="Bangued">Angad</option>
+              <option class="Bangued">Bañacao</option>
+              <option class="Bangued">Bangbangar</option>
+              <option class="Bangued">Cabuloan</option>
+              <option class="Bangued">Calaba</option>
+              <option class="Bangued">Cosili East</option>
+              <option class="Bangued">Cosili West</option>
+              <option class="Bangued">Dangdangla</option>
+              <option class="Bangued">Lingtan</option>
+              <option class="Bangued">Lipcan</option>
+              <option class="Bangued">Lubong</option>
+              <option class="Bangued">Macarcarmay</option>
+              <option class="Bangued">Macray</option>
+              <option class="Bangued">Malita</option>
+              <option class="Bangued">Maoay</option>
+              <option class="Bangued">Palao</option>
+              <option class="Bangued">Patucannay</option>
+              <option class="Bangued">Sagap</option>
+              <option class="Bangued">San Antonio</option>
+              <option class="Bangued">Santa Rosa</option>
+              <option class="Bangued">Sao-atan</option>
+              <option class="Bangued">Sappaac</option>
+              <option class="Bangued">Tablac</option>
+              <option class="Bangued">Zone 1 Poblacion</option>
+              <option class="Bangued">Zone 2 Poblacion</option>
+              <option class="Bangued">Zone 3 Poblacion</option>
+              <option class="Bangued">Zone 4 Poblacion</option>
+              <option class="Bangued">Zone 5 Poblacion</option>
+              <option class="Bangued">Zone 6 Poblacion</option>
+              <option class="Bangued">Zone 7 Poblacion</option>
 
 
 
 
-              <option>...</option>
               </select required>
               </div>
 
-
-              <div class="form-group col-md-2">
+              <div class="form-group">
+              <div class="form-group col-md-3">
               <label for="zip">Zip</label>
               <input type="number" class="form-control" id="zip" name="zip" required>
               </div>
+            </div>
+
+      </div>
 
   </fieldset>
 
@@ -1535,13 +2248,7 @@ body {
             </div>
 
           </div>
-
-
-
-
-
-
-  </fieldset>
+</fieldset>
 
 <a href="index.php">Go back</a>
         <input class="btn btn-primary" type="submit" name="register" value="Register">
@@ -1555,6 +2262,41 @@ body {
 
 	<script src="jquery-3.1.1.min.js"></script>
 	<script src="bootstrap.min.js"></script>
+
+<script>
+  
+(() => {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+
+
+
+</script>
+
+<script>
+    var city = $("[name=city] option").detach()
+$("[name=province]").change(function() {
+  var val = $(this).val()
+  $("[name=city] option").detach()
+  city.filter("." + val).clone().appendTo("[name=city]")
+}).change()
+</script>
+
+
 
   <script>
     var course = $("[name=course] option").detach()
