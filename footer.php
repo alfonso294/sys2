@@ -31,7 +31,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: #000000;">
     © 2022 Copyright:
-    <a class="text-white" href="#">Ana Marie D. Casiao Angelica D.Copa Alfonso Luis M. Benito</a>
+    <a class="text-white" href="#">Ana Marie D. Casiao Angelica D. Copa Alfonso Luis M. Benito</a>
   </div>
   <!-- Copyright -->
 </footer>
