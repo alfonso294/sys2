@@ -4,6 +4,8 @@ session_start();
 // Include the database configuration file  
 require 'connect.php';
 require 'functions.php';
+require 'header.php';
+require 'header2.php';
 
  if(isset($_SESSION['username'], $_SESSION['password'])) {
 
@@ -12,22 +14,30 @@ require 'functions.php';
 $status = $statusMsg = ''; 
 if (isset($_POST['upload'])) {
 
+   if(!is_dir("user/". $_SESSION["username"] ."/")) {
+    mkdir("user/". $_SESSION["username"] ."/");
+}
+
+
     $filename = $_FILES["uploadfile"]["name"];
     $tempname = $_FILES["uploadfile"]["tmp_name"];
-    $folder = "./image/" . $filename;
+    $newfilename = 'COM'.date('Y-m-d');
+    $rename = $newfilename.'.jpeg';
+    $folder = "user/". $_SESSION["username"] ."/". $rename;
+
 
     
     // Get all the submitted data from the form
-    $sql = "UPDATE documents SET COM= '$filename' WHERE username = '".$_SESSION['username']."' AND password = '".$_SESSION['password']."'";
+    $sql = "UPDATE documents SET COM= '$rename' WHERE username = '".$_SESSION['username']."' AND password = '".$_SESSION['password']."'";
 
     // Execute query
     mysqli_query($con, $sql);
 
-    // Now let's move the uploaded image into the folder: image
+    // Now let's move the uploaded user into the folder: user
     if (move_uploaded_file($tempname, $folder)) {
-        echo "<h3> Image uploaded successfully!</h3>";
+        echo "<h3> user uploaded successfully!</h3>";
     } else {
-        echo "<h3> Failed to upload image!</h3>";
+        echo "<h3> Failed to upload user!</h3>";
     }
 }
  

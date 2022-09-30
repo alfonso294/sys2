@@ -9,6 +9,8 @@
 
   if(isset($_POST['register'])) {
 
+    $data = $_POST;
+
     $uname = clean($_POST['username']); 
     $pword = clean($_POST['password']); 
     $studno = clean($_POST['Student_ID']); 
@@ -32,13 +34,8 @@
     $FaName = clean($_POST['FaName']);
     $MoEduc = clean($_POST['MoEduc']);
     $FaEduc = clean($_POST['FaEduc']);
+    $province =clean($_POST['province']);
     
-
-    
-
-
-
-
 
     $query = "SELECT username FROM students WHERE username = '$uname'";
     $result = mysqli_query($con,$query);
@@ -54,10 +51,13 @@
       $result = mysqli_query($con,$query);
 
 
+      
+
+
     if(mysqli_num_rows($result) == 0) {
 
-        $query = "INSERT INTO students (username, password, Student_ID, firstname, lastname, email, birthday,address, barangay, zip, city, middlename, marital, gender, cellphonenum, MotherName, FatherName, MotherEduc, FatherEduc)
-        VALUES ('$uname', '$pword', '$studno', '$fname', '$lname', '$email', '$birthday', '$Add', '$barangay', '$zip', '$city', '$mname', '$marital', '$gender','$cnum','$MoName','$FaName','$MoEduc','$FaEduc')";
+        $query = "INSERT INTO students (username, password, Student_ID, firstname, lastname, email, birthday,address, barangay, zip, city, middlename, marital, gender, cellphonenum, MotherName, FatherName, MotherEduc, FatherEduc, province, SignupOn)
+        VALUES ('$uname', '$pword', '$studno', '$fname', '$lname', '$email', '$birthday', '$Add', '$barangay', '$zip', '$city', '$mname', '$marital', '$gender','$cnum','$MoName','$FaName','$MoEduc','$FaEduc','$province', NOW())";
 
         $que = "INSERT INTO documents (Student_ID, username, password, email) VALUES ('$studno','$uname','$pword','$email')";
           
@@ -97,18 +97,26 @@
     }
 
   } 
+
+
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-body {
-  background-image: url("assets/img/bg4.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+input,
+input:valid {
+    border-color: green;
 }
+
+input:invalid {
+    border-color: red;
+}
+
+
+
 </style>
   
 
@@ -116,12 +124,13 @@ body {
 
 	<link href="bootstrap.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  
 
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
-    
 </head>
 <body>
 
@@ -129,64 +138,64 @@ body {
 
   <section class="center-text">
     
-    <strong></strong>
+   
 
     <div class="registration-form box-center clearfix">
 
-    <?php 
-        if(isset($_SESSION['errprompt'])) {
-          showError();
-        }
-    ?>
+   
 
-      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+      <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" id="form">
+
+
+        <div class="form-group">
+          <text style="color:red">*Required field</text></label>
+        </div>
 
    <fieldset> 
       <legend>Personal Information</legend>  
         
         <div class="form-row">
                 <div class="form-group col-md-6">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" name="username" id="floatingInput"  placeholder="Username (must be unique)" required>
+                <label for="username">Username<text style="color:red">&nbsp; *</text></label>
+                
+                <input type="text" name="username" class="form-control" id="Username"  placeholder="Username (must be unique)" pattern="[A-Za0-z9]{1,}" title="Username should only contain numbers, lowercase and uppercase letters." required>
                 </div>
 
                 <div class="form-group col-md-6">
-                <label for="password">Password</label>
-                <input type="text" class="form-control" name="password" placeholder="Password" required>
-		<div class="form-group">
-                <small id="passwordHelpInline" class="text-muted">
-                &nbsp;Must be 8-20 characters long.
-                </small>
+                <label for="password">Password<text style="color:red">&nbsp; *</text></label>
+                <input type="text" class="form-control" name="password" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><span class="text-muted" style="font-size: 12px;">Username should only contain numbers, </span>
                 </div>
-                </div>
+
+
+                
         </div>
 
                 
-        <div class="form-row">
+        <br><div class="form-row"><br><br>
                 <div class="form-group col-md-4">
-                <label for="firstname">First Name</label>
+                <label for="firstname" style="font-size: 15px;">First Name<i class="text-muted" style="font-size: 11px;">(Pangalan)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
                 </div>
 
                 <div class="form-group col-md-4">
-                <label for="middlename">Middle Name</label>
+                <label for="middlename" style="font-size: 15px;">Middle Name<i class="text-muted" style="font-size: 11px;">(Gitnang Pangalan)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="text" class="form-control" name="middlename" placeholder="Middle Name" required>
                 </div>
 
                 <div class="form-group col-md-4">
-                <label for="lastname">Last Name</label>
+                <label for="lastname" style="font-size: 15px;">Last Name<i class="text-muted" style="font-size: 11px;">(Apelyido)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
                 </div>
         </div>
 
         <div class="form-row">
                 <div class="form-group col-md-6">
-                <label for="birthday">Birthday</label>
+                <label for="birthday" style="font-size: 15px;">Birthday<i class="text-muted" style="font-size: 11px;">(Kaarawan)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="date" class="form-control" name="birthday" placeholder="Birthday" required>
                 </div>
 
                 <div class="form-group col-md-6">
-                <label for="email">Email</label>
+                <label for="email" style="font-size: 15px;">Email<i class="text-muted" style="font-size: 11px;">(Sulatroniko)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
 
@@ -194,13 +203,15 @@ body {
 
          <div class="form-row">
                 <div class="form-group col-md-6">
-                <label class="gender">Gender</label><br>
-                <input name="gender" type="radio" value="male" checked>Male
+                <label class="gender" style="font-size: 15px;">Gender<i class="text-muted" style="font-size: 11px;">(Kasarian)</i><text style="color:red">&nbsp; *</text></label><br>
+                <input name="gender" type="radio" value="male" checked>Male &nbsp; &nbsp;
                 <input name="gender" type="radio" value="female">Female
                 </div>
 
                 <div class="form-group col-md-6">
-                <label for="cpnum">Cellphone Number</label>
+                <label for="cpnum" style="font-size: 15px;">Cellphone Number<i class="text-muted" style="font-size: 11px;">(Numero ng Telepono
+
+)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="number" class="form-control" name="cpnum" placeholder="Cellphone Number" required>
                 </div>
 
@@ -209,42 +220,157 @@ body {
 
           <div class="form-row">
                 <div class="form-group col-md-12">
-                <label for="address">Address</label>
+                <label for="address" style="font-size: 15px">Address<i class="text-muted" style="font-size: 11px;">(Tirahan)</i><text style="color:red">&nbsp; *</text></label>
                 <input type="text" class="form-control" name="address" placeholder="1234 Main Street"  required>
                 </div>
           </div>
 
 
         <div class="form-row">
-                 <div class="form-group col-md-6">
-                  <label for="city">City</label>
-                  <select id="city" class="form-control" name="city">
-                    <option selected>Choose...</option>
-                    <option selected>Muntinlupa</option>
-                    <option selected>Caloocan</option>
-                    <option selected>Malabon</option>
-                    <option selected>Navotas</option>
-                    <option selected>Valenzuela</option>
-                    <option selected>Quezon</option>
-                    <option selected>Marikina</option>
-                    <option selected>Pasig</option>
-                    <option selected>Taguig</option>
-                    <option selected>Makati</option>
-                    <option selected>Manila</option>
-                    <option selected>Mandaluyong</option>
-                    <option selected>San Juan</option>
-                    <option selected>Pasay</option>
-                    <option selected>Parañaque</option>
-                    <option selected>Las Piñas</option>
-                    <option selected>Pateros</option>
-                  </select required>
 
-        </div>
+                  <div class="form-group col-md-4">
+                     <label for="province" style="font-size: 15px;">Province/State<i class="text-muted" style="font-size: 11px;">(Probinsya)</i><text style="color:red">&nbsp; *</text></label>
+                  <select id="province" class="form-control" name="province" required>
+                     <option value=""selected>-</option>
+                     <option>NCR</option>
+                    <option >Abra</option>
+                    <option >Apayao</option>
+                    <option >Benguet</option>
+                    <option >Ifugao</option>
+                    <option >Kalinga</option>
+                    <option >Mountain Province</option>
+                    <option >Ilocos Norte</option>
+                    <option >Ilocos Sur</option>
+                    <option >La Union</option>
+                    <option >Pangasinan</option>
+                    <option >Batanes</option>
+                    <option >Cagayan</option>
+                    <option >Isabela</option>
+                    <option >Nueva Ecijia</option>
+                    <option >Pampanga</option>
+                    <option >Tarlac</option>
+                    <option>Zambales</option>
+                    <option>Batangas</option>
+                    <option>Cavite</option>
+                    <option>Laguna</option>
+                    <option>Quezon</option>
+                    <option>Rizal</option>
+                    <option>Marinduque</option>
+                    <option>Occidental Mindoro</option>
+                    <option>Oriental Mindoro</option>
+                    <option>Palawan</option>
+                    <option>Romblon</option>
+                    <option>Albay</option>
+                    <option>Camarines Norte</option>
+                    <option>Camarines Sur</option>
+                    <option>Catanduanes</option>
+                    <option>Masbate</option>
+                    <option>Sorsogon</option>
+                    <option>Aklan</option>
+                    <option>Antique</option>
+                    <option>Capiz</option>
+                    <option>Guimaras</option>
+                    <option>Iloilo</option>
+                    <option>Negros Occidental</option>
+                    <option>Bohol</option>
+                    <option>Cebu</option>
+                    <option>Negros Oriental</option>
+                    <option>Siquijor</option>
+                    <option>Biliran</option>
+                    <option>Eastern Samar</option>
+                    <option>Leyte</option>
+                    <option>Northern Samar</option>
+                    <option>Samar</option>
+                    <option>Southern Leyte</option>
+                    <option>Zamboanga del Norte</option>
+                    <option>Zamboanga del Sur</option>
+                    <option>Zamboanga Sibugay</option>
+                    <option>Bukidnon</option>
+                    <option>Camiguin</option>
+                    <option>Lanao del Norte</option>
+                    <option>Misamis Occidental</option>
+                    <option>Misamis Oriental</option>
+                    <option>Davao de Oro</option>
+                    <option>Davao del Norte</option>
+                    <option>Davao del Sur</option>
+                    <option>Davao Occidental</option>
+                    <option>Davao Oriental</option>
+                    <option>Cotabato</option>
+                    <option>Sarangani</option>
+                    <option>South Cotabato</option>
+                    <option>Sultan Kudarat</option>
+                    <option>Agusan del Norte</option>
+                    <option>Agusan del Sur</option>
+                    <option>Dinagat Islands</option>
+                    <option>Surigao del Norte</option>
+                    <option>Surigao del Sur</option>
+                    <option>Basilan</option>
+                    <option>Lanao del Sur</option>
+                    <option>Maguindanao</option>
+                    <option>Sulu</option>
+                    <option>Tawi-Tawi</option>
+                    </select>
+                  </div>
+
+                 <div class="form-group col-md-4">
+                  <label for="city">City/Municipality<text style="color:red">&nbsp; *</text></label>
+                  <select id="city" class="form-control" name="city" required>
+                    <option value=""selected>-</option>
+                    <option class="NCR">Muntinlupa</option>
+                    <option class="NCR">Caloocan</option>
+                    <option class="NCR">Malabon</option>
+                    <option class="NCR">Navotas</option>
+                    <option class="NCR">Valenzuela</option>
+                    <option class="NCR">Quezon</option>
+                    <option class="NCR">Marikina</option>
+                    <option class="NCR">Pasig</option>
+                    <option class="NCR">Taguig</option>
+                    <option class="NCR">Makati</option>
+                    <option class="NCR">Manila</option>
+                    <option class="NCR">Mandaluyong</option>
+                    <option class="NCR" value="San-Juan">San Juan</option>
+                    <option class="NCR">Pasay</option>
+                    <option class="NCR">Parañaque</option>
+                    <option class="NCR" value="Las-Piñas">Las Piñas</option>
+                    <option class="NCR">Pateros</option>
+                    <option class="Abra">Bangued</option>
+                    <option class="Abra">Boliney</option>
+                    <option class="Abra">Bucay</option>
+                    <option class="Abra">Bucloc</option>
+                    <option class="Abra">Daguioman</option>
+                    <option class="Abra">Danglas</option>
+                    <option class="Abra">Dolores</option>
+                    <option class="Abra">Lacub</option>
+                    <option class="Abra">Lagangilang</option>
+                    <option class="Abra">Lagayan</option>
+                    <option class="Abra">Langiden</option>
+                    <option class="Abra">La Paz</option>
+                    <option class="Abra">Licuan-Baay(Licuan)</option>
+                    <option class="Abra">Luba</option>
+                    <option class="Abra">Malibcong</option>
+                    <option class="Abra">Manabo</option>
+                    <option class="Abra">Peñarrubia</option>
+                    <option class="Abra">Pidigan</option>
+                    <option class="Abra">Pilar</option>
+                    <option class="Abra">Sallapadan</option>
+                    <option class="Abra">San Isidro</option>
+                    <option class="Abra">San Juan</option>
+                    <option class="Abra">San Quintin</option>
+                    <option class="Abra">Tayum</option>
+                    <option class="Abra">Tineg</option>
+                    <option class="Abra">Tubo</option>
+                    <option class="Abra">Villaviciosa</option>
 
 
-        <div class="form-group col-md-4">
+
+                  </select>
+                  </div>
+
+
+            <div class="form-group col-md-4">
             <label for="barangay">Barangay</label>
-            <select id="barangay" class="form-control" name="barangay">
+            <select id="barangay" class="form-control" name="barangay" required>
+               <option value=""selected>-</option>
               <option class="Muntinlupa">Alabang</option>
               <option class="Muntinlupa">Bayanan</option>
               <option class="Muntinlupa">Tunasan</option>
@@ -1470,8 +1596,8 @@ body {
               <option class="Manila">Tondo: Barangay 78</option> 
               <option class="Manila">Tondo: Barangay 79</option> 
               <option class="Manila">Tondo: Barangay 80</option> 
-              <option class="Manila">Tondo: Barangay 81</option>    
-              <option class="Manila">Tondo: Barangay 82</option>    
+              <option class="Manila">Tondo: Barangay 81</option>  
+              <option class="Manila">Tondo: Barangay 82</option>  
               <option class="Manila">Tondo: Barangay 83</option> 
               <option class="Manila">Tondo: Barangay 84</option> 
               <option class="Manila">Tondo: Barangay 83</option> 
@@ -1686,7 +1812,7 @@ body {
               <option class="Mandaluyong">San Jose</option> 
               <option class="Mandaluyong">Vergara</option> 
               <option class="Mandaluyong">Wack-Wack Greenhills</option>   
-              <option class="San Juan">Addition Hills</option> 
+              <option class="San-Juan">Addition Hills</option> 
               <option class="San Juan">Balong-Bato</option> 
               <option class="San Juan">Batis</option> 
               <option class="San Juan">Corazon de Jesus</option> 
@@ -1953,52 +2079,52 @@ body {
               <option class="Pateros">Santo Rosario-Kanluran</option> 
               <option class="Pateros">Santo Rosario-Silangan</option>
               <option class="Pateros">Tabacalera</option> 
-              <option class="Pateros"></option>  
-              <option class="Pateros"></option>  
-             
-             
-             
-             
-              
-             
-              
-               
-            
-            
-            
-            
-           
-           
-          
-          
-
-        
-                                     
-                                 
-                          
-                          
-                          
-                          
-                  
-                  
-                          
-                  
-              
-              
-              
+              <option class="Bangued">Agtangao</option>
+              <option class="Bangued">Angad</option>
+              <option class="Bangued">Bañacao</option>
+              <option class="Bangued">Bangbangar</option>
+              <option class="Bangued">Cabuloan</option>
+              <option class="Bangued">Calaba</option>
+              <option class="Bangued">Cosili East</option>
+              <option class="Bangued">Cosili West</option>
+              <option class="Bangued">Dangdangla</option>
+              <option class="Bangued">Lingtan</option>
+              <option class="Bangued">Lipcan</option>
+              <option class="Bangued">Lubong</option>
+              <option class="Bangued">Macarcarmay</option>
+              <option class="Bangued">Macray</option>
+              <option class="Bangued">Malita</option>
+              <option class="Bangued">Maoay</option>
+              <option class="Bangued">Palao</option>
+              <option class="Bangued">Patucannay</option>
+              <option class="Bangued">Sagap</option>
+              <option class="Bangued">San Antonio</option>
+              <option class="Bangued">Santa Rosa</option>
+              <option class="Bangued">Sao-atan</option>
+              <option class="Bangued">Sappaac</option>
+              <option class="Bangued">Tablac</option>
+              <option class="Bangued">Zone 1 Poblacion</option>
+              <option class="Bangued">Zone 2 Poblacion</option>
+              <option class="Bangued">Zone 3 Poblacion</option>
+              <option class="Bangued">Zone 4 Poblacion</option>
+              <option class="Bangued">Zone 5 Poblacion</option>
+              <option class="Bangued">Zone 6 Poblacion</option>
+              <option class="Bangued">Zone 7 Poblacion</option>
 
 
 
 
-              <option>...</option>
               </select required>
               </div>
 
-
-              <div class="form-group col-md-2">
+              <div class="form-group">
+              <div class="form-group col-md-3">
               <label for="zip">Zip</label>
               <input type="number" class="form-control" id="zip" name="zip" required>
               </div>
+            </div>
+
+      </div>
 
   </fieldset>
 
@@ -2122,13 +2248,7 @@ body {
             </div>
 
           </div>
-
-
-
-
-
-
-  </fieldset>
+</fieldset>
 
 <a href="index.php">Go back</a>
         <input class="btn btn-primary" type="submit" name="register" value="Register">
@@ -2142,6 +2262,41 @@ body {
 
 	<script src="jquery-3.1.1.min.js"></script>
 	<script src="bootstrap.min.js"></script>
+
+<script>
+  
+(() => {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+
+
+
+</script>
+
+<script>
+    var city = $("[name=city] option").detach()
+$("[name=province]").change(function() {
+  var val = $(this).val()
+  $("[name=city] option").detach()
+  city.filter("." + val).clone().appendTo("[name=city]")
+}).change()
+</script>
+
+
 
   <script>
     var course = $("[name=course] option").detach()

@@ -5,7 +5,7 @@
   require 'connect.php';
   require 'functions.php';
   require 'header2.php';
-  require 'header.php';
+  
 
   
 ?>
@@ -55,26 +55,26 @@ $sql = "SELECT * FROM students WHERE username='" . $_GET["username"] . "'";
 
         }
 ?>
-
+<br><br>
              <div class="registration-form box-center clearfix">
-                 
-                      <div class="col-lg-6">
+                 <form role="form" method="post" action="index.php">
 
-                        <form role="form" method="post" action="index.php">
-                            
-                            <b>First Name</b>
-                            <div class="form-group">
+                      <div class="form-row">
+                            <div class="form-group col-md-4">
+                              <label for="firstname">First Name</label>
                               <input class="form-control" placeholder="First Name" name="firstname" value="<?php echo $a; ?>" readonly>
                             </div>
 
-                            <b>First Name</b>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="First Name" name="firstname" value="<?php echo $b; ?>" readonly>
-                            </div>  
+                            <div class="form-group col-md-4">
+                              <label for="middlename">Middle Name</label>
+                              <input class="form-control" placeholder="Middle Name" name="middlename" value="<?php echo $d; ?>" readonly>
+                            </div>
 
-                            <b>Middle Name</b>
-                            <div class="form-group">
-                              <input class="form-control" placeholder="Middle Name" name="middlename" value="<?php echo $c; ?>" readonly>
+                            <div class="form-group col-md-4">
+                              <label for="lastname">Last Name</label>
+                              <input class="form-control" placeholder="Last Name" name="lastname" value="<?php echo $b; ?>" readonly>
+                            </div>
+
                             </div> 
                             <b>Last name</b>
                             <div class="form-group">
