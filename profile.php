@@ -42,11 +42,7 @@ body {
 </head>
 <body>
 
-  
-
- 
-
-  <section class="center-text"><br><br>
+ <section class="center-text"><br><br>
     
     <div class="registration-form box-center clearfix">
 
@@ -138,6 +134,9 @@ body {
 
 
       ?>
+
+
+
                        <form role="form" method="post" action="index.php">
 
                           <fieldset>
@@ -297,11 +296,6 @@ body {
                             </div> 
 
                       </fieldset>
-                          
-                           
-                            
-                            
-
                           </form>  
                  
                  
@@ -364,11 +358,10 @@ body {
 
                             <tr>
                               
-                                <td style="text-align: center;"><img src="./image/<?php echo $j; ?>" alt="Image" class="img-thumbnail"style="width: 100px; height: 100px;" readonly></td>
+                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $j; ?>" alt="Image" class="img-thumbnail"style="width: 100px; height: 100px;" readonly></td>
 
-                                <td style="text-align: center;"><img src="./image/<?php echo $ac; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
-
-                                <td style="text-align: center;"><img src="./image/<?php echo $ad; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
+                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $ac; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
+                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $ad; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
 
                            </tr>
                          </table>
@@ -387,15 +380,21 @@ body {
 
                             <tr>
                               
-                                <td style="text-align: center;"><img src="./image/<?php echo $j; ?>" alt="Image" class="img-thumbnail"style="width: 100px; height: 100px;"></td>
 
-                                <td style="text-align: center;"><img src="./image/<?php echo $ac; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
+                              
+                              
+                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $j; ?>" alt="Image" class="img-thumbnail"style="width: 100px; height: 100px;"></td>
 
-                                <td style="text-align: center;"><img src="./image/<?php echo $ad; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
+                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $ac; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
+
+                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $ad; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
 
                            </tr>
                          </table>
+                                    
 
+                                   
+                                    
 
                     </fieldset>
 
