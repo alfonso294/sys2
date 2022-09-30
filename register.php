@@ -345,7 +345,7 @@ input:invalid {
                     <option class="Abra">Lagayan</option>
                     <option class="Abra">Langiden</option>
                     <option class="Abra" value="La-Paz">La Paz</option>
-                    <option class="Abra">Licuan-Baay(Licuan)</option>
+                    <option class="Abra" value="Licuan-Baay">Licuan-Baay(Licuan)</option>
                     <option class="Abra">Luba</option>
                     <option class="Abra">Malibcong</option>
                     <option class="Abra">Manabo</option>
@@ -2782,9 +2782,66 @@ input:invalid {
               <option class="Banaue">San Fernando</option>
               <option class="Banaue">Tam-an</option>
               <option class="Banaue">View Point</option>
-              <option class="Hingyon"></option>
-              <option class="Hingyon"></option>
-              
+              <option class="Hingyon">Anao</option>
+              <option class="Hingyon">Bangtinon</option>
+              <option class="Hingyon">Bitu</option>
+              <option class="Hingyon">Cababuyan</option>
+              <option class="Hingyon">Mompolia</option>
+              <option class="Hingyon">Namulditan</option>
+              <option class="Hingyon">Northern Cababuyan</option>
+              <option class="Hingyon">O-ong</option>
+              <option class="Hingyon">Piwong</option>
+              <option class="Hingyon">Poblacion</option>
+              <option class="Hingyon">Ubuag</option>
+              <option class="Hingyon">Umalbong</option>
+              <option class="Hungduan">Abatan</option>
+              <option class="Hungduan">Ba-ang</option>
+              <option class="Hungduan">Bangbang</option>
+              <option class="Hungduan">Bokiawan</option>
+              <option class="Hungduan">Hapao</option>
+              <option class="Hungduan">Lubo-ong</option>
+              <option class="Hungduan">Maggok</option>
+              <option class="Hungduan">Nungulunan</option>
+              <option class="Hungduan">Poblacion</option>
+              <option class="Kiangan">Ambabag</option>
+              <option class="Kiangan">Baguinge</option>
+              <option class="Kiangan">Bokiawan</option>
+              <option class="Kiangan">Bolog</option>
+              <option class="Kiangan">Dalligan</option>
+              <option class="Kiangan">Duit</option>
+              <option class="Kiangan">Hucab</option>
+              <option class="Kiangan">Julongan</option>
+              <option class="Kiangan">Lingay</option>
+              <option class="Kiangan">Mungayang</option>
+              <option class="Kiangan">Nagacadan</option>
+              <option class="Kiangan">Pindongan</option>
+              <option class="Kiangan">Poblacion</option>
+              <option class="Kiangan">Tuplac</option>
+              <option class="Lagawe">Abinuan</option>
+              <option class="Lagawe">Banga</option>
+              <option class="Lagawe">Boliwong</option>
+              <option class="Lagawe">Burnay</option>
+              <option class="Lagawe">Buyabuyan</option>
+              <option class="Lagawe">Caba,</option>
+              <option class="Lagawe">Cudog</option>
+              <option class="Lagawe">Dulao</option>
+              <option class="Lagawe">Jucbong</option>
+              <option class="Lagawe">Luta</option>
+              <option class="Lagawe">Montabiong</option>
+              <option class="Lagawe">Olilicon</option>
+              <option class="Lagawe">Poblacion East</option>
+              <option class="Lagawe">Poblacion North</option>
+              <option class="Lagawe">Poblacion South</option>
+              <option class="Lagawe">Poblacion West</option>
+              <option class="Lagawe">Ponghal</option>
+              <option class="Lagawe">Pullaan</option>
+              <option class="Lagawe">Tungngod</option>
+              <option class="Lagawe">Tupaya</option>
+              <option class="Lagawe"></option>
+
+
+
+
 
 
 
