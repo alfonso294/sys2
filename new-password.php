@@ -42,10 +42,10 @@ if($email == false){
                     }
                     ?>
                     <div class="form-group">
-                        <input class="form-control" type="password" name="password" placeholder="Create new password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <input class="form-control" type="password" name="password" placeholder="Create new password" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="password" name="cpassword" placeholder="Confirm your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
+                        <input class="form-control" type="password" name="cpassword" placeholder="Confirm your password" required>
                     </div>
                     <div class="form-group">
                         <input class="form-control button" type="submit" name="change-password" value="Change">
