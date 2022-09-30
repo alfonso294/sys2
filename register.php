@@ -360,6 +360,28 @@ input:invalid {
                     <option class="Abra">Tineg</option>
                     <option class="Abra">Tubo</option>
                     <option class="Abra">Villaviciosa</option>
+                    <option class="Apayao">Calanasan</option>
+                    <option class="Apayao">Conner</option>
+                    <option class="Apayao">Flora</option>
+                    <option class="Apayao">Kabugao</option>
+                    <option class="Apayao">Luna</option>
+                    <option class="Apayao">Pudtol</option>
+                    <option class="Apayao">Santa Marcela</option>
+                    <option class="Benguet">Atok</option>
+                    <option class="Benguet">Bakun</option>
+                    <option class="Benguet">Bokod</option>
+                    <option class="Benguet">Buguias</option>
+                    <option class="Benguet">Itogon</option>
+                    <option class="Benguet">Kabayan</option>
+                    <option class="Benguet">Kapangan</option>
+                    <option class="Benguet">Kibungan</option>
+                    <option class="Benguet">La Trinidad</option>
+                    <option class="Benguet">Mankayan</option>
+                    <option class="Benguet">Sablan</option>
+                    <option class="Benguet">Tuba</option>
+                    <option class="Benguet">Tublay</option>
+
+
 
 
 
@@ -2201,6 +2223,7 @@ input:invalid {
               <option class="Langiden">Malapaao</option>
               <option class="Langiden">Poblacion</option>
               <option class="Langiden">Quillat</option>
+              <option class=""
               
              
 
