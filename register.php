@@ -2049,7 +2049,7 @@ input:invalid {
               <option class="Parañaque">Sun Valley</option>       
               <option class="Parañaque">Tambo</option> 
               <option class="Parañaque">Vitalez</option> 
-              <option class="Las Piñas">Almanza Dos</option>
+              <option class="Las piñas">Almanza Dos</option>
               <option class="Las Piñas">Almanza Uno</option> 
               <option class="Las Piñas">B.F. International Village</option>  
               <option class="Las Piñas">Daniel Fajardo</option>  
