@@ -2223,8 +2223,25 @@ input:invalid {
               <option class="Langiden">Malapaao</option>
               <option class="Langiden">Poblacion</option>
               <option class="Langiden">Quillat</option>
+<<<<<<< HEAD
+              <option class="La Paz">Benben</option>
+              <option class="La Paz">Bulbulala</option>
+              <option class="La Paz">Buli</option>
+              <option class="La Paz">Canan</option>
+              <option class="La Paz">Liguis</option>
+              <option class="La Paz">Malabaga</option>
+              <option class="La Paz">Mudeng</option>
+              <option class="La Paz">Pidipid</option>
+              <option class="La Paz">Poblacion</option>
+              <option class="La Paz">San Gregorio</option>
+              <option class="La Paz">Toon</option>
+              <option class="La Paz">Udangan</option>
+              <option class="Licuan-Baay"></option>
+              <option class="Licuan-Baay"></option>
+=======
               <option class=""
               
+>>>>>>> ec7223fa61a39ac93410cfaceec053951130e03a
              
 
 
