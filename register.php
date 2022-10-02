@@ -419,13 +419,13 @@ input:invalid {
                     <option class="Ilocos-Norte">Dingras</option>
                     <option class="Ilocos-Norte">Dumalneg</option>
                     <option class="Ilocos-Norte">Marcos</option>
-                    <option class="Ilocos-Norte">Nueva Era</option>
+                    <option class="Ilocos-Norte" value="Nueva-Era">Nueva Era</option>
                     <option class="Ilocos-Norte">Pagudpud</option>
                     <option class="Ilocos-Norte">Paoay</option>
                     <option class="Ilocos-Norte">Pasuquin</option>
                     <option class="Ilocos-Norte">Piddig</option>
                     <option class="Ilocos-Norte">Pinili</option>
-                    <option class="Ilocos-Norte">San Nicolas</option>
+                    <option class="Ilocos-Norte" value="San-Nicolas">San Nicolas</option>
                     <option class="Ilocos-Norte">Sarrat</option>
                     <option class="Ilocos-Norte">Solsona</option>
                     <option class="Ilocos-Norte">Vintar</option>
@@ -474,9 +474,9 @@ input:invalid {
                     <option class="La-Union">Naguilian</option>
                     <option class="La-Union">Pugo</option>
                     <option class="La-Union">Rosario</option>
-                    <option class="La-Union">San Gabriel</option>
-                    <option class="La-Union">San Juan</option>
-                    <option class="La-Union">Santo Tomas</option>
+                    <option class="La-Union" value="San-Gabriel">San Gabriel</option>
+                    <option class="La-Union" value="San-Juan">San Juan</option>
+                    <option class="La-Union" value="Santo-Tomas">Santo Tomas</option>
                     <option class="La-Union">Santol</option>
                     <option class="La-Union">Sudipen</option>
                     <option class="La-Union">Tubao</option>
