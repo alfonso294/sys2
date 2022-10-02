@@ -233,22 +233,22 @@ input:invalid {
                   <select id="province" class="form-control" name="province" required>
                      <option value=""selected>-</option>
                      <option>NCR</option>
-                    <option >Abra</option>
-                    <option >Apayao</option>
-                    <option >Benguet</option>
-                    <option >Ifugao</option>
-                    <option >Kalinga</option>
-                    <option >Mountain Province</option>
-                    <option >Ilocos Norte</option>
-                    <option >Ilocos Sur</option>
-                    <option >La Union</option>
-                    <option >Pangasinan</option>
-                    <option >Batanes</option>
-                    <option >Cagayan</option>
-                    <option >Isabela</option>
-                    <option >Nueva Ecijia</option>
-                    <option >Pampanga</option>
-                    <option >Tarlac</option>
+                    <option>Abra</option>
+                    <option>Apayao</option>
+                    <option>Benguet</option>
+                    <option>Ifugao</option>
+                    <option>Kalinga</option>
+                    <option value="Mountain-Province">Mountain Province</option>
+                    <option value="Ilocos-Norte">Ilocos Norte</option>
+                    <option value="Ilocos-Sur">Ilocos Sur</option>
+                    <option value="La-Union">La Union</option>
+                    <option>Pangasinan</option>
+                    <option>Batanes</option>
+                    <option>Cagayan</option>
+                    <option>Isabela</option>
+                    <option value="Nueva-Ecija">Nueva Ecijia</option>
+                    <option>Pampanga</option>
+                    <option>Tarlac</option>
                     <option>Zambales</option>
                     <option>Batangas</option>
                     <option>Cavite</option>
@@ -256,13 +256,13 @@ input:invalid {
                     <option>Quezon</option>
                     <option>Rizal</option>
                     <option>Marinduque</option>
-                    <option>Occidental Mindoro</option>
-                    <option>Oriental Mindoro</option>
+                    <option value="Occidental-Mindoro">Occidental Mindoro</option>
+                    <option value="Oriental-Mindoro">Oriental Mindoro</option>
                     <option>Palawan</option>
                     <option>Romblon</option>
                     <option>Albay</option>
-                    <option>Camarines Norte</option>
-                    <option>Camarines Sur</option>
+                    <option value="Camarines-Norte">Camarines Norte</option>
+                    <option value="Camarines-Sur">Camarines Sur</option>
                     <option>Catanduanes</option>
                     <option>Masbate</option>
                     <option>Sorsogon</option>
@@ -271,44 +271,44 @@ input:invalid {
                     <option>Capiz</option>
                     <option>Guimaras</option>
                     <option>Iloilo</option>
-                    <option>Negros Occidental</option>
+                    <option value="Negros-Occidental">Negros Occidental</option>
                     <option>Bohol</option>
                     <option>Cebu</option>
-                    <option>Negros Oriental</option>
+                    <option value="Negros-Oriental">Negros Oriental</option>
                     <option>Siquijor</option>
                     <option>Biliran</option>
-                    <option>Eastern Samar</option>
+                    <option value="Eastern-Samar">Eastern Samar</option>
                     <option>Leyte</option>
-                    <option>Northern Samar</option>
+                    <option value="Northern-Samar">Northern Samar</option>
                     <option>Samar</option>
-                    <option>Southern Leyte</option>
-                    <option>Zamboanga del Norte</option>
-                    <option>Zamboanga del Sur</option>
-                    <option>Zamboanga Sibugay</option>
+                    <option value="Southern-Leyte">Southern Leyte</option>
+                    <option value="Zamboanga-del-Norte">Zamboanga del Norte</option>
+                    <option value="Zamboanga-del-Sur">Zamboanga del Sur</option>
+                    <option value="Zamboanga-Sibugay">Zamboanga Sibugay</option>
                     <option>Bukidnon</option>
                     <option>Camiguin</option>
-                    <option>Lanao del Norte</option>
-                    <option>Misamis Occidental</option>
-                    <option>Misamis Oriental</option>
-                    <option>Davao de Oro</option>
-                    <option>Davao del Norte</option>
-                    <option>Davao del Sur</option>
-                    <option>Davao Occidental</option>
-                    <option>Davao Oriental</option>
+                    <option value="Lanao-del-Norte">Lanao del Norte</option>
+                    <option value="Misamis-Occidental">Misamis Occidental</option>
+                    <option value="Misamis-Oriental">Misamis Oriental</option>
+                    <option value="Davao-de-Oro">Davao de Oro</option>
+                    <option value="Davao-del-Norte">Davao del Norte</option>
+                    <option value="Davao-del-Sur">Davao del Sur</option>
+                    <option value="Davao-Occidental">Davao Occidental</option>
+                    <option value="Davao-Oriental">Davao Oriental</option>
                     <option>Cotabato</option>
                     <option>Sarangani</option>
-                    <option>South Cotabato</option>
-                    <option>Sultan Kudarat</option>
-                    <option>Agusan del Norte</option>
-                    <option>Agusan del Sur</option>
-                    <option>Dinagat Islands</option>
-                    <option>Surigao del Norte</option>
-                    <option>Surigao del Sur</option>
+                    <option value="Sultan-Cotabato">South Cotabato</option>
+                    <option value="Sultan-Kudarat">Sultan Kudarat</option>
+                    <option value="Agusan-del-Norte">Agusan del Norte</option>
+                    <option value="Agusan-del-Sur">Agusan del Sur</option>
+                    <option value="Dinagat-Islands">Dinagat Islands</option>
+                    <option value="Surigao-del-Norte">Surigao del Norte</option>
+                    <option value="Surigao-del-Sur">Surigao del Sur</option>
                     <option>Basilan</option>
-                    <option>Lanao del Sur</option>
+                    <option value="Lanao-del-Sur">Lanao del Sur</option>
                     <option>Maguindanao</option>
                     <option>Sulu</option>
-                    <option>Tawi-Tawi</option>
+                    <option value="Tawi-tawi">Tawi-Tawi</option>
                     </select>
                   </div>
 
@@ -419,13 +419,13 @@ input:invalid {
                     <option class="Ilocos-Norte">Dingras</option>
                     <option class="Ilocos-Norte">Dumalneg</option>
                     <option class="Ilocos-Norte">Marcos</option>
-                    <option class="Ilocos-Norte">Nueva Era</option>
+                    <option class="Ilocos-Norte" value="Nueva-Era">Nueva Era</option>
                     <option class="Ilocos-Norte">Pagudpud</option>
                     <option class="Ilocos-Norte">Paoay</option>
                     <option class="Ilocos-Norte">Pasuquin</option>
                     <option class="Ilocos-Norte">Piddig</option>
                     <option class="Ilocos-Norte">Pinili</option>
-                    <option class="Ilocos-Norte">San Nicolas</option>
+                    <option class="Ilocos-Norte" value="San-Nicolas">San Nicolas</option>
                     <option class="Ilocos-Norte">Sarrat</option>
                     <option class="Ilocos-Norte">Solsona</option>
                     <option class="Ilocos-Norte">Vintar</option>
@@ -474,9 +474,9 @@ input:invalid {
                     <option class="La-Union">Naguilian</option>
                     <option class="La-Union">Pugo</option>
                     <option class="La-Union">Rosario</option>
-                    <option class="La-Union">San Gabriel</option>
-                    <option class="La-Union">San Juan</option>
-                    <option class="La-Union">Santo Tomas</option>
+                    <option class="La-Union" value="San-Gabriel">San Gabriel</option>
+                    <option class="La-Union" value="San-Juan">San Juan</option>
+                    <option class="La-Union" value="Santo-Tomas">Santo Tomas</option>
                     <option class="La-Union">Santol</option>
                     <option class="La-Union">Sudipen</option>
                     <option class="La-Union">Tubao</option>
