@@ -1,4 +1,4 @@
-gg<?php 
+<?php 
 
   session_start();
 
@@ -9,9 +9,9 @@ gg<?php
 
   if (!isset($_SESSION['username']))
     header("Location: index.php");
-   
+  
  ?>
-a
+
 <style>
  table td, table th  
             {    
@@ -34,7 +34,7 @@ body {
 
 
 <body id="body1">
-<div id="page-wrapper">
+<br><br><br><div id="page-wrapper">
             <div class="container-fluid">
                 <div class="col-lg-12">
                     <div class="table responsive">

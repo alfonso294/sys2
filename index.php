@@ -94,7 +94,8 @@
 
         <div class="form-group">
           <label for="password" class="sr-only">Password</label>
-          <input type="password" class="form-control" name="password" placeholder="Password" required>
+          <input type="password" class="form-control" name="password" placeholder="Password" id="Password"required><br>
+          <input type="checkbox" onclick="myFunction()">&nbsp; Show Password
         </div>
         
         <a href="register.php">Need an account?</a>
@@ -116,7 +117,16 @@
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 
-
+<script>
+function myFunction() {
+  var x = document.getElementById("Password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 
 
 </body>
