@@ -3717,14 +3717,7 @@ input:invalid {
               <option class="Caoayan">Pantay Tamurong</option>
               <option class="Caoayan">Pantay-Quitiquit</option>
               <option class="Caoayan">Puro</option>
-<<<<<<< Updated upstream
               <option class="Caoayan">Villamar</option>
-              <option class="Cervantes"></option>
-              <option class="Cervantes"></option>
-              <option class="Cervantes"></option>
-              <option class="Cervantes"></option>
-=======
-              <option class="Caoayan">Villamares</option>
               <option class="Cervantes">Aluling</option>
               <option class="Cervantes">Comillas North</option>
               <option class="Cervantes">Comillas South</option>
@@ -3822,10 +3815,6 @@ input:invalid {
               <option class="Nagbukel">Poblacion East</option>
               <option class="Nagbukel">Poblacion West</option>
               <option class="Nagbukel">Taleb</option>
-
-
-
->>>>>>> Stashed changes
           </select required>
               </div>
 
