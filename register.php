@@ -3717,71 +3717,12 @@ input:invalid {
               <option class="Caoayan">Pantay Tamurong</option>
               <option class="Caoayan">Pantay-Quitiquit</option>
               <option class="Caoayan">Puro</option>
-              <option class="Caoayan">Villamar</option>
+              <option class="Caoayan">Villamares</option>
               <option class="Cervantes"></option>
               <option class="Cervantes"></option>
               <option class="Cervantes"></option>
               <option class="Cervantes"></option>
-              
-              
-              
-              
-              
-              
-              
-              
-
-
-              
-              
-            
-              
-              
-              
-              
-             
-             
-
-             
-             
-             
-             
-
-             
- 
-
-
-
-
-
-
-
-
-
-
-
-              
-
-              
-
-
-
-
-
-
-
-
-
-
-
-
-             
-
-
-
-
-
-              </select required>
+          </select required>
               </div>
 
               <div class="form-group">
