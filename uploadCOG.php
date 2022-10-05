@@ -55,7 +55,7 @@ if(!is_dir("user/". $_SESSION["username"] ."/")) {
     $filename = $_FILES["uploadfile"]["name"];
     $tempname = $_FILES["uploadfile"]["tmp_name"];
     $newfilename = 'COG-'.date('m-d-Y-h-i-sa');
-    $rename = $newfilename.'jpeg';
+    $rename = $newfilename.'.jpeg';
     $folder = "user/". $_SESSION["username"] ."/". $rename;
     
 
