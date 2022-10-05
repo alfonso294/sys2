@@ -1242,13 +1242,92 @@ input:invalid {
                     <option class="Bohol">Tubigon</option>
                     <option class="Bohol">Ubay</option>
                     <option class="Bohol">Valencia</option>
-                    <option class="Cebu"></option>
-
-
-
-
-
-                    </select>
+                    <option class="Cebu">Alcantara</option>
+                    <option class="Cebu">Alcoy</option>
+                    <option class="Cebu">Alegria</option>
+                    <option class="Cebu">Aloguinsan</option>
+                    <option class="Cebu">Argao</option>
+                    <option class="Cebu">Asturias</option>
+                    <option class="Cebu">Badian</option>
+                    <option class="Cebu">Balamban</option>
+                    <option class="Cebu">Bantayan</option>
+                    <option class="Cebu">Barili</option>
+                    <option class="Cebu">Bogo</option>
+                    <option class="Cebu">Boljoon</option>
+                    <option class="Cebu">Borbon</option>
+                    <option class="Cebu">Carcar</option>
+                    <option class="Cebu">Carmen</option>
+                    <option class="Cebu">Catmon</option>
+                    <option class="Cebu">Compostela</option>
+                    <option class="Cebu">Consolacion</option>
+                    <option class="Cebu">Cordova</option>
+                    <option class="Cebu">Daanbantayan</option>
+                    <option class="Cebu">Dalaguete</option>
+                    <option class="Cebu">Danao</option>
+                    <option class="Cebu">Dumanjug</option>
+                    <option class="Cebu">Ginatilan</option>
+                    <option class="Cebu">Liloan</option>
+                    <option class="Cebu">Madridejos</option>
+                    <option class="Cebu">Malabuyoc</option>
+                    <option class="Cebu">Medellin</option>
+                    <option class="Cebu">Minglanilla</option>
+                    <option class="Cebu">Moalboal</option>
+                    <option class="Cebu">Naga</option>
+                    <option class="Cebu">Oslob</option>
+                    <option class="Cebu">Pilar</option>
+                    <option class="Cebu">Pinamungajan</option>
+                    <option class="Cebu">Poro</option>
+                    <option class="Cebu">Ronda</option>
+                    <option class="Cebu">Samboan</option>
+                    <option class="Cebu">San Fernando</option>
+                    <option class="Cebu">San Francisco</option>
+                    <option class="Cebu">San Remigio</option>
+                    <option class="Cebu">Santa Fe</option>
+                    <option class="Cebu">Santander</option>
+                    <option class="Cebu">Sibonga</option>
+                    <option class="Cebu">Sogod</option>
+                    <option class="Cebu">Tabogon</option>
+                    <option class="Cebu">Tabuelan</option>
+                    <option class="Cebu">Talisay</option>
+                    <option class="Cebu">Toledo</option>
+                    <option class="Cebu">Tuburan</option>
+                    <option class="Cebu">Tudela</option>
+                    <option class="Cebu">Cebu City</option>
+                    <option class="Cebu">Lapu-Lapu City</option>
+                    <option class="Cebu">Mandaue City</option>
+                    <option class="Negros-Oriental">Amlan</option>
+                    <option class="Negros-Oriental">Ayungon</option>
+                    <option class="Negros-Oriental">Bacong</option>
+                    <option class="Negros-Oriental">Bais</option>
+                    <option class="Negros-Oriental">Basay</option>
+                    <option class="Negros-Oriental">Bayawan</option>
+                    <option class="Negros-Oriental">Bindoy</option>
+                    <option class="Negros-Oriental">Canlaon</option>
+                    <option class="Negros-Oriental">Dauin</option>
+                    <option class="Negros-Oriental">Dumaguete</option>
+                    <option class="Negros-Oriental">Guihulngan</option>
+                    <option class="Negros-Oriental">Jimalalud</option>
+                    <option class="Negros-Oriental">La Libertad</option>
+                    <option class="Negros-Oriental">Mabinay</option>
+                    <option class="Negros-Oriental">Manjuyod</option>
+                    <option class="Negros-Oriental">Pamplona</option>
+                    <option class="Negros-Oriental">San Jose</option>
+                    <option class="Negros-Oriental">Santa Catalina</option>
+                    <option class="Negros-Oriental">Siaton</option>
+                    <option class="Negros-Oriental">Sibulan</option>
+                    <option class="Negros-Oriental">Tanjay</option>
+                    <option class="Negros-Oriental">Tayasan</option>
+                    <option class="Negros-Oriental">Valencia</option>
+                    <option class="Negros-Oriental">Vallehermoso</option>
+                    <option class="Negros-Oriental">Zamboanguita</option>
+                    <option class="Siquijor">Enrique Villanueva</option>
+                    <option class="Siquijor">Larena</option>
+                    <option class="Siquijor">Lazi</option>
+                    <option class="Siquijor">Maria</option>
+                    <option class="Siquijor">San Juan</option>
+                    <option class="Siquijor">Siquijor</option>
+                    <option class="Biliran">Almeria</option>
+                  </select>
                   </div>
 
 
