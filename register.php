@@ -1,4 +1,4 @@
-<?php 
+<?php FONSO
 
   session_start();
 
