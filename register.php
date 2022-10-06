@@ -5473,7 +5473,51 @@ input:invalid {
               <option class="Bangar">Sinapangan Norte</option>
               <option class="Bangar">Sinapangan Sur</option>
               <option class="Bangar">Ubbog</option>
-              <option class="Bauang"></option>
+              <option class="Bauang">Acao</option>
+              <option class="Bauang">Baccuit Norte</option>
+              <option class="Bauang">Baccuit Sur</option>
+              <option class="Bauang">Bagbag</option>
+              <option class="Bauang">Ballay</option>
+              <option class="Bauang">Bawanta</option>
+              <option class="Bauang">Boy-utan</option>
+              <option class="Bauang">Bucayab</option>
+              <option class="Bauang">Cabalayangan</option>
+              <option class="Bauang">Cabisilan</option>
+              <option class="Bauang">Calumbaya</option>
+              <option class="Bauang">Carmay</option>
+              <option class="Bauang">Casilagan</option>
+              <option class="Bauang">Central East</option>
+              <option class="Bauang">Central West</option>
+              <option class="Bauang">Dili</option>
+              <option class="Bauang">Disso-or</option>
+              <option class="Bauang">Guerrero</option>
+              <option class="Bauang">Lower San Agustin</option>
+              <option class="Bauang">Nagrebcan</option>
+              <option class="Bauang">Pagdalagan Sur</option>
+              <option class="Bauang">Palintucang</option>
+              <option class="Bauang">Palugsi-Limmansangan</option>
+              <option class="Bauang">Parian Este</option>
+              <option class="Bauang">Parian Oeste</option>
+              <option class="Bauang">Paringao</option>
+              <option class="Bauang">Payocpoc Norte Este</option>
+              <option class="Bauang">Payocpoc Norte Oeste</option>
+              <option class="Bauang">Payocpoc Sur</option>
+              <option class="Bauang">Pilar</option>
+              <option class="Bauang">Pottot</option>
+              <option class="Bauang">Pudoc</option>
+              <option class="Bauang">Pugo</option>
+              <option class="Bauang">Quinavite</option>
+              <option class="Bauang">Santa Monica</option>
+              <option class="Bauang">Santiago</option>
+              <option class="Bauang">Taberna</option>
+              <option class="Bauang">Upper San Agustin</option>
+              <option class="Bauang">Urayong</option>
+              <option class="Burgos"></option>
+
+
+
+
+             
               
               
               
