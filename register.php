@@ -5404,8 +5404,43 @@ input:invalid {
               <option class="Bagulin">Tagudtud</option>
               <option class="Bagulin">Tio-angan</option>
               <option class="Bagulin">Wallayan</option>
-              <option class="Balaoan"></option>
-             
+              <option class="Balaoan">Almieda</option>
+              <option class="Balaoan">Antonino</option>
+              <option class="Balaoan">Apatut</option>
+              <option class="Balaoan">Ar-arampang</option>
+              <option class="Balaoan">Baracbac Este</option>
+              <option class="Balaoan">Baracbac Oeste</option>
+              <option class="Balaoan">Bet-ang</option>
+              <option class="Balaoan">Bulbulala</option>
+              <option class="Balaoan">Bungol</option>
+              <option class="Balaoan">Butubut Este</option>
+              <option class="Balaoan">Butubut Norte</option>
+              <option class="Balaoan">Butubut Oeste</option>
+              <option class="Balaoan">Butubut Sur</option>
+              <option class="Balaoan">Cabuaan Oeste</option>
+              <option class="Balaoan">Calliat</option>
+              <option class="Balaoan">Calungbuyan</option>
+              <option class="Balaoan">Camiling</option>
+              <option class="Balaoan">Dr. Camilo Osias Poblacion</option>
+              <option class="Balaoan">Guinaburan</option>
+              <option class="Balaoan">Masupe</option>
+              <option class="Balaoan">Nagsabaran Norte</option>
+              <option class="Balaoan">Nagsabaran Sur</option>
+              <option class="Balaoan">Nalasin</option>
+              <option class="Balaoan">Napaset</option>
+              <option class="Balaoan">Napaset</option>
+              <option class="Balaoan">Pagleddegan</option>
+              <option class="Balaoan">Pantar Norte</option>
+              <option class="Balaoan">Pantar Sur</option>
+              <option class="Balaoan">Pa-o</option>
+              <option class="Balaoan">Paraoir</option>
+              <option class="Balaoan">Patpata</option>
+              <option class="Balaoan">Sablut</option>
+              <option class="Balaoan">San Pablo</option>
+              <option class="Balaoan">Sinapangan Norte</option>
+              <option class="Balaoan">Sinapangan Sur</option>
+              <option class="Balaoan">Tallipugo</option>
+              <option class="Bangar"></option>
               
               
               
