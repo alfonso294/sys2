@@ -5572,7 +5572,130 @@ input:invalid {
                   <select class="form-control" name="school">
                   <option value="Plmun">Pamantasan ng Lungsod ng Muntinlupa</option>
                   <option value="MunSci">Muntinlupa Science Highscool</option>
-                  <option value="IES">Itaas Elementary School</option> 
+                  <option value="IES">Itaas Elementary School</option>
+                  <option value="KSGT">Kaku School GT </option>
+                  <option value="DGLC">Divine Gift Learning Center </option>
+                  <option value="DMS">Divine Mercy School </option> 
+                  <option value="HIA">Holy Infant Academy (Main Campus) </option>
+                  <option value="HQLSS">Holy Queen of La Salette School </option>
+                  <option value="IJMSM">Infant Jesus Montessori School of Muntinlupa-Parkhomes </option>
+                  <option value="LM">Lyceum of Alabang </option>
+                  <option value="MCA">Mountaintop Christian Academy</option>
+                  <option value="MSHS">Muntinlupa Science High School </option>
+                  <option value="RA">Ridgeview Academy </option>
+                  <option value="SNSM">Santo Niño School of Muntinlupa </option>
+                  <option value="SSI">Servite School, Inc. </option>
+                  <option value="TBSM">The Brightright School of Muntinlupa </option>
+                  <option value="TES">Tunasan Elementary School </option>
+                  <option value="VES">Victoria Elementary School </option>
+                  <option value="VFBA">Victory Fundamental Baptist, Inc. </option>
+                  <option value="WKSM">Wise Kids School of Muntinlupa, Inc. </option>
+                  <option value="EJIST">Emmanuel John Institute of Science And Technology, Inc. </option>
+                  <option value="TNSH">Tunasan National High School </option>
+                  <option value="CLS">Christian Love School </option>
+                  <option value="IES">Itaas Elementary School </option>
+                  <option value="PES">Poblacion Elementary School </option>
+                  <option value="LPS">Liceo de Piccolo Santo </option>
+                  <option value="LAF">Lombosco Academy Foundation, Inc. </option>
+                  <option value="MCA">Muntinlupa Christian Academy </option>
+                  <option value="MES">Muntinlupa Elementary School </option>
+                  <option value="MNHS">Muntinlupa National High School </option>
+                  <option value="PNHS">Poblacion National High School</option>
+                  <option value="OLTACS">Our Lady of The Abandoned Catholic School </option>
+                  <option value="PGLS">Plena Gracia Learning School </option>
+                  <option value="PLMun">Pamantasan ng Lungsod ng Muntinlupa </option>
+                  <option value="SHI">Sacred Heart Institute </option>
+                  <option value="SMI">Southernside Montessori School </option>
+                  <option value="SCS">Spring Christian School </option>
+                  <option value="SCSM">Sunshine Christian School Muntinlupa </option>
+                  <option value="CMLC">Catherine McAuley Learning Center </option>
+                  <option value="CMLC">Child's Mind Learning $canGetVendors </option>
+                  <option value="CBA">Christ Baptist Academy </option>
+                  <option value="CKSM">Christ the King School of Muntinlupa </option>
+                  <option value="CLICS">Christ the Living Intercessor Christian School </option>
+                  <option value="CNSG">Colegio de Nuestra Señora de Guadalupe </option>
+                  <option value="FDMES">F. De Mesa Elementary School </option>
+                  <option value="HIA">Holy Infant Academy (Putatan Branch) </option>
+                  <option value="J.BKLC">J.B Kiddies Learning Center </option>
+                  <option value="LES">Lakeview Elementary School </option>
+                  <option value="LSA">Lakewood School of Alabng </option>
+                  <option value="LLA">Living Light Academy </option>
+                  <option value="MCJCS">Mary Cause of our Joy Catholic School </option>
+                  <option value="MCS">Muntinlupa Cosmopolitan School </option>
+                  <option value="MIT">Muntinlupa Institute of Technology (MIT) </option>
+                  <option value="PES">Putatan Elentary School </option>
+                  <option value="SCLC">SEAM Christian Learning Center</option>
+                  <option value="SCS">South Crest School </option>
+                  <option value="SMC">South Mansfield College </option>
+                  <option value="SHES">Soldier's Hills Elementary </option>
+                  <option value="BESM">Bayanan Elementary School (Main Campus)  </option>
+                  <option value="BES1">Bayanan Elementary School (Unit 1) </option>
+                  <option value="LALC">Little Angel Learning Center </option>
+                  <option value="MCAB">Maranatha Christian Academy - Bayanan </option>
+                  <option value="MFS">Maria Ferarri School </option>
+                  <option value="MBC-SS">MBC-Sinai School</option>
+                  <option value="MMGPS">Mary, Mother of Good Parochial School </option>
+                  <option value="MSCD">Muntinlupa  School for Child's Development </option>
+                  <option value="SCLC">SEAM Christian Learning Center </option>
+                  <option value="APEC">APEC Schools Bayanan </option>
+                  <option value="AES">Alabang Elmentary School </option>
+                  <option value="ACCLHD">Anima Christ Centerfor Learning  and Human Development </option>
+                  <option value="FEUA">Far Eastern University Alabang </option>
+                  <option value="IJLC-A">Infant Jesus Learning Center - Alabang  </option>
+                  <option value="LSS">Le Sainte School </option>
+                  <option value="LAI">Liceo Sainte School </option>
+                  <option value="MITIS">MIT Internaional School </option>
+                  <option value="SBCA">Saint Bernadette College of Alabang </option>
+                  <option value="PEDSHS">Pedro E. Diaz High school </option>
+                  <option value="SFAC">Saint Francis of Assisi College </option>
+                  <option value="SPSA">Saint Peter of Alabang </option>
+                  <option value="SRCS">San Roque Catholic School </option>
+                  <option value="TMDS">Theresiana de Monteralegre Dame School </option>
+                  <option value="DLSZS">De La Salle Zobel School </option>
+                  <option value="ICD">Institute for Child Development </option>
+                  <option value="MMF">Maria Montessori Foundation </option>
+                  <option value="PWS">PAREF Woodrose School </option>
+                  <option value="TLCS"> The Learning Child School </option>
+                  <option value="VMI">Virgin Mary Immaculate School </option>
+                  <option value="CES">Cupang Elentary School </option>
+                  <option value="OLLS"> Our Lady of the Lake Schoo</option>
+                  <option value="PRS">PAREF Ridgefield School </option>
+                  <option value="PSS">PAREF Southridge School </option>
+                  <option value="SBCA">Saint Bernadette College of Alabang </option>
+                  <option value="SBCA">San Beda College Alabang </option>
+                  <option value="KISBL">Kennedy International School of Business and Languages </option>
+                  <option value="CSHS">Cupang Senior High Schoo </option>
+                  <option value="MBSH">Muntinlupa Business High School </option>
+                  <option value="BES">Buli Elementary School </option>
+                  <option value="FMC">Facilities Management College </option>
+                  <option value="BSES">Bagong Silang Elementary School </option>
+                  <option value="BVA">Bay View Academy </option>
+                  <option value="MMS">Miraculous Medal School </option>
+                  <option value="SASD">Saint Augustine School for the Deaf </option>
+                  <option value="SES">Sucat Elementary School </option>
+                  <option value="MBHS-SA">Muntinlupa Business Highschool (Sucat Annex) </option>
+                  <option value="SDPAI">Sto. Domingo Pascual Academy, Inc. </option>
+                  <option value="CDM">Colegio De Muntinlupa</option>
+
+
+
+
+
+
+                  
+                  
+
+
+                  
+
+
+                 
+                  
+                
+
+                  
+                
+                
                   </select required>
                 </div>
 
