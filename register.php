@@ -5440,7 +5440,48 @@ input:invalid {
               <option class="Balaoan">Sinapangan Norte</option>
               <option class="Balaoan">Sinapangan Sur</option>
               <option class="Balaoan">Tallipugo</option>
-              <option class="Bangar"></option>
+              <option class="Bangar">Agdeppa</option>
+              <option class="Bangar">Alzate</option>
+              <option class="Bangar">Bangaoilan East</option>
+              <option class="Bangar">Bangaoilan East</option>
+              <option class="Bangar">Barraca</option>
+              <option class="Bangar">Cadapli</option>
+              <option class="Bangar">Caggao</option>
+              <option class="Bangar">Central East No. 1</option>
+              <option class="Bangar">Central East No. 2</option>
+              <option class="Bangar">Central West No. 1</option>
+              <option class="Bangar">Central West No. 2</option>
+              <option class="Bangar">Central West No. 3</option>
+              <option class="Bangar">Consuegra</option>
+              <option class="Bangar">General Prim East</option>
+              <option class="Bangar">General Prim West</option>
+              <option class="Bangar">General Terrero</option>
+              <option class="Bangar">Luzong Norte</option>
+              <option class="Bangar">Luzong Sur</option>
+              <option class="Bangar">Maria Cristina East</option>
+              <option class="Bangar">Maria Cristina West</option>
+              <option class="Bangar">Mindoro</option>
+              <option class="Bangar">Nagsabaran</option>
+              <option class="Bangar">Paratong No. 3</option>
+              <option class="Bangar">Paratong No. 4</option>
+              <option class="Bangar">Paratong Norte</option>
+              <option class="Bangar">Quintarong</option>
+              <option class="Bangar">Reyna Regente</option>
+              <option class="Bangar">Rissing</option>
+              <option class="Bangar">San Blas</option>
+              <option class="Bangar">San Cristobal</option>
+              <option class="Bangar">Sinapangan Norte</option>
+              <option class="Bangar">Sinapangan Sur</option>
+              <option class="Bangar">Ubbog</option>
+              <option class="Bauang"></option>
+              
+              
+              
+              
+              
+              
+              
+              
               
               
               
