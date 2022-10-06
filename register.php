@@ -5394,10 +5394,18 @@ input:invalid {
               <option class="Bacnotan">Tammocalao</option>
               <option class="Bacnotan">Ubbog</option>
               <option class="Bacnotan">Zaragosa</option>
-              <option class="Bagulin"></option>
-              
-              
-              
+              <option class="Bagulin">Alibangsay</option>
+              <option class="Bagulin">Baay</option>
+              <option class="Bagulin">Cambaly</option>
+              <option class="Bagulin">Cardiz</option>
+              <option class="Bagulin">Dagup</option>
+              <option class="Bagulin">Libbo</option>
+              <option class="Bagulin">Suyo</option>
+              <option class="Bagulin">Tagudtud</option>
+              <option class="Bagulin">Tio-angan</option>
+              <option class="Bagulin">Wallayan</option>
+              <option class="Balaoan"></option>
+             
               
               
               
