@@ -4808,7 +4808,34 @@ input:invalid {
                   <select class="form-control" name="school">
                   <option value="Plmun">Pamantasan ng Lungsod ng Muntinlupa</option>
                   <option value="MunSci">Muntinlupa Science Highscool</option>
-                  <option value="IES">Itaas Elementary School</option> 
+                  <option value="IES">Itaas Elementary School</option>
+                  <option value="KSGT">Kaku School GT </option>
+                  <option value="DGLC">Divine Gift Learning Center </option>
+                  <option value="DMS">Divine Mercy School </option> 
+                  <option value="HIA">Holy Infant Academy (Main Campus) </option>
+                  <option value="HQLSS">Holy Queen of La Salette School </option>
+                  <option value="IJMSM">Infant Jesus Montessori School of Muntinlupa-Parkhomes </option>
+                  <option value="LM">Lyceum of Alabang </option>
+                  <option value="MCA">Mountaintop Christian Academy</option>
+                  <option value="MSHS">Muntinlupa Science High School </option>
+                  <option value="RA">Ridgeview Academy </option>
+                  <option value="SNSM">Santo Niño School of Muntinlupa </option>
+                  <option value="SSI">Servite School, Inc. </option>
+                  <option value="TBSM">The Brightright School of Muntinlupa </option>
+                  <option value="TES">Tunasan Elementary School </option>
+                  <option value="VES">Victoria Elementary School </option>
+                  <option value="VFBA">Victory Fundamental Baptist, Inc. </option>
+                  <option value="WKSM">Wise Kids School of Muntinlupa, Inc. </option>
+                  <option value="EJIST">Emmanuel John Institute of Science And Technology, Inc. </option>
+                  <option value="TNSH">Tunasan National High School </option>
+                  <option value="CLS">Christian Love School </option>
+                  <option value="IES">Itaas Elementary School </option>
+                  <option value="PES">Poblacion Elementary School </option>
+                  <option value="LPS">Liceo de Piccolo Santo </option>
+                  <option value="LAF">Lombosco Academy Foundation, Inc. </option>
+                  <option value="MCA">Muntinlupa Christian Academy </option>
+                  <option value="MES">Muntinlupa Elementary School </option>
+                  <option value="KSGT">Kaku School GT </option>
                   </select required>
                 </div>
 
