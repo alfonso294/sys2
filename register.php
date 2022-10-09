@@ -595,26 +595,26 @@ input:invalid {
                     <option class="Isabela">Ramon</option>
                     <option class="Isabela">Reina Mercedes</option>
                     <option class="Isabela">Roxas</option>
-                    <option class="Isabela">San Agustin</option>
-                    <option class="Isabela">San Guillermo</option>
-                    <option class="Isabela">San Isidro</option>
-                    <option class="Isabela">San Manuel</option>
-                    <option class="Isabela">San Mariano</option>
-                    <option class="Isabela">San Mateo</option>
-                    <option class="Isabela">San Pablo</option>
-                    <option class="Isabela">Santa Maria</option>
+                    <option class="Isabela"  value="San-Agustin">San Agustin</option>
+                    <option class="Isabela"  value="San-Guillermo">San Guillermo</option>
+                    <option class="Isabela"  value="San-Isidro">San Isidro</option>
+                    <option class="Isabela"  value="San-Manuel">San Manuel</option>
+                    <option class="Isabela"  value="San-Mariano">San Mariano</option>
+                    <option class="Isabela"  value="San-Mateo">San Mateo</option>
+                    <option class="Isabela"  value="San-Pablo">San Pablo</option>
+                    <option class="Isabela"  value="Santa-Maria">Santa Maria</option>
                     <option class="Isabela">Santiago</option>
-                    <option class="Isabela">Santo Tomas</option>
+                    <option class="Isabela"  value="Santo-Tomas">Santo Tomas</option>
                     <option class="Isabela">Tumauini</option>
-                    <option class="Nueva-Vizcaya">Alfonso Castañeda</option>
+                    <option class="Nueva-Vizcaya"  value="Alfonso-Castañeda">Alfonso Castañeda</option>
                     <option class="Nueva-Vizcaya">Ambaguio</option>
                     <option class="Nueva-Vizcaya">Aritao</option>
                     <option class="Nueva-Vizcaya">Bagabag</option>
                     <option class="Nueva-Vizcaya">Bambang</option>
                     <option class="Nueva-Vizcaya">Bayombong</option>
                     <option class="Nueva-Vizcaya">Diadi</option>
-                    <option class="Nueva-Vizcaya">Dupax del Norte</option>
-                    <option class="Nueva-Vizcaya">Dupax del Sur</option>
+                    <option class="Nueva-Vizcaya" value="Dupax-del-Norte">Dupax del Norte</option>
+                    <option class="Nueva-Vizcaya" value="Dupax-del-Sur">Dupax del Sur</option>
                     <option class="Nueva-Vizcaya">Kasibu</option>
                     <option class="Nueva-Vizcaya">Kayapa</option>
                     <option class="Nueva-Vizcaya">Quezon</option>
@@ -633,8 +633,8 @@ input:invalid {
                     <option class="Aurora">Dinalungan</option>
                     <option class="Aurora">Dingalan</option>
                     <option class="Aurora">Dipaculao</option>
-                    <option class="Aurora">Maria Aurora</option>
-                    <option class="Aurora">San Luis</option>
+                    <option class="Aurora" value="Maria-Aurora">Maria Aurora</option>
+                    <option class="Aurora" value="San-Luis">San Luis</option>
                     <option class="Bataan">Abucay</option>
                     <option class="Bataan">Bagac</option>
                     <option class="Bataan">Balanga</option>
@@ -655,8 +655,8 @@ input:invalid {
                     <option class="Nueva-Ecija">Cuyapo</option>
                     <option class="Nueva-Ecija">Gabaldon</option>
                     <option class="Nueva-Ecija">Gapan</option>
-                    <option class="Nueva-Ecija">General Mamerto Natividad</option>
-                    <option class="Nueva-Ecija">General Tinio</option>
+                    <option class="Nueva-Ecija" value="General-Mamerto-Natividad">General Mamerto Natividad</option>
+                    <option class="Nueva-Ecija" value="General-Tinio">General Tinio</option>
                     <option class="Nueva-Ecija">Guimba</option>
                     <option class="Nueva-Ecija">Jaen</option>
                     <option class="Nueva-Ecija">Laur</option>
@@ -670,12 +670,12 @@ input:invalid {
                     <option class="Nueva-Ecija">Peñaranda</option>
                     <option class="Nueva-Ecija">Quezon</option>
                     <option class="Nueva-Ecija">Rizal</option>
-                    <option class="Nueva-Ecija">San Antonio</option>
-                    <option class="Nueva-Ecija">San Isidro</option>
-                    <option class="Nueva-Ecija">San Jose</option>
-                    <option class="Nueva-Ecija">San Leonardo</option>
-                    <option class="Nueva-Ecija">Santa Rosa</option>
-                    <option class="Nueva-Ecija">Santo Domingo</option>
+                    <option class="Nueva-Ecija" value="San-Antonio">San Antonio</option>
+                    <option class="Nueva-Ecija" value="San-Isidro">San Isidro</option>
+                    <option class="Nueva-Ecija" value="San-Jose">San Jose</option>
+                    <option class="Nueva-Ecija" value="San-Leonardo">San Leonardo</option>
+                    <option class="Nueva-Ecija" value="Santa-Rosa">Santa Rosa</option>
+                    <option class="Nueva-Ecija" value="Santo-Domingo">Santo Domingo</option>
                     <option class="Nueva-Ecija">Talavera</option>
                     <option class="Nueva-Ecija">Talugtug</option>
                     <option class="Nueva-Ecija">Zaragoza</option>
@@ -693,12 +693,12 @@ input:invalid {
                     <option class="Pampanga">Mexico</option>
                     <option class="Pampanga">Minalin</option>
                     <option class="Pampanga">Porac</option>
-                    <option class="Pampanga">San Fernando</option>
-                    <option class="Pampanga">San Luis</option>
-                    <option class="Pampanga">San Simon</option>
-                    <option class="Pampanga">Santa Ana</option>
-                    <option class="Pampanga">Santa Rita</option>
-                    <option class="Pampanga">Santo Tomas</option>
+                    <option class="Pampanga" value="San-Fernando">San Fernando</option>
+                    <option class="Pampanga" value="San-Luis">San Luis</option>
+                    <option class="Pampanga" value="San-Siomon">San Simon</option>
+                    <option class="Pampanga" value="Santa-Ana">Santa Ana</option>
+                    <option class="Pampanga" value="San-Rita">Santa Rita</option>
+                    <option class="Pampanga" value="Santo-Tomas">Santo Tomas</option>
                     <option class="Pampanga">Sasmuan</option>
                     <option class="Tarlac">Anao</option>
                     <option class="Tarlac">Bamban</option>
@@ -712,11 +712,11 @@ input:invalid {
                     <option class="Tarlac">Paniqui</option>
                     <option class="Tarlac">Pura</option>
                     <option class="Tarlac">Ramos</option>
-                    <option class="Tarlac">San Clemente </option>
-                    <option class="Tarlac">San Jose</option>
-                    <option class="Tarlac">San Manuel</option>
-                    <option class="Tarlac">Santa Ignacia  </option>
-                    <option class="Tarlac">Tarlac City</option>
+                    <option class="Tarlac" value="San-Clemente">San Clemente </option>
+                    <option class="Tarlac" value="San-Jose">San Jose</option>
+                    <option class="Tarlac" value="San-Miguel">San Manuel</option>
+                    <option class="Tarlac" value="Santa-Ignacia">Santa Ignacia  </option>
+                    <option class="Tarlac" value="Tarlac-City">Tarlac City</option>
                     <option class="Tarlac">Victoria</option>
                     <option class="Zambales">Botolan</option>
                     <option class="Zambales">Cabangan</option>
@@ -726,11 +726,11 @@ input:invalid {
                     <option class="Zambales">Masinloc</option>
                     <option class="Zambales">Olongapo</option>
                     <option class="Zambales">Palauig</option>
-                    <option class="Zambales">San Antonio</option>
-                    <option class="Zambales">San Felipe</option>
-                    <option class="Zambales">San Marcelino</option>
-                    <option class="Zambales">San Narciso</option>
-                    <option class="Zambales">Santa Cruz</option>
+                    <option class="Zambales" value="San-Antonio">San Antonio</option>
+                    <option class="Zambales" value="San-Felipe">San Felipe</option>
+                    <option class="Zambales" value="San-Marcelino">San Marcelino</option>
+                    <option class="Zambales" value="San-Narciso">San Narciso</option>
+                    <option class="Zambales" value="Santa-Cruz">Santa Cruz</option>
                     <option class="Zambales">Subic</option>
                     <option class="Batangas">Agoncillo</option>
                     <option class="Batangas">Alitagtag</option>
@@ -749,17 +749,17 @@ input:invalid {
                     <option class="Batangas">Lobo</option>
                     <option class="Batangas">Mabini</option>
                     <option class="Batangas">Malvar</option>
-                    <option class="Batangas">Mataas na Kahoy</option>
+                    <option class="Batangas" value="Mataas-na-Kahoy">Mataas na Kahoy</option>
                     <option class="Batangas">Nasugbu</option>
-                    <option class="Batangas">Padre Garcia</option>
+                    <option class="Batangas" value="Padre-Garcia">Padre Garcia</option>
                     <option class="Batangas">Rosario</option>
-                    <option class="Batangas">San Jose</option>
-                    <option class="Batangas">San Juan</option>
-                    <option class="Batangas">San Luis</option>
-                    <option class="Batangas">San Nicolas</option>
-                    <option class="Batangas">San Pascual</option>
-                    <option class="Batangas">Santa Teresita</option>
-                    <option class="Batangas">Santo Tomas</option>
+                    <option class="Batangas" value="San-Jose">San Jose</option>
+                    <option class="Batangas" value="San-Juan">San Juan</option>
+                    <option class="Batangas" value="San-Luis">San Luis</option>
+                    <option class="Batangas" value="San-Nicolas">San Nicolas</option>
+                    <option class="Batangas" value="San-Pascual">San Pascual</option>
+                    <option class="Batangas" value="Santa-Teresita">Santa Teresita</option>
+                    <option class="Batangas" value="Santo-Tomas">Santo Tomas</option>
                     <option class="Batangas">Taal</option>
                     <option class="Batangas">Talisay</option>
                     <option class="Batangas">Tanauan</option>
@@ -772,9 +772,9 @@ input:invalid {
                     <option class="Cavite">Carmona</option>
                     <option class="Cavite">Cavite City</option>
                     <option class="Cavite">Dasmariñas</option>
-                    <option class="Cavite">General Emilio Aguinaldo</option>
-                    <option class="Cavite">General Mariano Alvarez</option>
-                    <option class="Cavite">General Trias</option>
+                    <option class="Cavite" value="General-Emilio-Aguinaldo">General Emilio Aguinaldo</option>
+                    <option class="Cavite" value="General-Mariano-Alvarez">General Mariano Alvarez</option>
+                    <option class="Cavite" value="General-Trias">General Trias</option>
                     <option class="Cavite">Imus</option>
                     <option class="Cavite">Indang</option>
                     <option class="Cavite">Kawit</option>
@@ -788,7 +788,7 @@ input:invalid {
                     <option class="Cavite">Tagaytay</option>
                     <option class="Cavite">Tanza</option>
                     <option class="Cavite">Ternate</option>
-                    <option class="Cavite">Trece Martires</option>
+                    <option class="Cavite" value="Trece-Martires">Trece Martires</option>
                     <option class="Laguna">Alaminos</option>
                     <option class="Laguna">Bay</option>
                     <option class="Laguna">Biñan</option>
@@ -812,8 +812,8 @@ input:invalid {
                     <option class="Laguna">Pangil</option>
                     <option class="Laguna">Pila</option>
                     <option class="Laguna">Rizal</option>
-                    <option class="Laguna">San Pablo</option>
-                    <option class="Laguna">San Pedro</option>
+                    <option class="Laguna" value="San-Pablo">San Pablo</option>
+                    <option class="Laguna" value="San-Pedro">San Pedro</option>
                     <option class="Laguna">Santa Cruz</option>
                     <option class="Laguna">Santa Maria</option>
                     <option class="Laguna">Santa Rosa</option>
@@ -5512,8 +5512,333 @@ input:invalid {
               <option class="Bauang">Taberna</option>
               <option class="Bauang">Upper San Agustin</option>
               <option class="Bauang">Urayong</option>
-              <option class="Burgos"></option>
-
+              <option class="Burgos">Agapay</option>
+              <option class="Burgos">Bilis</option>
+              <option class="Burgos">Caoayan</option>
+              <option class="Burgos">Dalacdac</option>
+              <option class="Burgos">Delles</option>
+              <option class="Burgos">Imelda</option>
+              <option class="Burgos">Libtong</option>
+              <option class="Burgos">Linuan</option>
+              <option class="Burgos">Lower Tumapoc</option>
+              <option class="Burgos">New Poblacion</option>
+              <option class="Burgos">Old Poblacion</option>
+              <option class="Burgos">Upper Tumapoc</option>
+              <option class="Luna">Alcala</option>
+              <option class="Luna">Ayaoan</option>
+              <option class="Luna">Barangobong</option>
+              <option class="Luna">Barrientos</option>
+              <option class="Luna">Bungro</option>
+              <option class="Luna">Buselbusel</option>
+              <option class="Luna">Cabalitocan</option>
+              <option class="Luna">Cantoria No. 1</option>
+              <option class="Luna">Cantoria No. 2</option>
+              <option class="Luna">Cantoria No. 3</option>
+              <option class="Luna">Cantoria No. 4</option>
+              <option class="Luna">Carisquis</option>
+              <option class="Luna">Darigayos</option>
+              <option class="Luna">Magallanes</option>
+              <option class="Luna">Magsiping</option>
+              <option class="Luna">Mamay</option>
+              <option class="Luna">Nagrebcan</option>
+              <option class="Luna">Nalvo Norte</option>
+              <option class="Luna">Nalvo Sur</option>
+              <option class="Luna">Napaset</option>
+              <option class="Luna">Oaqui No. 1</option>
+              <option class="Luna">Oaqui No. 2</option>
+              <option class="Luna">Oaqui No. 3</option>
+              <option class="Luna">Oaqui No. 4</option>
+              <option class="Luna">Pila</option>
+              <option class="Luna">Pitpitac</option>
+              <option class="Luna">Rimos No. 1</option>
+              <option class="Luna">Rimos No. 2</option>
+              <option class="Luna">Rimos No. 3</option>
+              <option class="Luna">Rimos No. 4</option>
+              <option class="Luna">Rimos No. 5</option>
+              <option class="Luna">Rissing</option>
+              <option class="Luna">Salcedo</option>
+              <option class="Luna">Santo Domingo Norte</option>
+              <option class="Luna">Santo Domingo Sur</option>
+              <option class="Luna">Sucoc Norte</option>
+              <option class="Luna">Sucoc Sur</option>
+              <option class="Luna">Suyo</option>
+              <option class="Luna">Tallaoen</option>
+              <option class="Luna">Victoria</option>
+              <option class="Naguilian">Aguioas</option>
+              <option class="Naguilian">Al-alinao Norte</option>
+              <option class="Naguilian">Al-alinao Sur</option>
+              <option class="Naguilian">Ambaracao Norte</option>
+              <option class="Naguilian">Ambaracao Sur</option>
+              <option class="Naguilian">Angin</option>
+              <option class="Naguilian">Balecbec</option>
+              <option class="Naguilian">Bancagan</option>
+              <option class="Naguilian">Baraoas Norte</option>
+              <option class="Naguilian">Baraoas Sur</option>
+              <option class="Naguilian">Bariquir</option>
+              <option class="Naguilian">Bato</option>
+              <option class="Naguilian">Bimmotobot</option>
+              <option class="Naguilian">Cabaritan Norte</option>
+              <option class="Naguilian">Cabaritan Sur</option>
+              <option class="Naguilian">Casilagan</option>
+              <option class="Naguilian">Dal-lipaoen</option>
+              <option class="Naguilian">Daramuangan</option>
+              <option class="Naguilian">Guesset</option>
+              <option class="Naguilian">Gusing Norte</option>
+              <option class="Naguilian">Gusing Sur</option>
+              <option class="Naguilian">Imelda</option>
+              <option class="Naguilian">Lioac Norte</option>
+              <option class="Naguilian">Lioac Sur</option>
+              <option class="Naguilian">Magungunay</option>
+              <option class="Naguilian">Mamat-ing Norte</option>
+              <option class="Naguilian">Mamat-ing Sur</option>
+              <option class="Naguilian">Nagsidorisan</option>
+              <option class="Naguilian">Natividad</option>
+              <option class="Naguilian">Ortiz</option>
+              <option class="Naguilian">Ribsuan</option>
+              <option class="Naguilian">San Antonio</option>
+              <option class="Naguilian">San Isidro</option>
+              <option class="Naguilian">Sili</option>
+              <option class="Naguilian">Suguidan Norte</option>
+              <option class="Naguilian">Suguidan Sur</option>
+              <option class="Naguilian">Tuddingan</option>
+              <option class="Pugo">Ambalite</option>
+              <option class="Pugo">Ambangonan</option>
+              <option class="Pugo">Cares</option>
+              <option class="Pugo">Cuenca</option>
+              <option class="Pugo">Duplas</option>
+              <option class="Pugo">Maoasoas Norte</option>
+              <option class="Pugo">Maoasoas Sur</option>
+              <option class="Pugo">Palina</option>
+              <option class="Pugo">Poblacion East</option>
+              <option class="Pugo">Poblacion West</option>
+              <option class="Pugo">San Luis</option>
+              <option class="Pugo">Saytan</option>
+              <option class="Pugo">Tavora East</option>
+              <option class="Pugo">Tavora Proper</option>
+              <option class="Rosario">Alipang</option>
+              <option class="Rosario">Ambangonan</option>
+              <option class="Rosario">Ambangonan</option>
+              <option class="Rosario">Bacani</option>
+              <option class="Rosario">Bangar</option>
+              <option class="Rosario">Bani</option>
+              <option class="Rosario">Benteng-Sapilang</option>
+              <option class="Rosario">Cadumanian</option>
+              <option class="Rosario">Camp One</option>
+              <option class="Rosario">Carunuan East</option>
+              <option class="Rosario">Carunuan West</option>
+              <option class="Rosario">Casilagan</option>
+              <option class="Rosario">Cataguingtingan</option>
+              <option class="Rosario">Concepcion</option>
+              <option class="Rosario">Damortis</option>
+              <option class="Rosario">Gumot-Nagcolaran</option>
+              <option class="Rosario">Inabaan Norte</option>
+              <option class="Rosario">Inabaan Sur</option>
+              <option class="Rosario">Marcos</option>
+              <option class="Rosario">Nagtagaan</option>
+              <option class="Rosario">Nangcamotian</option>
+              <option class="Rosario">Parasapas</option>
+              <option class="Rosario">Poblacion East</option>
+              <option class="Rosario">Poblacion West</option>
+              <option class="Rosario">Puzon</option>
+              <option class="Rosario">Rabon</option>
+              <option class="Rosario">San Jose</option>
+              <option class="Rosario">Subusub</option>
+              <option class="Rosario">Tabtabungao</option>
+              <option class="Rosario">Tanglag</option>
+              <option class="Rosario">Tay-ac</option>
+              <option class="Rosario">Udiao</option>
+              <option class="Rosario">Vila</option>
+              <option class="San-Fernando">Abut</option>
+              <option class="San-Fernando">Apaleng</option>
+              <option class="San-Fernando">Bacsil</option>
+              <option class="San-Fernando">Bangbangolan</option>
+              <option class="San-Fernando">Bangcusay</option>
+              <option class="San-Fernando">Barangay I</option>
+              <option class="San-Fernando">Barangay II</option>
+              <option class="San-Fernando">Barangay III</option>
+              <option class="San-Fernando">Barangay IV</option>
+              <option class="San-Fernando">Baraoas</option>
+              <option class="San-Fernando">Bato</option>
+              <option class="San-Fernando">Biday</option>
+              <option class="San-Fernando">Birunget</option>
+              <option class="San-Fernando">Bungro</option>
+              <option class="San-Fernando">Cabaroan</option>
+              <option class="San-Fernando">Cabarsican</option>
+              <option class="San-Fernando">Cadaclan</option>
+              <option class="San-Fernando">Calabugao</option>
+              <option class="San-Fernando">Camansi</option>
+              <option class="San-Fernando">Canaoay</option>
+              <option class="San-Fernando">Carlatan</option>
+              <option class="San-Fernando">Catbangen</option>
+              <option class="San-Fernando">Dallangayan Este</option>
+              <option class="San-Fernando">Dallangayan Oeste</option>
+              <option class="San-Fernando">Dalumpinas Este</option>
+              <option class="San-Fernando">Dalumpinas Oeste</option>
+              <option class="San-Fernando">Ilocanos Norte</option>
+              <option class="San-Fernando">Ilocanos Sur</option>
+              <option class="San-Fernando">Langcuas</option>
+              <option class="San-Fernando">Lingsat</option>
+              <option class="San-Fernando">Madayegdeg</option>
+              <option class="San-Fernando">Mameltac</option>
+              <option class="San-Fernando">Masicong</option>
+              <option class="San-Fernando">Nagyubuyuban</option>
+              <option class="San-Fernando">Namtutan</option>
+              <option class="San-Fernando">Narra Este</option>
+              <option class="San-Fernando">Narra Oeste</option>
+              <option class="San-Fernando">Pacpaco</option>
+              <option class="San-Fernando">Pagdalagan</option>
+              <option class="San-Fernando">Pagdaraoan</option>
+              <option class="San-Fernando">Pagudpud</option>
+              <option class="San-Fernando">Pao Norte</option>
+              <option class="San-Fernando">Pao Sur</option>
+              <option class="San-Fernando">Parian</option>
+              <option class="San-Fernando">Pias</option>
+              <option class="San-Fernando">Poro</option>
+              <option class="San-Fernando">Puspus</option>
+              <option class="San-Fernando">Sacyud</option>
+              <option class="San-Fernando">Sagayad</option>
+              <option class="San-Fernando">San Agustin</option>
+              <option class="San-Fernando">San Francisco</option>
+              <option class="San-Fernando">San Vicente</option>
+              <option class="San-Fernando">Santiago Norte</option>
+              <option class="San-Fernando">Santiago Sur</option>
+              <option class="San-Fernando">Saoay</option>
+              <option class="San-Fernando">Sevilla</option>
+              <option class="San-Fernando">Siboan-Otong</option>
+              <option class="San-Fernando">Tanqui</option>
+              <option class="San-Fernando">Tanquigan</option>
+              <option class="San-Gabriel">Amontoc</option>
+              <option class="San-Gabriel">Apayao</option>
+              <option class="San-Gabriel">Balbalayang</option>
+              <option class="San-Gabriel">Bayabas</option>
+              <option class="San-Gabriel">Bucao</option>
+              <option class="San-Gabriel">Bumbuneg</option>
+              <option class="San-Gabriel">Daking</option>
+              <option class="San-Gabriel">Lacong</option>
+              <option class="San-Gabriel">Lipay Este</option>
+              <option class="San-Gabriel">Lipay Norte</option>
+              <option class="San-Gabriel">Lipay Proper</option>
+              <option class="San-Gabriel">Lipay Sur</option>
+              <option class="San-Gabriel">Lon-oy</option>
+              <option class="San-Gabriel">Poblacion</option>
+              <option class="San-Gabriel">Polipol</option>
+              <option class="San-Juan">Allangigan</option>
+              <option class="San-Juan">Aludaid</option>
+              <option class="San-Juan">Bacsayan</option>
+              <option class="San-Juan">Balballosa</option>
+              <option class="San-Juan">Bambanay</option>
+              <option class="San-Juan">Bugbugcao</option>
+              <option class="San-Juan">Caarusipan</option>
+              <option class="San-Juan">Cabaroan</option>
+              <option class="San-Juan">Cabugnayan</option>
+              <option class="San-Juan">Cacapian</option>
+              <option class="San-Juan">Caculangan</option>
+              <option class="San-Juan">Calincamasan</option>
+              <option class="San-Juan">Casilagan</option>
+              <option class="San-Juan">Catdongan</option>
+              <option class="San-Juan">Dangdangla</option>
+              <option class="San-Juan">Dasay</option>
+              <option class="San-Juan">Dinanum</option>
+              <option class="San-Juan">Duplas</option>
+              <option class="San-Juan">Guinguinabang</option>
+              <option class="San-Juan">Ili Norte</option>
+              <option class="San-Juan">Ili Sur</option>
+              <option class="San-Juan">Legleg</option>
+              <option class="San-Juan">Lubing</option>
+              <option class="San-Juan">Nadsaag</option>
+              <option class="San-Juan">Nagsabaran</option>
+              <option class="San-Juan">Naguirangan</option>
+              <option class="San-Juan">Naguituban</option>
+              <option class="San-Juan">Nagyubuyuban</option>
+              <option class="San-Juan">Oaquing</option>
+              <option class="San-Juan">Pacpacac</option>
+              <option class="San-Juan">Pagdildilan</option>
+              <option class="San-Juan">Panicsican</option>
+              <option class="San-Juan">Quidem</option>
+              <option class="San-Juan">San Felipe</option>
+              <option class="San-Juan">Santa Rosa</option>
+              <option class="San-Juan">Santo Rosario</option>
+              <option class="San-Juan">Saracat</option>
+              <option class="San-Juan">Sinapangan</option>
+              <option class="San-Juan">Taboc</option>
+              <option class="San-Juan">Talogtog</option>
+              <option class="San-Juan">Urbiztondo</option>
+              <option class="Santo-Tomas">Ambitacay</option>
+              <option class="Santo-Tomas">Bail</option>
+              <option class="Santo-Tomas">Balaoc</option>
+              <option class="Santo-Tomas">Balsaan</option>
+              <option class="Santo-Tomas">Baybay</option>
+              <option class="Santo-Tomas">Cabaruan</option>
+              <option class="Santo-Tomas">Casantaan</option>
+              <option class="Santo-Tomas">Casilagan</option>
+              <option class="Santo-Tomas">Cupang</option>
+              <option class="Santo-Tomas">Damortis</option>
+              <option class="Santo-Tomas">Fernando</option>
+              <option class="Santo-Tomas">Linong</option>
+              <option class="Santo-Tomas">Lomboy</option>
+              <option class="Santo-Tomas">Malabago</option>
+              <option class="Santo-Tomas">Namboongan</option>
+              <option class="Santo-Tomas">Namonitan</option>
+              <option class="Santo-Tomas">Narvacan</option>
+              <option class="Santo-Tomas">Patac</option>
+              <option class="Santo-Tomas">Poblacion</option>
+              <option class="Santo-Tomas">Pongpong</option>
+              <option class="Santo-Tomas">Raois</option>
+              <option class="Santo-Tomas">Tococ</option>
+              <option class="Santo-Tomas">Tubod</option>
+              <option class="Santo-Tomas">Ubagan</option>
+              <option class="Santol">Corrooy</option>
+              <option class="Santol">Lettac Norte</option>
+              <option class="Santol">Lettac Sur</option>
+              <option class="Santol">Mangaan</option>
+              <option class="Santol">Paagan</option>
+              <option class="Santol">Poblacion</option>
+              <option class="Santol">Puguil</option>
+              <option class="Santol">Ramot</option>
+              <option class="Santol">Sapdaan</option>
+              <option class="Santol">Sasaba</option>
+              <option class="Santol">Tubaday</option>
+              <option class="Sudipen">Bigbiga</option>
+              <option class="Sudipen">Bulalaan</option>
+              <option class="Sudipen">Castro</option>
+              <option class="Sudipen">Duplas</option>
+              <option class="Sudipen">Ilocano</option>
+              <option class="Sudipen">Ipet</option>
+              <option class="Sudipen">Maliclico</option>
+              <option class="Sudipen">Namaltugan</option>
+              <option class="Sudipen">Old Central</option>
+              <option class="Sudipen">Poblacion</option>
+              <option class="Sudipen">Porporiket</option>
+              <option class="Sudipen">San Francisco Norte</option>
+              <option class="Sudipen">San Francisco Sur</option>
+              <option class="Sudipen">San Jose</option>
+              <option class="Sudipen">Sengngat</option>
+              <option class="Sudipen">Turod</option>
+              <option class="Sudipen">Up-uplas</option>
+              <option class="Tubao">Amallapay</option>
+              <option class="Tubao">Anduyan</option>
+              <option class="Tubao">Caoigue</option>
+              <option class="Tubao">Francia Sur</option>
+              <option class="Tubao">Francia West</option>
+              <option class="Tubao">Garcia</option>
+              <option class="Tubao">Gonzales</option>
+              <option class="Tubao">Halog East</option>
+              <option class="Tubao">Halog West</option>
+              <option class="Tubao">Leones East</option>
+              <option class="Tubao">Leones West</option>
+              <option class="Tubao">Linapew</option>
+              <option class="Tubao">Lloren</option>
+              <option class="Tubao">Magsaysay</option>
+              <option class="Tubao">Pideg</option>
+              <option class="Tubao">Poblacion</option>
+              <option class="Tubao">Rizal</option>
+              <option class="Tubao">Santa Teresa</option>
+              <option class="Agno"></option>
+              
+              
+            
+            
+            
 
 
 
