@@ -518,15 +518,15 @@ input:invalid {
                     <option class="Pangasinan">Natividad</option>
                     <option class="Pangasinan">Pozorrubio</option>
                     <option class="Pangasinan">Rosales</option>
-                    <option class="Pangasinan">San Carlos</option>
-                    <option class="Pangasinan">San Fabian</option>
-                    <option class="Pangasinan">San Jacinto</option>
-                    <option class="Pangasinan">San Manuel</option>
-                    <option class="Pangasinan">San Nicolas</option>
-                    <option class="Pangasinan">San Quintin</option>
-                    <option class="Pangasinan">Santa Barbara</option>
-                    <option class="Pangasinan">Santa Maria</option>
-                    <option class="Pangasinan">Santo Tomas</option>
+                    <option class="Pangasinan" value="San-Carlos">San Carlos</option>
+                    <option class="Pangasinan" value="San-Fabian">San Fabian</option>
+                    <option class="Pangasinan" value="San-Jacinto">San Jacinto</option>
+                    <option class="Pangasinan" value="San-Manuel">San Manuel</option>
+                    <option class="Pangasinan" value="San-Nicolas">San Nicolas</option>
+                    <option class="Pangasinan" value="San-Quintin">San Quintin</option>
+                    <option class="Pangasinan" value="Santa-Barbara">Santa Barbara</option>
+                    <option class="Pangasinan" value="Santa-Maria">Santa Maria</option>
+                    <option class="Pangasinan" value="Santo-Tomas">Santo Tomas</option>
                     <option class="Pangasinan">Sison</option>
                     <option class="Pangasinan">Sual</option>
                     <option class="Pangasinan">Tayug</option>
@@ -561,11 +561,11 @@ input:invalid {
                     <option class="Cagayan">Peñablanca</option>
                     <option class="Cagayan">Piat</option>
                     <option class="Cagayan">Rizal</option>
-                    <option class="Cagayan">Sanchez-Mira</option>
-                    <option class="Cagayan">Santa Ana</option>
-                    <option class="Cagayan">Santa Praxedes</option>
-                    <option class="Cagayan">Santa Teresita</option>
-                    <option class="Cagayan">Santo Niño</option>
+                    <option class="Cagayan" value="Sanchez-Mira">Sanchez-Mira</option>
+                    <option class="Cagayan" value="Santa-Ana">Santa Ana</option>
+                    <option class="Cagayan" value="Santa-Praxedes">Santa Praxedes</option>
+                    <option class="Cagayan" value="Santa-Teresita">Santa Teresita</option>
+                    <option class="Cagayan" value="Santo-Niño">Santo Niño</option>
                     <option class="Cagayan">Solana</option>
                     <option class="Cagayan">Tuao</option>
                     <option class="Cagayan">Tuguegarao</option>
@@ -578,7 +578,7 @@ input:invalid {
                     <option class="Isabela">Cabatuan</option>
                     <option class="Isabela">Cauayan</option>
                     <option class="Isabela">Cordon</option>
-                    <option class="Isabela">Delfin Albano</option>
+                    <option class="Isabela" value="Delfin-Albano">Delfin Albano</option>
                     <option class="Isabela">Dinapigue</option>
                     <option class="Isabela">Divilacan</option>
                     <option class="Isabela">Echague</option>
@@ -593,7 +593,7 @@ input:invalid {
                     <option class="Isabela">Quezon</option>
                     <option class="Isabela">Quirino</option>
                     <option class="Isabela">Ramon</option>
-                    <option class="Isabela">Reina Mercedes</option>
+                    <option class="Isabela" value="Santa-Barbara">Reina Mercedes</option>
                     <option class="Isabela">Roxas</option>
                     <option class="Isabela"  value="San-Agustin">San Agustin</option>
                     <option class="Isabela"  value="San-Guillermo">San Guillermo</option>
@@ -770,7 +770,7 @@ input:invalid {
                     <option class="Cavite">Amadeo</option>
                     <option class="Cavite">Bacoor</option>
                     <option class="Cavite">Carmona</option>
-                    <option class="Cavite">Cavite City</option>
+                    <option class="Cavite" value="Cavite-City">Cavite City</option>
                     <option class="Cavite">Dasmariñas</option>
                     <option class="Cavite" value="General-Emilio-Aguinaldo">General Emilio Aguinaldo</option>
                     <option class="Cavite" value="General-Mariano-Alvarez">General Mariano Alvarez</option>
@@ -799,7 +799,7 @@ input:invalid {
                     <option class="Laguna">Famy</option>
                     <option class="Laguna">Kalayaan</option>
                     <option class="Laguna">Liliw</option>
-                    <option class="Laguna">Los Baños</option>
+                    <option class="Laguna" value="Los-Baños">Los Baños</option>
                     <option class="Laguna">Luisiana</option>
                     <option class="Laguna">Lumban</option>
                     <option class="Laguna">Mabitac</option>
@@ -814,9 +814,9 @@ input:invalid {
                     <option class="Laguna">Rizal</option>
                     <option class="Laguna" value="San-Pablo">San Pablo</option>
                     <option class="Laguna" value="San-Pedro">San Pedro</option>
-                    <option class="Laguna">Santa Cruz</option>
-                    <option class="Laguna">Santa Maria</option>
-                    <option class="Laguna">Santa Rosa</option>
+                    <option class="Laguna" value="Santa-Cruz">Santa Cruz</option>
+                    <option class="Laguna" value="Santa-Maria">Santa Maria</option>
+                    <option class="Laguna" value="Santa-Rosa">Santa Rosa</option>
                     <option class="Laguna">Siniloan</option>
                     <option class="Laguna">Victoria</option>
                     <option class="Quezon">Agdangan</option>
@@ -828,8 +828,8 @@ input:invalid {
                     <option class="Quezon">Candelaria</option>
                     <option class="Quezon">Catanauan</option>
                     <option class="Quezon">Dolores</option>
-                    <option class="Quezon">General Luna</option>
-                    <option class="Quezon">General Nakar</option>
+                    <option class="Quezon" value="General-Luna">General Luna</option>
+                    <option class="Quezon" value="General-Nakar">General Nakar</option>
                     <option class="Quezon">Guinayangan</option>
                     <option class="Quezon">Gumaca</option>
                     <option class="Quezon">Infanta</option>
@@ -839,7 +839,7 @@ input:invalid {
                     <option class="Quezon">Macalelon</option>
                     <option class="Quezon">Mauban</option>
                     <option class="Quezon">Mulanay</option>
-                    <option class="Quezon">Padre Burgos</option>
+                    <option class="Quezon" value="Padre-Burgos">Padre Burgos</option>
                     <option class="Quezon">Pagbilao</option>
                     <option class="Quezon">Panukulan</option>
                     <option class="Quezon">Patnanungan</option>
@@ -850,10 +850,10 @@ input:invalid {
                     <option class="Quezon">Quezon</option>
                     <option class="Quezon">Real</option>
                     <option class="Quezon">Sampaloc</option>
-                    <option class="Quezon">San Andres</option>
-                    <option class="Quezon">San Antonio</option>
-                    <option class="Quezon">San Francisco</option>
-                    <option class="Quezon">San Narciso</option>
+                    <option class="Quezon" value="San-Andres">San Andres</option>
+                    <option class="Quezon" value="San-Antonio">San Antonio</option>
+                    <option class="Quezon" value="San-Francisco">San Francisco</option>
+                    <option class="Quezon" value="San-Narciso">San Narciso</option>
                     <option class="Quezon">Sariaya</option>
                     <option class="Quezon">Tagkawayan</option>
                     <option class="Quezon">Tayabas</option>
@@ -870,7 +870,7 @@ input:invalid {
                     <option class="Rizal">Morong</option>
                     <option class="Rizal">Pililla</option>
                     <option class="Rizal">Rodriguez</option>
-                    <option class="Rizal">San Mateo</option>
+                    <option class="Rizal" value="San-Mateo">San Mateo</option>
                     <option class="Rizal">Tanay</option>
                     <option class="Rizal">Taytay</option>
                     <option class="Rizal">Teresa</option>
@@ -886,22 +886,22 @@ input:invalid {
                     <option class="Albay">Malinao</option>
                     <option class="Albay">Manito</option>
                     <option class="Albay">Oas</option>
-                    <option class="Albay">Pio Duran</option>
+                    <option class="Albay" value="Pio-Duran">Pio Duran</option>
                     <option class="Albay">Polangui</option>
-                    <option class="Albay">Rapu-Rapu</option>
-                    <option class="Albay">Santo Domingo</option>
+                    <option class="Albay" value="Rapu-Rapu">Rapu-Rapu</option>
+                    <option class="Albay" value="Santo-Domingo">Santo Domingo</option>
                     <option class="Albay">Tabaco</option>
                     <option class="Albay">Tiwi</option>
                     <option class="Camarines-Norte">Basud</option>
                     <option class="Camarines-Norte">Capalonga</option>
                     <option class="Camarines-Norte">Daet</option>
-                    <option class="Camarines-Norte">Jose Panganiban</option>
+                    <option class="Camarines-Norte" value="Jose-Panganiban">Jose Panganiban</option>
                     <option class="Camarines-Norte">Labo</option>
                     <option class="Camarines-Norte">Mercedes</option>
                     <option class="Camarines-Norte">Paracale</option>
-                    <option class="Camarines-Norte">San Lorenzo Ruiz</option>
-                    <option class="Camarines-Norte">San Vicente</option>
-                    <option class="Camarines-Norte">Santa Elena</option>
+                    <option class="Camarines-Norte" value="San-Lorenzo-Ruiz">San Lorenzo Ruiz</option>
+                    <option class="Camarines-Norte" value="San-Vicente">San Vicente</option>
+                    <option class="Camarines-Norte" value="San-Andres">Santa Elena</option>
                     <option class="Camarines-Norte">Talisay</option>
                     <option class="Camarines-Norte">Vinzons</option>
                     <option class="Camarines-Sur">Baao</option>
@@ -935,7 +935,7 @@ input:invalid {
                     <option class="Camarines-Sur">Presentacion</option>
                     <option class="Camarines-Sur">Ragay</option>
                     <option class="Camarines-Sur">Sagñay</option>
-                    <option class="Camarines-Sur">San Fernando</option>
+                    <option class="Camarines-Sur" value="San-Fernando">San Fernando</option>
                     <option class="Camarines-Sur">San Jose</option>
                     <option class="Camarines-Sur">Sipocot</option>
                     <option class="Camarines-Sur">Siruma</option>
@@ -948,8 +948,8 @@ input:invalid {
                     <option class="Catanduanes">Gigmoto</option>
                     <option class="Catanduanes">Pandan</option>
                     <option class="Catanduanes">Panganiban</option>
-                    <option class="Catanduanes">San Andres</option>
-                    <option class="Catanduanes">San Miguel</option>
+                    <option class="Catanduanes" value="San-Andres">San Andres</option>
+                    <option class="Catanduanes" value="San-Miguel">San Miguel</option>
                     <option class="Catanduanes">Viga</option>
                     <option class="Catanduanes">Virac</option>
                     <option class="Masbate">Aroroy</option>
@@ -962,16 +962,16 @@ input:invalid {
                     <option class="Masbate">Dimasalang</option>
                     <option class="Masbate">Esperanza</option>
                     <option class="Masbate">Mandaon</option>
-                    <option class="Masbate">Masbate City</option>
+                    <option class="Masbate" value="Masbate-City">Masbate City</option>
                     <option class="Masbate">Milagros</option>
                     <option class="Masbate">Mobo</option>
                     <option class="Masbate">Monreal</option>
                     <option class="Masbate">Palanas</option>
-                    <option class="Masbate">Pio V. Corpuz </option>
+                    <option class="Masbate"value="Pio-V.-Corpuz">Pio V. Corpuz </option>
                     <option class="Masbate">Placer</option>
-                    <option class="Masbate">San Fernando</option>
-                    <option class="Masbate">San Jacinto</option>
-                    <option class="Masbate">San Pascual</option>
+                    <option class="Masbate" value="San-Fernando">San Fernando</option>
+                    <option class="Masbate" value="San-Jacinto">San Jacinto</option>
+                    <option class="Masbate" value="San-Pascual">San Pascual</option>
                     <option class="Masbate">Uson</option>
                     <option class="Sorsogon">Barcelona</option>
                     <option class="Sorsogon">Bulan</option>
@@ -985,16 +985,16 @@ input:invalid {
                     <option class="Sorsogon">Magallanes</option>
                     <option class="Sorsogon">Matnog</option>
                     <option class="Sorsogon">Pilar</option>
-                    <option class="Sorsogon">Prieto Diaz</option>
-                    <option class="Sorsogon">Santa Magdalena</option>
-                    <option class="Sorsogon">Sorsogon City</option>
+                    <option class="Sorsogon" value="Prieto-Diaz">Prieto Diaz</option>
+                    <option class="Sorsogon" value="Santa-Magdalena">Santa Magdalena</option>
+                    <option class="Sorsogon" value="Sorsogon-City">Sorsogon City</option>
                     <option class="Marinduque">Boac</option>
                     <option class="Marinduque">Buenavista </option>
                     <option class="Marinduque">Gasan</option>
                     <option class="Marinduque">Mogpog</option>
                     <option class="Marinduque">Santa Cruz</option>
                     <option class="Marinduque">Torrijos</option>
-                    <option class="Occidental-Mindoro">Abra de Ilog</option>
+                    <option class="Occidental-Mindoro" value="Abra-de-Ilog">Abra de Ilog</option>
                     <option class="Occidental-Mindoro">Calintaan</option>
                     <option class="Occidental-Mindoro">Looc</option>
                     <option class="Occidental-Mindoro">Lubang</option>
@@ -1003,8 +1003,8 @@ input:invalid {
                     <option class="Occidental-Mindoro">Paluan</option>
                     <option class="Occidental-Mindoro">Rizal</option>
                     <option class="Occidental-Mindoro">Sablayan</option>
-                    <option class="Occidental-Mindoro">San Jose</option>
-                    <option class="Occidental-Mindoro">Santa Cruz</option>
+                    <option class="Occidental-Mindoro" value="San-Jose">San Jose</option>
+                    <option class="Occidental-Mindoro" value="Santa-Cruz">Santa Cruz</option>
                     <option class="Oriental-Mindoro">Baco</option>
                     <option class="Oriental-Mindoro">Bansud</option>
                     <option class="Oriental-Mindoro">Bongabong</option>
@@ -1015,9 +1015,9 @@ input:invalid {
                     <option class="Oriental-Mindoro">Naujan</option>
                     <option class="Oriental-Mindoro">Pinamalayan</option>
                     <option class="Oriental-Mindoro">Pola</option>
-                    <option class="Oriental-Mindoro">Puerto Galera</option>
+                    <option class="Oriental-Mindoro" value="Puerto-Galera">Puerto Galera</option>
                     <option class="Oriental-Mindoro">Roxas</option>
-                    <option class="Oriental-Mindoro">San Teodoro</option>
+                    <option class="Oriental-Mindoro" value="San-Teodoro">San Teodoro</option>
                     <option class="Oriental-Mindoro">Socorro</option>
                     <option class="Oriental-Mindoro">Victoria</option>
                     <option class="Palawan">Aborlan</option>
@@ -1025,14 +1025,14 @@ input:invalid {
                     <option class="Palawan">Araceli</option>
                     <option class="Palawan">Balabac</option>
                     <option class="Palawan">Bataraza</option>
-                    <option class="Palawan">Brooke's Point</option>
+                    <option class="Palawan" value="Brooke's-Point">Brooke's Point</option>
                     <option class="Palawan">Busuanga</option>
                     <option class="Palawan">Cagayancillo</option>
                     <option class="Palawan">Coron</option>
                     <option class="Palawan">Culion</option>
                     <option class="Palawan">Cuyo</option>
                     <option class="Palawan">Dumaran</option>
-                    <option class="Palawan">El Nido</option>
+                    <option class="Palawan" value="El-Nido">El Nido</option>
                     <option class="Palawan">Kalayaan</option>
                     <option class="Palawan">Linapacan</option>
                     <option class="Palawan">Magsaysay</option>
@@ -1040,10 +1040,10 @@ input:invalid {
                     <option class="Palawan">Quezon</option>
                     <option class="Palawan">Rizal</option>
                     <option class="Palawan">Roxas</option>
-                    <option class="Palawan">San Vicente</option>
-                    <option class="Palawan">San Vicente</option>
+                    <option class="Palawan" value="San-Vicente">San Vicente</option>
+                    <option class="Palawan" value="Sofronio-Española">Sofronio Española</option>
                     <option class="Palawan">Taytay</option>
-                    <option class="Palawan">Puerto Princesa</option>
+                    <option class="Palawan" value="Puerto-Pricesa">Puerto Princesa</option>
                     <option class="Romblon">Alcantara</option>
                     <option class="Romblon">Banton</option>
                     <option class="Romblon">Cajidiocan</option>
@@ -1055,12 +1055,12 @@ input:invalid {
                     <option class="Romblon">Magdiwang</option>
                     <option class="Romblon">Odiongan</option>
                     <option class="Romblon">Romblon</option>
-                    <option class="Romblon">San Agustin</option>
-                    <option class="Romblon">San Andres</option>
-                    <option class="Romblon">San Fernando</option>
-                    <option class="Romblon">San Jose</option>
-                    <option class="Romblon">Santa Fe</option>
-                    <option class="Romblon">Santa Maria</option>
+                    <option class="Romblon" value="San-Agustin">San Agustin</option>
+                    <option class="Romblon" value="San-Andres">San Andres</option>
+                    <option class="Romblon" value="San-Fernando">San Fernando</option>
+                    <option class="Romblon" value="San-Jose">San Jose</option>
+                    <option class="Romblon" value="Santa-Fe">Santa Fe</option>
+                    <option class="Romblon" value="Santa-Maria">Santa Maria</option>
                     <option class="Aklan">Altavas</option>
                     <option class="Aklan">Balete</option>
                     <option class="Aklan">Banga</option>
@@ -7423,7 +7423,372 @@ input:invalid {
               <option class="Baggao">Taytay</option>
               <option class="Baggao">Temblique</option>
               <option class="Baggao">Tungel</option>
-              <option class="Ballesteros"></option>
+              <option class="Ballesteros">Ammubuan</option>
+              <option class="Ballesteros">Baran</option>
+              <option class="Ballesteros">Cabaritan East</option>
+              <option class="Ballesteros">Cabaritan West</option>
+              <option class="Ballesteros">Cabayu</option>
+              <option class="Ballesteros">Cabuluan East</option>
+              <option class="Ballesteros">Cabuluan West</option>
+              <option class="Ballesteros">Centro East</option>
+              <option class="Ballesteros">Centro West</option>
+              <option class="Ballesteros">Fugu</option>
+              <option class="Ballesteros">Mabuttal East</option>
+              <option class="Ballesteros">Mabuttal West</option>
+              <option class="Ballesteros">Nararagan</option>
+              <option class="Ballesteros">Palloc</option>
+              <option class="Ballesteros">Payagan East</option>
+              <option class="Ballesteros">Payagan West</option>
+              <option class="Ballesteros">San Juan</option>
+              <option class="Ballesteros">Santa Cruz</option>
+              <option class="Ballesteros">Zitanga</option>
+              <option class="Alicia">Amistad</option>
+              <option class="Alicia">Antonino</option>
+              <option class="Alicia">Apanay</option>
+              <option class="Alicia">Aurora</option>
+              <option class="Alicia">Bagnos</option>
+              <option class="Alicia">Bagong Sikat</option>
+              <option class="Alicia">Bantug-Petines</option>
+              <option class="Alicia">Bonifacio</option>
+              <option class="Alicia">Burgos</option>
+              <option class="Alicia">Calaocan</option>
+              <option class="Alicia">Callao</option>
+              <option class="Alicia">Dagupan</option>
+              <option class="Alicia">Inanama</option>
+              <option class="Alicia">Linglingay</option>
+              <option class="Alicia">M. H. del Pilar</option>
+              <option class="Alicia">Mabini</option>
+              <option class="Alicia">Magsaysay</option>
+              <option class="Alicia">Mataas na Kahoy</option>
+              <option class="Alicia">Paddad</option>
+              <option class="Alicia">Rizal</option>
+              <option class="Alicia">Rizaluna</option>
+              <option class="Alicia">Salvacion</option>
+              <option class="Alicia">San Antonio</option>
+              <option class="Alicia">San Fernando</option>
+              <option class="Alicia">San Francisco</option>
+              <option class="Alicia">San Juan</option>
+              <option class="Alicia">San Pablo</option>
+              <option class="Alicia">San Pedro</option>
+              <option class="Alicia">Santa Cruz</option>
+              <option class="Alicia">Santa Maria</option>
+              <option class="Alicia">Santo Domingo</option>
+              <option class="Alicia">Santo Tomas</option>
+              <option class="Alicia">Victoria</option>
+              <option class="Alicia">Zamora</option>
+              <option class="Angadanan">Allangigan</option>
+              <option class="Angadanan">Aniog</option>
+              <option class="Angadanan">Baniket</option>
+              <option class="Angadanan">Bannawag</option>
+              <option class="Angadanan">Bantug</option>
+              <option class="Angadanan">Barangcuag</option>
+              <option class="Angadanan">Baui</option>
+              <option class="Angadanan">Bonifacio</option>
+              <option class="Angadanan">Buenavista</option>
+              <option class="Angadanan">Bunnay</option>
+              <option class="Angadanan">Calabayan-Minanga</option>
+              <option class="Angadanan">Calaccab</option>
+              <option class="Angadanan">Calaocan</option>
+              <option class="Angadanan">Campanario</option>
+              <option class="Angadanan">Canangan</option>
+              <option class="Angadanan">Centro I</option>
+              <option class="Angadanan">Centro II</option>
+              <option class="Angadanan">Centro III</option>
+              <option class="Angadanan">Consular</option>
+              <option class="Angadanan">Consular</option>
+              <option class="Angadanan">Consular</option>
+              <option class="Angadanan">Dalenat</option>
+              <option class="Angadanan">Dipaluda</option>
+              <option class="Angadanan">Duroc</option>
+              <option class="Angadanan">Esperanza</option>
+              <option class="Angadanan">Fugaru</option>
+              <option class="Angadanan">Ingud Norte</option>
+              <option class="Angadanan">Ingud Sur</option>
+              <option class="Angadanan">Kalusutan</option>
+              <option class="Angadanan">La Suerte</option>
+              <option class="Angadanan">Liwliwa</option>
+              <option class="Angadanan">Lomboy</option>
+              <option class="Angadanan">Loria</option>
+              <option class="Angadanan">Lourdes</option>
+              <option class="Angadanan">Mabuhay</option>
+              <option class="Angadanan">Macalauat</option>
+              <option class="Angadanan">Macaniao</option>
+              <option class="Angadanan">Malannao</option>
+              <option class="Angadanan">Malasin</option>
+              <option class="Angadanan">Mangandingay</option>
+              <option class="Angadanan">Minanga Proper</option>
+              <option class="Angadanan">Pappat</option>
+              <option class="Angadanan">Pissay</option>
+              <option class="Angadanan">Ramona</option>
+              <option class="Angadanan">Rancho Bassit</option>
+              <option class="Angadanan">Rang-ayan</option>
+              <option class="Angadanan">Salay</option>
+              <option class="Angadanan">San Ambrocio</option>
+              <option class="Angadanan">San Guillermo</option>
+              <option class="Angadanan">San Isidro</option>
+              <option class="Angadanan">San Marcelo</option>
+              <option class="Angadanan">San Roque</option>
+              <option class="Angadanan">San Vicente</option>
+              <option class="Angadanan">Santo Niño</option>
+              <option class="Angadanan">Saranay</option>
+              <option class="Angadanan">Sinabbaran</option>
+              <option class="Angadanan">Victory</option>
+              <option class="Angadanan">Viga</option>
+              <option class="Angadanan">Villa Domingo</option>
+              <option class="Aurora">Apiat</option>
+              <option class="Aurora">Bagnos</option>
+              <option class="Aurora">Bagong Tanza</option>
+              <option class="Aurora">Ballesteros</option>
+              <option class="Aurora">Bannagao</option>
+              <option class="Aurora">Bannawag</option>
+              <option class="Aurora">Bolinao</option>
+              <option class="Aurora">Caipilan</option>
+              <option class="Aurora">Camarunggayan</option>
+              <option class="Aurora">Dalig-Kalinga</option>
+              <option class="Aurora">Diamantina</option>
+              <option class="Aurora">Divisoria</option>
+              <option class="Aurora">Esperanza East</option>
+              <option class="Aurora">Esperanza West</option>
+              <option class="Aurora">Kalabaza</option>
+              <option class="Aurora">Macatal</option>
+              <option class="Aurora">Malasin</option>
+              <option class="Aurora">Nampicuan</option>
+              <option class="Aurora">Panecien</option>
+              <option class="Aurora">Rizaluna</option>
+              <option class="Aurora">Rizaluna</option>
+              <option class="Aurora">San Andres</option>
+              <option class="Aurora">San Jose</option>
+              <option class="Aurora">San Juan</option>
+              <option class="Aurora">San Pedro-San Pablo</option>
+              <option class="Aurora">San Rafael</option>
+              <option class="Aurora">San Ramon</option>
+              <option class="Aurora">Santa Rita</option>
+              <option class="Aurora">Santa Rosa</option>
+              <option class="Aurora">Saranay</option>
+              <option class="Aurora">Sili</option>
+              <option class="Aurora">Victoria</option>
+              <option class="Aurora">Villa Fugu</option>
+              <option class="Aurora">Villa Nuesa</option>
+              <option class="Benito-Soliven">Andabuen</option>
+              <option class="Benito-Soliven">Ara</option>
+              <option class="Benito-Soliven">Balliao</option>
+              <option class="Benito-Soliven">Binogtungan</option>
+              <option class="Benito-Soliven">Capuseran</option>
+              <option class="Benito-Soliven">Dagupan</option>
+              <option class="Benito-Soliven">Danipa</option>
+              <option class="Benito-Soliven">District I</option>
+              <option class="Benito-Soliven">District II</option>
+              <option class="Benito-Soliven">Gomez</option>
+              <option class="Benito-Soliven">Guilingan</option>
+              <option class="Benito-Soliven">La Salette</option>
+              <option class="Benito-Soliven">Lucban</option>
+              <option class="Benito-Soliven">Makindol</option>
+              <option class="Benito-Soliven">Maluno Norte</option>
+              <option class="Benito-Soliven">Maluno Sur</option>
+              <option class="Benito-Soliven">Nacalma</option>
+              <option class="Benito-Soliven">New Magsaysay</option>
+              <option class="Benito-Soliven">Placer</option>
+              <option class="Benito-Soliven">Punit</option> 
+              <option class="Benito-Soliven">San Carlos</option>
+              <option class="Benito-Soliven">San Francisco</option>
+              <option class="Benito-Soliven">Santa Cruz</option>
+              <option class="Benito-Soliven">Santiago</option>
+              <option class="Benito-Soliven">Sevillana</option>
+              <option class="Benito-Soliven">Sinipit</option> 
+              <option class="Benito-Soliven">Villaluz</option>
+              <option class="Benito-Soliven">Yeban Norte</option>
+              <option class="Benito-Soliven">Yeban Sur</option>
+              <option class="Burgos">Bacnor East</option> 
+              <option class="Burgos">Bacnor West</option> 
+              <option class="Burgos">Caliguian</option> 
+              <option class="Burgos">Catabban</option> 
+              <option class="Burgos">Cullalabo del Norte</option> 
+              <option class="Burgos">Cullalabo del Sur</option> 
+              <option class="Burgos">Cullalabo San Antonio</option> 
+              <option class="Burgos">Dalig</option> 
+              <option class="Burgos">Malasin</option> 
+              <option class="Burgos">Masigun</option> 
+              <option class="Burgos">Raniag</option> 
+              <option class="Burgos">San Bonifacio</option> 
+              <option class="Burgos">San Miguel</option> 
+              <option class="Burgos">San Roque</option> 
+              <option class="San-Roque">Aggub</option> 
+              <option class="San-Roque">Anao</option> 
+              <option class="San-Roque">Angancasilian</option> 
+              <option class="San-Roque">Balasig</option> 
+              <option class="San-Roque">Cansan</option> 
+              <option class="San-Roque">Casibarag Norte</option> 
+              <option class="San-Roque">Casibarag Sur</option> 
+              <option class="San-Roque">Catabayungan</option> 
+              <option class="San-Roque">Centro</option> 
+              <option class="San-Roque">Cubag</option> 
+              <option class="San-Roque">Garita</option> 
+              <option class="San-Roque">Luquilu</option> 
+              <option class="San-Roque">Mabangug</option> 
+              <option class="San-Roque">Magassi</option> 
+              <option class="San-Roque">Masipi East</option> 
+              <option class="San-Roque">Masipi West</option> 
+              <option class="San-Roque">Ngarag</option> 
+              <option class="San-Roque">Pilig Abajo</option> 
+              <option class="San-Roque">Pilig Alto</option> 
+              <option class="San-Roque">San Antonio</option> 
+              <option class="San-Roque">San Bernardo</option> 
+              <option class="San-Roque">San Juan</option> 
+              <option class="San-Roque">Saui</option>
+              <option class="San-Roque">Tallag</option> 
+              <option class="San-Roque">Ugad</option> 
+              <option class="San-Roque">Union</option> 
+              <option class="Cabatuan">Calaocan</option> 
+              <option class="Cabatuan">Canan</option> 
+              <option class="Cabatuan">Centro</option> 
+              <option class="Cabatuan">Culing Centro</option> 
+              <option class="Cabatuan">Culing East</option> 
+              <option class="Cabatuan">Culing West</option> 
+              <option class="Cabatuan">Del Corpuz</option> 
+              <option class="Cabatuan">Del Pilar</option> 
+              <option class="Cabatuan">Diamantina</option> 
+              <option class="Cabatuan">La Paz</option> 
+              <option class="Cabatuan">Luzon</option> 
+              <option class="Cabatuan">Macalaoat</option> 
+              <option class="Cabatuan">Magdalena</option> 
+              <option class="Cabatuan">Magsaysay</option> 
+              <option class="Cabatuan">Namnama</option> 
+              <option class="Cabatuan">Nueva Era</option> 
+              <option class="Cabatuan">Paraiso</option> 
+              <option class="Cabatuan">Rang-ay</option> 
+              <option class="Cabatuan">Sampaloc</option> 
+              <option class="Cabatuan">San Andres</option> 
+              <option class="Cabatuan">Saranay</option> 
+              <option class="Cabatuan">Tandul</option> 
+              <option class="Cauayan">Alicaocao</option> 
+              <option class="Cauayan">Alinam</option> 
+              <option class="Cauayan">Amobocan</option> 
+              <option class="Cauayan">Andarayan</option> 
+              <option class="Cauayan">Baculod</option> 
+              <option class="Cauayan">Baringin Norte</option> 
+              <option class="Cauayan">Baringin Sur</option> 
+              <option class="Cauayan">Buena Suerte</option> 
+              <option class="Cauayan">Bugallon</option> 
+              <option class="Cauayan">Buyon</option> 
+              <option class="Cauayan">Cabaruan</option> 
+              <option class="Cauayan">Cabugao</option> 
+              <option class="Cauayan">Carabatan Bacareno</option> 
+              <option class="Cauayan">Carabatan Chica</option> 
+              <option class="Cauayan">Carabatan Grande</option> 
+              <option class="Cauayan">Carabatan Punta</option> 
+              <option class="Cauayan">Casalatan</option> 
+              <option class="Cauayan">Cassap Fuera</option> 
+              <option class="Cauayan">Catalina</option> 
+              <option class="Cauayan">Culalabat</option> 
+              <option class="Cauayan">Dabburab</option> 
+              <option class="Cauayan">De Vera</option> 
+              <option class="Cauayan">Dianao</option> 
+              <option class="Cauayan">Disimuray</option> 
+              <option class="Cauayan">District I</option> 
+              <option class="Cauayan">District II</option> 
+              <option class="Cauayan">District III</option> 
+              <option class="Cauayan">Duminit</option> 
+              <option class="Cauayan">Faustino</option> 
+              <option class="Cauayan">Gagabutan</option> 
+              <option class="Cauayan">Gappal</option> 
+              <option class="Cauayan">Guayabal</option> 
+              <option class="Cauayan">Labinab</option> 
+              <option class="Cauayan">Linglingay</option> 
+              <option class="Cauayan">Mabantad</option> 
+              <option class="Cauayan">Maligaya</option> 
+              <option class="Cauayan">Manaoag</option> 
+              <option class="Cauayan">Marabulig I</option> 
+              <option class="Cauayan">Marabulig II</option> 
+              <option class="Cauayan">Minante I</option> 
+              <option class="Cauayan">Minante II</option> 
+              <option class="Cauayan">Naganacan</option> 
+              <option class="Cauayan">Nagcampegan</option> 
+              <option class="Cauayan">Nagrumbuan</option> 
+              <option class="Cauayan">Nungnungan I</option> 
+              <option class="Cauayan">Nungnungan II</option> 
+              <option class="Cauayan">Pinoma</option> 
+              <option class="Cauayan">Rizal</option> 
+              <option class="Cauayan">Rogus</option> 
+              <option class="Cauayan">San Antonio</option> 
+              <option class="Cauayan">San Fermin</option> 
+              <option class="Cauayan">San Francisco</option> 
+              <option class="Cauayan">San Isidro</option> 
+              <option class="Cauayan">San Luis</option> 
+              <option class="Cauayan">San Pablo</option> 
+              <option class="Cauayan">Santa Luciana</option> 
+              <option class="Cauayan">Santa Maria</option> 
+              <option class="Cauayan">Sillawit</option> 
+              <option class="Cauayan">Sinippil</option> 
+              <option class="Cauayan">Tagaran</option> 
+              <option class="Cauayan">Turayong</option> 
+              <option class="Cauayan">Union</option> 
+              <option class="Cauayan">Villa Concepcion</option> 
+              <option class="Cauayan">Villa Luna</option> 
+              <option class="Cauayan">Villaflor</option> 
+              <option class="Cordon">Aguinaldo</option> 
+              <option class="Cordon">Anonang</option> 
+              <option class="Cordon">Calimaturod</option> 
+              <option class="Cordon">Camarao</option> 
+              <option class="Cordon">Capirpiriwan</option> 
+              <option class="Cordon">Caquilingan</option> 
+              <option class="Cordon">Dallao</option> 
+              <option class="Cordon">Gayong</option> 
+              <option class="Cordon">Laurel</option> 
+              <option class="Cordon">Magsaysay</option> 
+              <option class="Cordon">Malapat</option> 
+              <option class="Cordon">Osmeña</option> 
+              <option class="Cordon">Quezon</option> 
+              <option class="Cordon">Quirino</option> 
+              <option class="Cordon">Rizaluna</option> 
+              <option class="Cordon">Roxas Poblacion</option> 
+              <option class="Cordon">Sagat</option> 
+              <option class="Cordon">San Juan</option> 
+              <option class="Cordon">Taliktik</option> 
+              <option class="Cordon">Tanggal</option> 
+              <option class="Cordon">Tarinsing</option> 
+              <option class="Cordon">Turod Norte</option> 
+              <option class="Cordon">Turod Sur</option> 
+              <option class="Cordon">Villamarzo</option> 
+              <option class="Cordon">Villamiemban</option> 
+              <option class="Cordon">Wigan</option> 
+              <option class="Delfin-Albano">Aga</option> 
+              <option class="Delfin-Albano">Andarayan</option> 
+              <option class="Delfin-Albano">Aneg</option> 
+              <option class="Delfin-Albano">Bayabo</option> 
+              <option class="Delfin-Albano">Calinaoan Sur</option> 
+              <option class="Delfin-Albano">Caloocan</option> 
+              <option class="Delfin-Albano">Capitol</option> 
+              <option class="Delfin-Albano">Carmencita</option> 
+              <option class="Delfin-Albano">Concepcion</option> 
+              <option class="Delfin-Albano">Maui</option> 
+              <option class="Delfin-Albano">Quibal</option> 
+              <option class="Delfin-Albano">Ragan Almacen</option> 
+              <option class="Delfin-Albano">Ragan Norte</option> 
+              <option class="Delfin-Albano">Ragan Sur</option> 
+              <option class="Delfin-Albano">Rizal</option> 
+              <option class="Delfin-Albano">San Andres</option> 
+              <option class="Delfin-Albano">San Antonio</option> 
+              <option class="Delfin-Albano">San Isidro</option> 
+              <option class="Delfin-Albano">San Jose</option> 
+              <option class="Delfin-Albano">San Juan</option> 
+              <option class="Delfin-Albano">San Macario</option> 
+              <option class="Delfin-Albano">San Nicolas</option> 
+              <option class="Delfin-Albano">San Patricio</option> 
+              <option class="Delfin-Albano">San Roque</option> 
+              <option class="Delfin-Albano">Santo Rosario</option> 
+              <option class="Delfin-Albano">Santor</option> 
+              <option class="Delfin-Albano">Villa Luz</option> 
+              <option class="Delfin-Albano">Villa Pereda</option> 
+              <option class="Delfin-Albano">Visitacion</option> 
+              <option class="Dinapigue"></option> 
+              
+         
+             
+
+
+
+           
+             
              
              
              
