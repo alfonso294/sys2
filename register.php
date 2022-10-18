@@ -5882,7 +5882,19 @@ input:invalid {
                   <option class="CKSM">Bachelor of Arts in Mass Communication </option>
                   <option class="CLICS">Preschool> </option>
                   <option class="CLICS">Grade School </option>
-
+                  <option class="CNSG"> </option>
+                  <option class="FDEMES">Kindergarten </option>
+                  <option class="FDEMES">Grade 1 </option>
+                  <option class="FDEMES">Grade 2 </option>
+                  <option class="FDEMES">Grade 3 </option>
+                  <option class="FDEMES">Grade 4 </option>
+                  <option class="FDEMES">Grade 5 </option>
+                  <option class="FDEMES">Grade 6 </option>
+                  <option class="HIA"> </option>
+                  <option class="J.BKLC">Nursery </option>
+                  <option class="J.BKLC">Kindergarten </option>
+                  <option class="J.BKLC">Prep </option>
+                  <option class="LES"> </option>
                   
                   
                  
