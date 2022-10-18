@@ -5863,19 +5863,23 @@ input:invalid {
                   <option class="CBA">Elementary </option>
                   <option class="CBA">Junior High School </option>
                   <option class="CKSM">SMAW NCI&II </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
-                  <option class="CKSM"> </option>
+                  <option class="CKSM">Automotive Servicing NCI&NCII </option>
+                  <option class="CKSM">Computer System and Services </option>
+                  <option class="CKSM">Programming NCII </option>
+                  <option class="CKSM">Front Office NCII </option>
+                  <option class="CKSM">Food and Beverages </option>
+                  <option class="CKSM">Book Keeping NCII </option>
+                  <option class="CKSM">Housekeeping NCII </option>
+                  <option class="CKSM">Accountancy, Business, and Management (ABM) strand </option>
+                  <option class="CKSM">General Academic Strand (GAS) strand  </option>
+                  <option class="CKSM">Humanities and Social Science (HumSS) strand </option>
+                  <option class="CKSM">Sports Track </option>
+                  <option class="CKSM">Bachelor of Science in Business Administration  </option>
+                  <option class="CKSM">Bachelor of Science in Information Technology </option>
+                  <option class="CKSM">Bachelor in Elementary Education </option>
+                  <option class="CKSM">Bachelor of Science in Secondary Education </option>
+                  <option class="CKSM">Bachelor of Science in Hospitality Management </option>
+                  <option class="CKSM">Bachelor of Arts in Mass Communication </option>
                   
                   
                   
