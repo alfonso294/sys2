@@ -5880,7 +5880,9 @@ input:invalid {
                   <option class="CKSM">Bachelor of Science in Secondary Education </option>
                   <option class="CKSM">Bachelor of Science in Hospitality Management </option>
                   <option class="CKSM">Bachelor of Arts in Mass Communication </option>
-                  
+                  <option class="CLICS">Preschool> </option>
+                  <option class="CLICS">Grade School </option>
+
                   
                   
                  
