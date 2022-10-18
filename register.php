@@ -5616,7 +5616,7 @@ input:invalid {
                   <option value="FDMES">F. De Mesa Elementary School </option>
                   <option value="HIA">Holy Infant Academy (Putatan Branch) </option>
                   <option value="J.BKLC">J.B Kiddies Learning Center </option>
-                  <option value="LES">Lakeview Elementary School </option>
+                  <option value="LIS">Lakeview Integrated School </option>
                   <option value="LSA">Lakewood School of Alabng </option>
                   <option value="LLA">Living Light Academy </option>
                   <option value="MCJCS">Mary Cause of our Joy Catholic School </option>
@@ -5846,8 +5846,8 @@ input:invalid {
                   <option class="PGLS"> TEMPORAY CLOSED </option>
                   <option class="SHI">TEMPORARY CLOASED </option>
                   <option class="SMI">Accountancy, Business, and Management (ABM) strand</option>
-                  <option class="">General Academic Strand (GAS) strand </option>
-                  <option class="SMI"> Science, Technology, Engineering, and Mathematics (STEM) strand </option>
+                  <option class="SMI">General Academic Strand (GAS) strand </option>
+                  <option class="SMI">Science, Technology, Engineering, and Mathematics (STEM) strand </option>
                   <option class="SMI">Arts and Design </option>
                   <option class="SCS"> </option>
                   <option class="SCSM">Kindergarten </option>
@@ -5894,7 +5894,7 @@ input:invalid {
                   <option class="J.BKLC">Nursery </option>
                   <option class="J.BKLC">Kindergarten </option>
                   <option class="J.BKLC">Prep </option>
-                  <option class="LES"> </option>
+                  <option class="LIS"> </option>
                   
                   
                  
