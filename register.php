@@ -9837,132 +9837,7 @@ input:invalid {
               <option class="Bongabon">Tulay na Bato</option>
               <option class="Bongabon">Vega</option>
               <option class="Cabanatuan"></option>
-
-
-
-
-            
-            
-
-
-
-              
-
-
-
-             
-              
-
-
-
-
-
-
-
-              
-             
-
-
-
-
-
-
-
-
-             
-             
-             
-             
-              
-            
-            
-             
-
-           
-             
-             
-             
-             
-             
-             
-             
-           
-           
-            
-             
-            
-            
-            
-            
-              
-              
-
-              
-
-
-              
-             
-              
-             
-            
-            
-              
-              
-             
-             
-
-              
-              
-              
-              
-              
-              
-             
-
-              
-              
-              
-             
-              
-              
-              
-            
-            
-            
-
-
-
-             
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-             
-             
-             
-
-             
-             
-
-             
-              
-              
-            
-           
-           
-              
-              
-
-              
-
-          </select required>
+              </select required>
               </div>
 
               <div class="form-group">
@@ -10090,28 +9965,8 @@ input:invalid {
                   <option value="MBHS-SA">Muntinlupa Business Highschool (Sucat Annex) </option>
                   <option value="SDPAI">Sto. Domingo Pascual Academy, Inc. </option>
                   <option value="CDM">Colegio De Muntinlupa</option>
-
-
-
-
-
-
-                  
-                  
-
-
-                  
-
-
-                 
-                  
-                
-
-                  
-                
-                
                   </select required>
-                </div>
+                  </div>
 
                 <div class="form-group col-md-6">
                 <label for="course">Course - select "None" if not yet college</label>
