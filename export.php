@@ -4,7 +4,7 @@
 include_once 'connect.php'; 
  
 // Fetch records from database 
-$query = $con->query("SELECT * FROM students ORDER BY status ASC"); 
+$query = $con->query("SELECT * FROM school WHERE School='Plmun'"); 
  
 if($query->num_rows > 0){ 
     $delimiter = ","; 
@@ -14,13 +14,13 @@ if($query->num_rows > 0){
     $f = fopen('php://memory', 'w'); 
      
     // Set column headers 
-    $fields = array('ID','Stundet ID', 'FIRST NAME', 'LAST NAME', 'EMAIL', 'GENDER', 'STATUS'); 
+    $fields = array('Student ID', 'FIRST NAME', 'LAST NAME', 'COURSE', 'YEAR LEVEL', 'EMAIL'); 
     fputcsv($f, $fields, $delimiter); 
      
     // Output each row of the data, format line as csv and write to file pointer 
     while($row = $query->fetch_assoc()){ 
         
-        $lineData = array($row['id'],$row['Student_ID'], $row['firstname'], $row['lastname'], $row['email'], $row['gender'], $row['status']); 
+        $lineData = array($row['Student_ID'],$row['F_Name'], $row['L_Name'], $row['course'], $row['yrlevel'], $row['email']); 
         fputcsv($f, $lineData, $delimiter); 
     } 
      

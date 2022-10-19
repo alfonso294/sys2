@@ -9837,132 +9837,7 @@ input:invalid {
               <option class="Bongabon">Tulay na Bato</option>
               <option class="Bongabon">Vega</option>
               <option class="Cabanatuan"></option>
-
-
-
-
-            
-            
-
-
-
-              
-
-
-
-             
-              
-
-
-
-
-
-
-
-              
-             
-
-
-
-
-
-
-
-
-             
-             
-             
-             
-              
-            
-            
-             
-
-           
-             
-             
-             
-             
-             
-             
-             
-           
-           
-            
-             
-            
-            
-            
-            
-              
-              
-
-              
-
-
-              
-             
-              
-             
-            
-            
-              
-              
-             
-             
-
-              
-              
-              
-              
-              
-              
-             
-
-              
-              
-              
-             
-              
-              
-              
-            
-            
-            
-
-
-
-             
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-             
-             
-             
-
-             
-             
-
-             
-              
-              
-            
-           
-           
-              
-              
-
-              
-
-          </select required>
+              </select required>
               </div>
 
               <div class="form-group">
@@ -9995,8 +9870,7 @@ input:invalid {
                   <option value="HQLSS">Holy Queen of La Salette School </option>
                   <option value="IJMSM">Infant Jesus Montessori School of Muntinlupa-Parkhomes </option>
                   <option value="LM">Lyceum of Alabang </option>
-                  <option value="MCA">Mountaintop Christian Academy</option>
-                  <option value="MSHS">Muntinlupa Science High School </option>
+                  <option value="MCA">Mountaintop Christian Academy </option>
                   <option value="RA">Ridgeview Academy </option>
                   <option value="SNSM">Santo Niño School of Muntinlupa </option>
                   <option value="SSI">Servite School, Inc. </option>
@@ -10024,7 +9898,7 @@ input:invalid {
                   <option value="SCS">Spring Christian School </option>
                   <option value="SCSM">Sunshine Christian School Muntinlupa </option>
                   <option value="CMLC">Catherine McAuley Learning Center </option>
-                  <option value="CMLC">Child's Mind Learning $canGetVendors </option>
+                  <option value="CML">Child's Mind Learning </option>
                   <option value="CBA">Christ Baptist Academy </option>
                   <option value="CKSM">Christ the King School of Muntinlupa </option>
                   <option value="CLICS">Christ the Living Intercessor Christian School </option>
@@ -10032,7 +9906,7 @@ input:invalid {
                   <option value="FDMES">F. De Mesa Elementary School </option>
                   <option value="HIA">Holy Infant Academy (Putatan Branch) </option>
                   <option value="J.BKLC">J.B Kiddies Learning Center </option>
-                  <option value="LES">Lakeview Elementary School </option>
+                  <option value="LIS">Lakeview Integrated School </option>
                   <option value="LSA">Lakewood School of Alabng </option>
                   <option value="LLA">Living Light Academy </option>
                   <option value="MCJCS">Mary Cause of our Joy Catholic School </option>
@@ -10091,40 +9965,214 @@ input:invalid {
                   <option value="MBHS-SA">Muntinlupa Business Highschool (Sucat Annex) </option>
                   <option value="SDPAI">Sto. Domingo Pascual Academy, Inc. </option>
                   <option value="CDM">Colegio De Muntinlupa</option>
-
-
-
-
-
-
-                  
-                  
-
-
-                  
-
-
-                 
-                  
-                
-
-                  
-                
-                
                   </select required>
-                </div>
+                  </div>
 
                 <div class="form-group col-md-6">
                 <label for="course">Course - select "None" if not yet college</label>
                   <select class="form-control" name="course">
-                  <option class="Plmun">ACT</option>
-                  <option class="Plmun">BSIT</option>
-                  <option class="Plmun">BSCS</option> 
-                  <option class="IES">BSArch</option> 
-                  <option class="MunSci">BSMech</option> 
-                  <option class="Plmun">None</option> 
-                  <option class="MunSci">None</option> 
-                  <option class="IES">None</option>
+                  <option class="Plmun">Associate in Computer Technology </option>
+                  <option class="Plmun">Bachelor of Science in Information Technology </option>
+                  <option class="Plmun">Bachelor of Science in Computer Science </option>
+                  <option class="Plmun">Bachelor of Arts in Communication </option>
+                  <option class="Plmun">Bachelor of Arts in Political Science </option>
+                  <option class="Plmun">Bachelor of Science in Psychology  </option>
+                  <option class="Plmun">Bachelor of Science in Business Administration </option>
+                  <option class="Plmun">Bachelor of Science in Business Administration  Major in Human Resource Development Management </option>
+                  <option class="Plmun">Bachelor of Science in Business Administration  Major in Marketing Management </option>
+                  <option class="Plmun">Bachelor of Science in Business Administration  Major in Operation Management </option>
+                  <option class="Plmun">Bachelor of Science in Accountancy </option>
+                  <option class="Plmun">Bachelor of Science in Criminology </option>
+                  <option class="Plmun">Bachelor in Elementary Education </option>
+                  <option class="Plmun">Bachelor in Elementary Education Major in Biological Science   </option>
+                  <option class="Plmun">Bachelor in Elementary Education Major in English </option>
+                  <option class="Plmun">Bachelor in Elementary Education Major in Filipino </option>
+                  <option class="Plmun">Bachelor in Elementary Education Major in Mathematics </option>
+                  <option class="Plmun">Bachelor in Elementary Education Major in MAPEH (Music,Arts,Physical Education and Health)  </option>
+                  <option class="Plmun">Bachelor in Elementary Education Major in Social Science </option>
+                  <option class="MunSci">Grade 7 </option>
+                  <option class="MunSci">Grade 8 </option>
+                  <option class="MunSci">Grade 9 </option>
+                  <option class="MunSci">Grade 10 </option>
+                  <option class="MunSci">Grade 11 General Academic Strand  </option>
+                  <option class="MunSci">Grade 11 Humanities and Social Science Strand </option>
+                  <option class="MunSci">Grade 11 Science,Tehnology,Enginering and Mathemathics Strand </option>
+                  <option class="MunSci">Grade 11 Accountancy,Business and Management Strand </option>
+                  <option class="MunSci">Grade 12 General Academic Strand   </option>
+                  <option class="MunSci">Grade 12 Humanities and Social Science Strand </option>
+                  <option class="MunSci">Grade 12 Science,Tehnology,Enginering and Mathemathics Strand  </option>
+                  <option class="MunSci">Grade 11 Accountancy,Business and Management Strand </option>
+                  <option class="IES"></option> 
+                  <option class="KSGT"></option> 
+                  <option class="DGLC"></option> 
+                  <option class="DMS"></option> 
+                  <option class="HIA"></option> 
+                  <option class="HQLSS"></option> 
+                  <option class="IJMSM"></option> 
+                  <option class="LM">Business Management Education </option> 
+                  <option class="LM">Arts and Sciences </option> 
+                  <option class="LM">Criminal Justice </option> 
+                  <option class="LM">Education </option> 
+                  <option class="LM">Engineering </option>
+                  <option class="LM">Real Estate Management </option>
+                  <option class="LM">Tourism and Hospitality Management </option> 
+                  <option class="MCA">Primary Grade School-Kindergarten </option>
+                  <option class="MCA">Primary Grade School-Grade 1 </option>
+                  <option class="MCA">Primary Grade School-Grade 2 </option>
+                  <option class="MCA">Middle Grade School-Grade 3 </option>
+                  <option class="MCA">Middle Grade School-Grade 4  </option>
+                  <option class="MCA">Middle Grade School-Grade 5  </option>
+                  <option class="MCA">Middle Grade School-Grade 6  </option>
+                  <option class="MCA">Junior High School-Grade 7  </option>
+                  <option class="MCA">Junior High  School-Grade 8  </option>
+                  <option class="MCA">Junior High  School-Grade 9  </option>
+                  <option class="MCA">Junior High  School-Grade 10  </option>
+                  <option class="RA">Ridgeview academy </option>
+                  <option class="SNSM">Pre-school </option>
+                  <option class="SNSM">Elementary </option>
+                  <option class="SNSM">Secondary Level </option>
+                  <option class="SSI">English Department </option>
+                  <option class="SSI">Visual Arts Department </option>
+                  <option class="SSI">Music Department </option>
+                  <option class="SSI">World Language Department </option>
+                  <option class="SSI">Mathematics Department </option>
+                  <option class="SSI">Computer Science </option>
+                  <option class="SSI">Science Department </option>
+                  <option class="SSI">Physical Education and Health </option>
+                  <option class="SSI">Social Studies Department </option>
+                  <option class="SSI">Technology Department </option>
+                  <option class="SSI">Christian Service Department </option>
+                  <option class="TBSM"> </option>
+                  <option class="TES">Kindergarten </option>
+                  <option class="TES">Grade 1 </option>
+                  <option class="TES">Grade 2 </option>
+                  <option class="TES">Grade 3 </option>
+                  <option class="TES">Grade 4 </option>
+                  <option class="TES">Grade 5 </option>
+                  <option class="TES">Grade 6 </option>
+                  <option class="VES">Grade 1 </option>
+                  <option class="VES">Grade 2 </option>
+                  <option class="VES">Grade 3 </option>
+                  <option class="VES">Grade 4 </option>
+                  <option class="VES">Grade 5 </option>
+                  <option class="VES">Grade 6 </option>
+                  <option class="VFBA"> </option> 
+                  <option class="WKSM"></option> 
+                  <option class="EJIST">Accountancy, Business Management </option>
+                  <option class="EJIST"> </option> 
+                  <option class="EJIST">Accountancy, Business Management </option> 
+                  <option class="IES">General Academic Strand </option> 
+                  <option class="EJIST">Information Communication Technology </option>
+                  <option class="EJIST">Home Economics </option>  
+                  <option class="TNHS"></option> 
+                  <option class="CLS">Pre-Kinder </option>
+                  <option class="CLS">Kindegarten </option> 
+                  <option class="CLS">Grade 1 </option> 
+                  <option class="CLS">Grade 2 </option> 
+                  <option class="CLS">Grade 3 </option> 
+                  <option class="CLS">Grade 4 </option> 
+                  <option class="CLS">Grade 5 </option> 
+                  <option class="CLS">Grade 6 </option> 
+                  <option class="CLS">Grade 7 </option> 
+                  <option class="CLS">Grade 8 </option> 
+                  <option class="CLS">Grade 9 </option> 
+                  <option class="CLS">Grade 10 </option>           
+                  <option class="IES"></option> 
+                  <option class="PES"></option> 
+                  <option class="LPS"></option> 
+                  <option class="LAF">Pre-school </option> 
+                  <option class="LAF">Grade School </option> 
+                  <option class="LAF">1-on-1 Tutorial </option> 
+                  <option class="LAF">Funshine Summer Programs </option> 
+                  <option class="MCA"></option>
+                  <option class="MES"></option>  
+                  <option class="MNHS">Science, Technology, Engeneering, and Mathematics Strand </option>
+                  <option class="MNHS">Accountancy, Business and Management </option> 
+                  <option class="MNHS">General Academic Strand </option>
+                  <option class="MNHS">Arts and Design Track </option>
+                  <option class="MNHS">Automotive K to 12 </option>
+                  <option class="MNHS">Sports Track </option>
+                  <option class="MNHS">Information and Communication (ICT) Strand </option>
+                  <option class="PES"> Science, Technology, Engineering, and Mathematics (STEM) strand </option>
+                  <option class="PES">Accountancy, Business, and Management (ABM) strand </option>
+                  <option class="PES">Humanities and Social Science (HumSS) strand </option>
+                  <option class="PES">General Academic Strand (GAS) strand </option>
+                  <option class="PES">Technical-Vocational Livelihood (TVL) strand </option>
+                  <option class="OLTACS">Nursery </option>
+                  <option class="OLTACS"></option>
+                  <option class="OLTACS">Kindergarten </option>
+                  <option class="OLTACS">Grade 1 </option>
+                  <option class="OLTACS">Grade 2 </option>
+                  <option class="OLTACS">Grade 3 </option>
+                  <option class="OLTACS">Grade 4 </option>
+                  <option class="OLTACS">Grade 5 </option>
+                  <option class="OLTACS">Grade 6 </option>
+                  <option class="OLTACS">Junior High School- Grase 7 </optiion>
+                  <option class="OLTACS">Junior High School- Grase 8 </option>
+                  <option class="OLTACS">Junior High School- Grase 9 </option>
+                  <option class="OLTACS">Junior High School- Grase 10 </option>
+                  <option class="OLTACS">Senior High School- Grase 11 </option>
+                  <option class="OLTACS">Senior High School- Grase 12 </option>
+                  <option class="PGLS"> TEMPORAY CLOSED </option>
+                  <option class="SHI">TEMPORARY CLOASED </option>
+                  <option class="SMI">Accountancy, Business, and Management (ABM) strand</option>
+                  <option class="SMI">General Academic Strand (GAS) strand </option>
+                  <option class="SMI">Science, Technology, Engineering, and Mathematics (STEM) strand </option>
+                  <option class="SMI">Arts and Design </option>
+                  <option class="SCS"> </option>
+                  <option class="SCSM">Kindergarten </option>
+                  <option class="SCSM">Grade 1 </option>
+                  <option class="SCSM">Grade 2  </option>
+                  <option class="SCSM">Grade 3 </option>
+                  <option class="SCSM">Grade 4  </option>
+                  <option class="SCSM">Grade 5  </option>
+                  <option class="SCSM">Grade 6  </option>
+                  <option class="CMLC">Kindergarten </option>
+                  <option class="CML">Elementary level </option>
+                  <option class="CBA">Pre-school </option>
+                  <option class="CBA">Elementary </option>
+                  <option class="CBA">Junior High School </option>
+                  <option class="CKSM">SMAW NCI&II </option>
+                  <option class="CKSM">Automotive Servicing NCI&NCII </option>
+                  <option class="CKSM">Computer System and Services </option>
+                  <option class="CKSM">Programming NCII </option>
+                  <option class="CKSM">Front Office NCII </option>
+                  <option class="CKSM">Food and Beverages </option>
+                  <option class="CKSM">Book Keeping NCII </option>
+                  <option class="CKSM">Housekeeping NCII </option>
+                  <option class="CKSM">Accountancy, Business, and Management (ABM) strand </option>
+                  <option class="CKSM">General Academic Strand (GAS) strand  </option>
+                  <option class="CKSM">Humanities and Social Science (HumSS) strand </option>
+                  <option class="CKSM">Sports Track </option>
+                  <option class="CKSM">Bachelor of Science in Business Administration  </option>
+                  <option class="CKSM">Bachelor of Science in Information Technology </option>
+                  <option class="CKSM">Bachelor in Elementary Education </option>
+                  <option class="CKSM">Bachelor of Science in Secondary Education </option>
+                  <option class="CKSM">Bachelor of Science in Hospitality Management </option>
+                  <option class="CKSM">Bachelor of Arts in Mass Communication </option>
+                  <option class="CLICS">Preschool> </option>
+                  <option class="CLICS">Grade School </option>
+                  <option class="CNSG"> </option>
+                  <option class="FDEMES">Kindergarten </option>
+                  <option class="FDEMES">Grade 1 </option>
+                  <option class="FDEMES">Grade 2 </option>
+                  <option class="FDEMES">Grade 3 </option>
+                  <option class="FDEMES">Grade 4 </option>
+                  <option class="FDEMES">Grade 5 </option>
+                  <option class="FDEMES">Grade 6 </option>
+                  <option class="HIA"> </option>
+                  <option class="J.BKLC">Nursery </option>
+                  <option class="J.BKLC">Kindergarten </option>
+                  <option class="J.BKLC">Prep </option>
+                  <option class="LIS"> </option>
+                  
+                  
+                 
+
+
+
+                  
+
                   </select required>
                 </div>
                 
