@@ -15,6 +15,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
   background-image: url("assets/img/bg4.jpg");
@@ -78,7 +80,8 @@ body {
                 $y=$row['FatherName'];
                 $z=$row['MotherEduc'];
                 $aa=$row['FatherEduc'];   
-                $ab=$row['marital'];            
+                $ab=$row['marital'];  
+                $af=$row['comment'];          
                 
             } 
         } else {
@@ -125,6 +128,7 @@ body {
                 $t=$row['course'];
                 $u=$row['yrlevel'];
                 $v=$row['SAdd'];
+                $ae=$row['grlevel'];
             }
         } else {
 
@@ -225,14 +229,19 @@ body {
                               </div>
 
                               <div class="form-group col-md-6">
-                                 <label for="course">Course or Grade level</label>
+                                 <label for="course">Course</label>
                                 <input type="text" name="course" class="form-control" placeholder="course" value="<?php echo $t;?>" readonly>
                               </div>
 
                           </div>  
 
                           <div class="form-row">
-                              <div class="form-group col-md-6">
+                              <div class="form-group col-md-3">
+                                <label for="yrlevel">Grade level</label>
+                                <input type="text" name="yrlevel" class="form-control" placeholder="Year Level" value="<?php echo $ae;?>" readonly>
+                              </div>
+
+                              <div class="form-group col-md-3">
                                 <label for="yrlevel">Year level</label>
                                 <input type="text" name="yrlevel" class="form-control" placeholder="Year Level" value="<?php echo $u;?>" readonly>
                               </div>
@@ -292,7 +301,7 @@ body {
 
                              <div class="form-outline col-md-12">
                                 <label for="comment">Evaluators Comment</label>
-                             <textarea class="form-control" placeholder="comment" name="comment" row="12" value="<?php echo $h; ?>" readonly></textarea>
+                             <input class="form-control" placeholder="" name="comment" row="12" value="<?php echo $af; ?>" readonly>
                             </div> 
 
                       </fieldset>
@@ -367,31 +376,7 @@ body {
                          </table>
 
 
-                          <table class="table table-dark">
-                              <thead>
-                                <tr class="table-info">
-                                  <th style="text-align: center;">COM</th>
-                                  <th style="text-align: center;">COG</th>
-                                  <th style="text-align: center;">Care Card</th>
-
-                                </tr>
-                              </thead>
                             
-
-                            <tr>
-                              
-
-                              
-                              
-                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $j; ?>" alt="Image" class="img-thumbnail"style="width: 100px; height: 100px;"></td>
-
-                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $ac; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
-
-                                <td style="text-align: center;"><img src="user/<?php echo $_SESSION['username']?>/<?php echo $ad; ?>" alt="Image" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
-
-                           </tr>
-                         </table>
-                                    
 
                                    
                                     

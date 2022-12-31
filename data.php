@@ -11,9 +11,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <title>Document</title>
+ 
+    <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
 </head>
+<title>Data</title>
 <body>
+<br><br>
 
 <?php 
   $con = new mysqli('localhost','root','','studentinfosystem');
@@ -30,7 +34,8 @@ FROM school GROUP BY School;
 
 ?>
 
-<div class="col-lg-6">
+<div class="registration-form box-center clearfix">
+  <h1>Data</h1>
 <div style="width: 500px;">
   <canvas id="myChart"></canvas>
 </div>
@@ -67,7 +72,7 @@ FROM school GROUP BY School;
   };
 
   const config = {
-    type: 'bar',
+    type: 'pie',
     data: data,
     options: {
       scales: {
@@ -84,9 +89,10 @@ FROM school GROUP BY School;
   );
 </script>
 
+<a class="btn btn-secondary" href="admin.php" role="button">Go back</a>
+
 </div>
 
-<a class="btn btn-secondary" href="admin.php" role="button">Go back</a>
 
 </body>
 </html>

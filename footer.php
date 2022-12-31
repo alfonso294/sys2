@@ -1,40 +1,70 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<footer class="footer">
+			    <div class="container-fluid">
+				   <div class="row">
+				       <div class="col-md-6">
+					       <nav class="d-flex">
+						      <ul class="m-0 p-0">
+							     <!--<li><a href="#">Home</a></li>
+								  <li><a href="#">company</a></li>
+								   <li><a href="#">portfolio</a></li>
+								    <li><a href="#">Blogs</a></li>
+							  <ul>-->
+						   </nav>
+					   </div>
+					   
+					   <div class="col-md-6">
+					       <p class="copyright d-flex justify-content-end">
+						      &copy 2022 Design By
+						      <a href="#"> &nbsp; Benito, Casiao, Copa</a>
+						   </p>
+					   </div>
+				   </div>
+				</div>
+			 
+			 </footer>
+		</div>
+</div>
 
-  <style type="text/css">
-    #footer {
-  position: absolute;
 
-  bottom: 0;
-  width: 100%;
-  height:2rem;            /* Footer height */
+
+<!----------html code compleate----------->
+
+
+
+
+
+
+
+
+  
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery-3.3.1.min.js"></script>
   
   
+  <script type="text/javascript">
+        
+		$(document).ready(function(){
+		  $("#sidebar-collapse").on('click',function(){
+		    $('#sidebar').toggleClass('active');
+			$('#content').toggleClass('active');
+		  });
+		  
+		   $(".more-button,.body-overlay").on('click',function(){
+		     $('#sidebar,.body-overlay').toggleClass('show-nav');
+		   });
+		  
+		});
+		
+</script>
   
-}
-
-#footer, .push {
-        height: 2rem; /* '.push' must be the same height as 'footer' */
-}
+  
 
 
 
-  </style>
-  <title></title>
-</head>
-<body>
-
-  <footer id="footer" class="bg-light text-center text-lg-start">
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: #000000;">
-    © 2022 Copyright:
-    <a class="text-white" href="#">Ana Marie D. Casiao Angelica D.Copa Alfonso Luis M. Benito</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-
-</body>
-</html>
+  </body>
+  
+  </html>

@@ -1,3 +1,15 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://kit.fontawesome.com/9d45450406.js" crossorigin="anonymous"></script>
+
+    <title></title>
+</head>
+<body>
+
 <?php 
 
   session_start();
@@ -5,7 +17,7 @@
   require 'connect.php';
   require 'functions.php';
   require 'header2.php';
-  require 'footer.php';
+  
 
   if (!isset($_SESSION['username']))
     header("Location: index.php");
@@ -34,12 +46,15 @@ body {
 
 
 <body id="body1">
+
+    <section class="center-text"><br><br>
+<div class="registration-form box-center">
 <br><br><br><div id="page-wrapper">
             <div class="container-fluid">
                 <div class="col-lg-12">
-                    <div class="table responsive">
+                    <div class="table responsive, overflow-x:auto;">
                         <table id="dataset"class="table table-bordered table-hover table-striped table-sm" >
-                            <thead class="thead-dark">
+                            <thead class="thead-light">
                                 <tr>
                                    
                                     <th>User Name</th>
@@ -48,11 +63,12 @@ body {
                                     <th>First Name</th>
                                     <th>Last Name</th>
                                     <th>Course</th> 
+                                    <th>Grade Level</th>
                                     <th>Year Level</th>
                                     <th>School</th>
-                                   
                                     <th>Status</th>
                                     <th>Options</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
@@ -73,35 +89,35 @@ body {
                                     echo '<td>'. $row['firstname'].'</td>';
                                     echo '<td>'. $row['lastname'].'</td>';
                                     echo '<td>'. $row['course'].'</td>';
+                                    echo '<td>'. $row['grlevel'].'</td>';
                                     echo '<td>'. $row['yrlevel'].'</td>';
                                     echo '<td>'. $row['School'].'</td>';
                                    
                                     echo '<td><b>'. $row['status'].'</b></td>';
 
-                                    echo '<td> <a type="button" class="btn btn-info btn-sm" href="view.php?action=edit & username='.$row['username'] . '" > VIEW </a> ';
-                                    echo ' <a  type="button" class="btn btn-sm btn-warning" href="edit.php?action=edit & username='.$row['username'] . '"> EDIT </a> ';
-                                    echo ' <a  type="button" class="btn btn-sm btn-danger" href="delete.php?type=student&delete & username=' . $row['username'] . '">DELETE </a> </td>';
+                                    echo '<td> <a href="view.php?username='. $row['username'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
+                                    echo ' <a href="edit.php?action=edit & username='.$row['username'] .'" class="mr-3" title="Edit Record" data-toggle="tooltip"><i class="fa-solid fa-user-pen"></i></a>';
+                                    echo ' <a href="delete.php?type=student&delete & username=' . $row['username'] . '" class="mr-3" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a></td>';
                                     echo '</tr> ';
                                 
 
-                                        }
+                                        } 
                                 ?>
                                 
 
                             </tbody>
                         </table>
-                        
-                        <form method="post" action="export.php">  
-                        <input type="submit" name="export" value="CSV Export" class="btn btn-success" /> 
+                        <br><br><br><br>
+                        <a class="btn btn-secondary" href="export1.php" role="button">View Downloables</a>
                         <a class="btn btn-primary" href="data.php" role="button">View Data</a>
                         <a class="btn btn-secondary" href="logout.php" role="button">Logout</a>
 
-                    
-                         </form>  
-                    </div>
+                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
     
 
 
@@ -113,6 +129,8 @@ body {
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
 <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+
 
 
   <script>
@@ -130,4 +148,5 @@ body {
 
 
 </body>
+</html>
 

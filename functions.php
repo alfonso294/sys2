@@ -15,4 +15,7 @@
 		echo "<div class='alert alert-danger'>".$_SESSION['errprompt']."</div>";
 	}
 
+
+
 ?>
+

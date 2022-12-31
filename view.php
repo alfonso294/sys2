@@ -4,7 +4,7 @@
 
   require 'connect.php';
   require 'functions.php';
-  require 'header.php';
+  
   require 'header2.php';
   
 
@@ -28,7 +28,7 @@
 <body>
 
   <section class="center-text"><br><br>
-   <div class="registration-form box-center clearfix">
+  <div class="registration-form box-center clearfix">
 	
 	
 

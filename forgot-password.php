@@ -1,4 +1,8 @@
-<?php require_once "controllerUserData.php"; require_once "header.php"; require_once "header2.php";?>
+<?php 
+
+require_once "controllerUserData.php"; 
+ 
+require_once "header2.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +12,7 @@
   
     
 </head>
-<body>
+<body><br><br>
     <div class="registration-form box-center clearfix">
             <form action="forgot-password.php" method="POST" autocomplete="">
                 <div class="form-row">
